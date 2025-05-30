@@ -56,9 +56,17 @@
   <a href="mailto:jayanththomas2004@email.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
+  <a href="https://stackoverflow.com/users/30679522/jayath-thomas" target="_blank">
+    <img src="https://img.shields.io/badge/StackOverflow-FE7A16?style=for-the-badge&logo=stackoverflow&logoColor=white" />
+  </a>
+  <a href="https://x.com/JAYANTHTHOMASS" target="_blank">
+    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=twitter&logoColor=white" />
+  </a>
+  <a href="https://orcid.org/0009-0002-5126-5511" target="_blank">
+    <img src="https://img.shields.io/badge/ORCID-00A0DE?style=for-the-badge&logo=orcid&logoColor=white" />
+  </a>
 </p>
 
 ---
 
 > 🧠 _"Just trying to do my part in the world."_
-
