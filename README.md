@@ -7,7 +7,7 @@
 
 ### 👨‍💻 About Me
 
-- 🎓 Currently learning **Python**, **Java**, and **Data Structures**
+- 🎓 Currently learning **Python**, and **Data Structures**
 - 🤖 Exploring **Artificial Intelligence**, **Web Development**, and **Open Source**
 - 💬 I love bringing ideas to life through clean, functional code
 - 📚 Always growing, building, and staying curious
@@ -39,7 +39,7 @@
 
 ### 🎯 2025 Goals
 
-- ✅ Master **Python** and dive deeper into **Machine Learning**
+- ✅  Learn **Python** and dive deeper into **Machine Learning**
 - 🔥 Contribute to **Open Source Projects**
 - 🚀 Build a strong portfolio of real-world, impactful projects
 - 🌍 Collaborate with developers across the globe
