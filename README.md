@@ -1,26 +1,28 @@
-<h1 align="center">Hey there 👋, I'm Jayanth Thomas</h1>
+<h1 align="center">Hey there 👋, I'm <span style="color:#f92672">Jayanth Thomas</span></h1>
 <p align="center">
-  🚀 Future Software Developer | 🌱 Lifelong Learner | 💡 Problem Solver
+  🚀 Aspiring Software Developer | 🌱 Lifelong Learner | 💡 Problem Solver
 </p>
 
 ---
 
 ### 👨‍💻 About Me
 
-- 🔭 I’m currently learning **Python**, **Java**, and **Data Structures**
-- 👨‍🎓 A passionate student exploring **AI**, **Web Dev**, and **Open Source**
-- 💬 I love turning ideas into code and building real-world projects
-- 🎯 My motto: _Learn. Build. Grow._
+- 🎓 Currently learning **Python**, **Java**, and **Data Structures**
+- 🤖 Exploring **Artificial Intelligence**, **Web Development**, and **Open Source**
+- 💬 I love bringing ideas to life through clean, functional code
+- 📚 Always growing, building, and staying curious
 
 ---
 
-### 🛠️ Tech Stack
+### 🧰 Tech Stack
 
-![Python](https://img.shields.io/badge/-Python-0d1117?style=flat&logo=python&logoColor=yellow)
-![Java](https://img.shields.io/badge/-Java-0d1117?style=flat&logo=java&logoColor=red)
-![C](https://img.shields.io/badge/-C-0d1117?style=flat&logo=c&logoColor=blue)
-![Git](https://img.shields.io/badge/-Git-0d1117?style=flat&logo=git&logoColor=orange)
-![VSCode](https://img.shields.io/badge/-VSCode-0d1117?style=flat&logo=visual-studio-code&logoColor=blue)
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python&logoColor=yellow"/>
+  <img src="https://img.shields.io/badge/Java-0d1117?style=for-the-badge&logo=java&logoColor=red"/>
+  <img src="https://img.shields.io/badge/C-0d1117?style=for-the-badge&logo=c&logoColor=blue"/>
+  <img src="https://img.shields.io/badge/Git-0d1117?style=for-the-badge&logo=git&logoColor=orange"/>
+  <img src="https://img.shields.io/badge/VSCode-0d1117?style=for-the-badge&logo=visual-studio-code&logoColor=blue"/>
+</p>
 
 ---
 
@@ -29,24 +31,53 @@
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&theme=radical" height="180px"/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=JET609&theme=radical" height="180px"/>
+  <br />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JET609&layout=compact&theme=radical" height="130px"/>
 </p>
 
 ---
 
 ### 🎯 2025 Goals
 
-- ✅ learn Python and machine learning 
-- 🔥 Contribute open-source projects
-- 🚀 Build a portfolio 
-- 🤝 Collaborate with fellow developers worldwide
+- ✅ Master **Python** and dive deeper into **Machine Learning**
+- 🔥 Contribute to **Open Source Projects**
+- 🚀 Build a strong portfolio of real-world, impactful projects
+- 🌍 Collaborate with developers across the globe
+- 🧠 Keep learning, stay consistent, and never stop building
+
+---
+
+### 📌 Featured Projects
+
+<p align="center">
+  <a href="https://github.com/JET609">
+    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=JET609&repo=your-repo-name-1&theme=radical" />
+  </a>
+  <a href="https://github.com/JET609">
+    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=JET609&repo=your-repo-name-2&theme=radical" />
+  </a>
+</p>
+
+> Replace `your-repo-name-1` and `your-repo-name-2` with your actual project names.
 
 ---
 
 ### 📫 Let’s Connect!
 
-[![LinkedIn](https://www.linkedin.com/in/jayanth-thomas-027318221/) 
-📧 Email: jayanththomas2004@email.com
+<p align="center">
+  <a href="https://www.linkedin.com/in/jayanth-thomas-027318221/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="mailto:jayanththomas2004@email.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+</p>
 
 ---
 
-> 🧠 _" just trying my part in to world"
+> 🧠 _"Just trying to do my part in the world."_
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=JET609&style=flat-square&color=blue" alt="Profile Views" />
+</p>
+
