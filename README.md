@@ -47,21 +47,6 @@
 
 ---
 
-### 📌 Featured Projects
-
-<p align="center">
-  <a href="https://github.com/JET609">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=JET609&repo=your-repo-name-1&theme=radical" />
-  </a>
-  <a href="https://github.com/JET609">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=JET609&repo=your-repo-name-2&theme=radical" />
-  </a>
-</p>
-
-> Replace `your-repo-name-1` and `your-repo-name-2` with your actual project names.
-
----
-
 ### 📫 Let’s Connect!
 
 <p align="center">
@@ -76,8 +61,4 @@
 ---
 
 > 🧠 _"Just trying to do my part in the world."_
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=JET609&style=flat-square&color=blue" alt="Profile Views" />
-</p>
 
