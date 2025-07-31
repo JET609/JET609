@@ -69,6 +69,9 @@
 
 ---
 
+![Snake animation](https://github.com/JET609/JET609/blob/output/github-contribution-grid-snake-dark.svg?palette=github-dark)
+
+
 > 🧠 _"Just trying to do my part in the world."_
 
 ### ☕ Buy Me a Coffee
