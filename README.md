@@ -68,8 +68,14 @@
 </p>
 
 ---
+---
 
-![Snake animation](https://github.com/JET609/JET609/blob/output/github-contribution-grid-snake-dark.svg?palette=github-dark)
+### 🐍 Contribution Snake
+
+<p align="center">
+  <img src="https://github.com/JET609/JET609/blob/output/github-contribution-grid-snake.svg" />
+</p>
+
 
 
 > 🧠 _"Just trying to do my part in the world."_
