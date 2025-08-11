@@ -84,20 +84,20 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/jayanth-thomas-027318221/" target="_blank">
-    <img src="https://img.shields.io/badge/-Jayanth_Thomas-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+    <img src="https://img.shields.io/badge/-Jayanth_Thomas-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
   <a href="mailto:jayanththomas2004@email.com">
-    <img src="https://img.shields.io/badge/-jayanththomas2004-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+    <img src="https://img.shields.io/badge/-jayanththomas2004-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
   <a href="https://stackoverflow.com/users/30679522/jayath-thomas" target="_blank">
-    <img src="https://img.shields.io/badge/-Jayath_Thomas-FE7A16?style=for-the-badge&logo=stackoverflow&logoColor=white"/>
+    <img src="https://img.shields.io/badge/-Jayath_Thomas-FE7A16?style=for-the-badge&logo=stackoverflow&logoColor=white" alt="Stack Overflow"/>
   </a>
   <br/>
-  <a href="https://x.com/JAYANTHTHOMASS" target="_blank">
-    <img src="https://img.shields.io/badge/-@JAYANTHTHOMASS-000000?style=for-the-badge&logo=twitter&logoColor=white"/>
+  <a href="https://twitter.com/JAYANTHTHOMASS" target="_blank">
+    <img src="https://img.shields.io/badge/-@JAYANTHTHOMASS-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"/>
   </a>
   <a href="https://orcid.org/0009-0002-5126-5511" target="_blank">
-    <img src="https://img.shields.io/badge/-ORCID_0009_0002_5126_5511-00A0DE?style=for-the-badge&logo=orcid&logoColor=white"/>
+    <img src="https://img.shields.io/badge/-ORCID_0009_0002_5126_5511-00A0DE?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID"/>
   </a>
 </p>
 
