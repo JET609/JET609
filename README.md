@@ -53,28 +53,28 @@
 
 <p align="center">
   <table>
-  <tr>
-    <td align="center">
-      <img src="https://img.icons8.com/color/48/000000/python.png" width="40" alt="Python"/>
-      <br/>
-      <strong>Master Python</strong>
-    </td>
-    <td align="center">
-      <img src="https://img.icons8.com/color/48/000000/open-source.png" width="40" alt="Open Source"/>
-      <br/>
-      <strong>Open Source</strong>
-    </td>
-    <td align="center">
-      <img src="https://img.icons8.com/color/48/000000/artificial-intelligence.png" width="40" alt="AI"/>
-      <br/>
-      <strong>AI/ML Projects</strong>
-    </td>
-    <td align="center">
-      <img src="https://img.icons8.com/color/48/000000/developer.png" width="40" alt="Portfolio"/>
-      <br/>
-      <strong>Build Portfolio</strong>
-    </td>
-  </tr>
+    <tr>
+      <td align="center">
+        <img src="https://img.icons8.com/color/48/000000/python.png" width="40" alt="Python"/>
+        <br/>
+        <strong>Master Python</strong>
+      </td>
+      <td align="center">
+        <img src="https://img.icons8.com/color/48/000000/open-source.png" width="40" alt="Open Source"/>
+        <br/>
+        <strong>Open Source</strong>
+      </td>
+      <td align="center">
+        <img src="https://img.icons8.com/color/48/000000/artificial-intelligence.png" width="40" alt="AI"/>
+        <br/>
+        <strong>AI/ML Projects</strong>
+      </td>
+      <td align="center">
+        <img src="https://img.icons8.com/color/48/000000/developer.png" width="40" alt="Portfolio"/>
+        <br/>
+        <strong>Build Portfolio</strong>
+      </td>
+    </tr>
   </table>
 </p>
 
@@ -97,7 +97,7 @@
     <img src="https://img.shields.io/badge/-@JAYANTHTHOMASS-000000?style=for-the-badge&logo=twitter&logoColor=white"/>
   </a>
   <a href="https://orcid.org/0009-0002-5126-5511" target="_blank">
-    <img src="https://img.shields.io/badge/-ORCID_0009-0002-5126-5511-00A0DE?style=for-the-badge&logo=orcid&logoColor=white"/>
+    <img src="https://img.shields.io/badge/-ORCID_0009_0002_5126_5511-00A0DE?style=for-the-badge&logo=orcid&logoColor=white"/>
   </a>
 </p>
 
@@ -106,7 +106,7 @@
 ### 🐍 **My Contribution Graph**
 
 <p align="center">
-  <img src="https://github.com/JET609/JET609/blob/output/github-contribution-grid-snake.svg" alt="Contribution Snake"/>
+  <img src="https://raw.githubusercontent.com/JET609/JET609/output/github-contribution-grid-snake.svg" alt="Contribution Snake"/>
 </p>
 
 ---
