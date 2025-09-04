@@ -59,10 +59,9 @@
 ## 📊 GitHub Analytics
 <p align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&theme=radical&count_private=true&hide_border=true&include_all_commits=true" alt="GitHub Stats" />
-  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=JET609&theme=radical&hide_border=true" alt="GitHub Streak" />
   <br/>
-  <!-- Fallback badge in case streak image doesn't load -->
-  <img src="https://img.shields.io/badge/GitHub%20Streak-N_A-lightgrey" alt="GitHub Streak Fallback" />
+  <!-- Simplified fallback streak badge -->
+  ![GitHub Streak](https://img.shields.io/badge/GitHub_Streak-N/A-lightgrey)
 </p>
 
 <p align="center">
