@@ -24,13 +24,12 @@
 - 💡 Motto: _"Code should solve problems, not create them—let's innovate responsibly!"_
 - 📚 Diving deep into emerging tech: React, Node.js, AWS Cloud, and Ethical AI.
 - ⚡ Coffee ☕ fuels my 3 AM breakthroughs; Chess ♟️ teaches algorithmic patience.
-- 🏆 Achievements: 1,000+ commits by 2025, Top 5% on LeetCode, Hackathon Winner (2024), mentoring juniors.
 
 ### 📜 My Journey Timeline
 - **2022** Started coding with Python basics 🐍
-- **2023** Built first web app and solved 200+ DSA problems 💻
-- **2024** Contributed to open-source AI projects, won local hackathon 🏆
-- **2025** Launching AI startups, aiming for Google Summer of Code 🌟
+- **2023** Built first web app and solved DSA problems 💻
+- **2024** Contributed to open-source AI projects
+- **2025** Launching AI startups�
 
 ---
 
@@ -56,16 +55,6 @@
 <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask"/>
 
 ---
-
-## 📈 Skills Radar
-
-<p align="center">
-  <!-- Upload your skills-radar.svg to your repo and update this relative path -->
-  ![Skills Radar](./assets/skills-radar.svg)
-</p>
-
----
-
 ## 📊 GitHub Analytics
 
 <p align="center">
@@ -76,15 +65,6 @@
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=JET609&theme=radical&no-frame=true&margin-w=15&column=7" alt="GitHub Trophies"/>
 </p>
-
----
-
-## 🏅 Certifications & Badges
-- Google Data Analytics Professional Certificate (2024)
-- AWS Certified Cloud Practitioner (2025)
-- LeetCode: 500+ Problems Solved Badge
-- Hackerrank: 5-Star Python & Java
-
 ---
 
 ## 🎯 2025 Goals
@@ -96,18 +76,15 @@
 ---
 
 ## 🚀 Featured Projects
-- [AI Chatbot](https://github.com/JET609/ai-chatbot) – Python NLP bot (⭐ 100+ | Forks 20+)
-- [Full-Stack Web App](https://github.com/JET609/web-portfolio) – React + Node.js prototype
-- [DSA Mastery Repo](https://github.com/JET609/dsa-repo) – 300+ solved problems
-- [ML Predictor](https://github.com/JET609/ml-predictor) – TensorFlow stock forecasting
+- [AI Chatbot](https://github.com/JET609/ai-chatbot) – 
+- [Full-Stack Web App](https://github.com/JET609/web-portfolio) – 
+- [DSA Mastery Repo](https://github.com/JET609/dsa-repo) – 
+- [ML Predictor](https://github.com/JET609/ml-predictor) – 
 
 ---
 
 ## 📝 Blog & Articles
 - [Building Your First AI Model with Python](https://medium.com/@jayanththomas/building-ai-101)
-- [DSA Tips for Beginners](https://dev.to/jayanththomas/dsa-tips)
-- [Why Open Source Matters in India](https://hashnode.com/post/why-os-india)
-
 ---
 
 ## 📅 Recent Activity
@@ -158,7 +135,7 @@
 ---
 
 > 💡 _"Just trying to do my part through code, collaboration, and curiosity."_  
-> <p align="right">— Jayanth Thomas, Python Developer from India 🇮🇳</p>
+> <p align="right">— Jayanth Thomas </p>
 
 ---
 
