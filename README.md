@@ -93,15 +93,6 @@
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=JET609&theme=react-dark&hide_border=true&area=true&custom_title=Recent%20Contributions" alt="Recent Contributions" width="100%" />
 </p>
-
----
-
-## 🌍 Visitor Map
-<p align="center">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=JET609.JET609&left_color=black&right_color=green" alt="Visitor Badge" />
-  <img src="https://profile-counter.glitch.me/JET609/count.svg" alt="Profile Views Counter" />
-</p>
-
 ---
 
 ## 🤝 Let's Connect
