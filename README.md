@@ -23,7 +23,7 @@
 - 🌐 Actively contributing to **Open Source** and building scalable real-world apps.
 - 💡 Motto: _"Code should solve problems, not create them — let's innovate responsibly!"_
 - 📚 Diving deep into emerging tech: React, Node.js, AWS Cloud, and Ethical AI.
-- ⚡ Coffee ☕ fuels my 3 AM breakthroughs; Chess ♟️ sharpens my algorithmic patience.
+- ⚡ Coffee ☕ fuels my 3 AM breakthroughs; Chess ♟️ teaches algorithmic patience.
 
 ### 📜 My Journey Timeline
 - **2022:** Started coding with Python basics 🐍.
@@ -59,9 +59,6 @@
 ## 📊 GitHub Analytics
 <p align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&theme=radical&count_private=true&hide_border=true&include_all_commits=true" alt="GitHub Stats" />
-  <br/>
-  <!-- Simplified fallback streak badge -->
-  ![GitHub Streak](https://img.shields.io/badge/GitHub_Streak-N/A-lightgrey)
 </p>
 
 <p align="center">
