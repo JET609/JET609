@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=900&size=35&duration=1000&pause=450&color=F92672&center=true&vCenter=true&width=600&lines=JAYANTH+THOMAS;Hello+World!+👋;From+India+🇮🇳" alt="Jayanth Thomas Flash Typing" />
+  <a href="https://git.io/typing-svg" target="_blank" rel="noopener noreferrer">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=435&lines=JAYANTH+EAPEN+THOMAS" alt="Jayanth Eapen Thomas Typing SVG" />
+  </a>
 </p>
 
 <h3 align="center">
@@ -58,7 +60,7 @@
 ## 📈 Skills Radar
 
 <p align="center">
-  <!-- Change this to your uploaded image path -->
+  <!-- IMPORTANT: Upload your skills-radar.svg to your repo assets folder and update the path below -->
   ![Skills Radar](./assets/skills-radar.svg)
 </p>
 
@@ -128,23 +130,23 @@
 ## 🤝 Let's Connect
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/jayanth-thomas-027318221/" target="_blank">
+  <a href="https://www.linkedin.com/in/jayanth-thomas-027318221/" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/-Jayanth_Thomas-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="mailto:jayanththomas2004@gmail.com">
     <img src="https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
-  <a href="https://stackoverflow.com/users/30679522/jayath-thomas" target="_blank">
+  <a href="https://stackoverflow.com/users/30679522/jayath-thomas" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/-Jayath_Thomas-FE7A16?style=for-the-badge&logo=stackoverflow&logoColor=white" alt="Stack Overflow" />
   </a>
   <br/>
-  <a href="https://twitter.com/JAYANTHTHOMASS" target="_blank">
+  <a href="https://twitter.com/JAYANTHTHOMASS" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/-@JAYANTHTHOMASS-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
   </a>
-  <a href="https://orcid.org/0009-0002-5126-5511" target="_blank">
+  <a href="https://orcid.org/0009-0002-5126-5511" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/-ORCID_0009_0002_5126_5511-00A0DE?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID" />
   </a>
-  <a href="https://medium.com/@jayanththomas" target="_blank">
+  <a href="https://medium.com/@jayanththomas" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/-Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Medium" />
   </a>
 </p>
@@ -163,10 +165,10 @@
 ## ☕ Support My Work
 
 <p align="center">
-  <a href="https://www.buymeacoffee.com/jayteee" target="_blank">
+  <a href="https://www.buymeacoffee.com/jayteee" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee" />
   </a>
-  <a href="https://github.com/sponsors/JET609" target="_blank">
+  <a href="https://github.com/sponsors/JET609" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA" alt="GitHub Sponsors" />
   </a>
 </p>
@@ -176,3 +178,4 @@
   <br/>
   <em>Last Updated: September 2025</em>
 </p>
+
