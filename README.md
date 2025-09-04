@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://readme-typing-svg.herokuapp.com/demo/?lines=JAYANTH+EAPEN+THOMAS" target="_blank" rel="noopener noreferrer">
-    <img src="https://readme-typing-svg.herokuapp.com/demo/?lines=JAYANTH+EAPEN+THOMAS" alt="Jayanth Eapen Thomas Typing SVG" />
+  <a href="https://git.io/typing-svg" target="_blank" rel="noopener noreferrer">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=435&lines=JAYANTH+EAPEN+THOMAS;PEW+PEW" alt="Jayanth Eapen Thomas Typing SVG" />
   </a>
 </p>
 
@@ -104,7 +104,7 @@
 ---
 
 ## 📝 Blog & Articles
-- [Building Your First AI Model with Python](https://medium.com/@jayanththomas/building-ai-101) <!-- You may update or remove if no articles yet -->
+- [Building Your First AI Model with Python](https://medium.com/@jayanththomas/building-ai-101)
 - [DSA Tips for Beginners](https://dev.to/jayanththomas/dsa-tips)
 - [Why Open Source Matters in India](https://hashnode.com/post/why-os-india)
 
