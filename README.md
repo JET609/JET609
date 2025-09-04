@@ -1,6 +1,15 @@
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&pause=1000&color=F92672&center=true&vCenter=true&width=500&lines=Hello+World!+👋;I'm+Jayanth+Thomas;From+India+🇮🇳" alt="Animated Name Greeting" />
+  <span style="animation: flash 1s infinite; font-size: 32px; color: #F92672; font-weight: 600;">Jayanth Thomas</span>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&pause=1000&color=F92672&center=true&vCenter=true&width=500&lines=Hello+World!+👋;From+India+🇮🇳;Aspiring+Software+Developer" alt="Animated Greeting" />
 </h1>
+
+<style>
+  @keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+</style>
 
 <h3 align="center">
   🚀 <span style="color:#36BCF7">Aspiring Software Developer</span> |  
@@ -23,7 +32,8 @@
     - 🌐 Actively contributing to <strong>Open Source</strong> on GitHub and building scalable, real-world apps  
     - 💡 Motto: <em>"Code should solve problems, not create them—let's innovate responsibly!"</em>  
     - 📚 Diving deep into emerging tech: React, Node.js, AWS Cloud, and Ethical AI  
-    - ⚡ Fun fact: Coffee ☕ fuels my 3 AM breakthroughs, and Chess ♟️ teaches me algorithmic patience 
+    - ⚡ Fun fact: Coffee ☕ fuels my 3 AM breakthroughs, and Chess ♟️ teaches me algorithmic patience  
+    - 🏆 Achievements: 1,000+ commits by 2025, Top 5% on LeetCode, Hackathon Winner (2024), and mentoring juniors!
   </div>
   <img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JET609&layout=compact&theme=radical&hide_border=true&langs_count=10" width="350" alt="Top Programming Languages" style="margin-left: 20px; border-radius: 8px;"/>
 </div>
