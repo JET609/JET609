@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://git.io/typing-svg" target="_blank" rel="noopener noreferrer">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=435&lines=JAYANTH+EAPEN+THOMAS" alt="Jayanth Eapen Thomas Typing SVG" />
+  <a href="https://readme-typing-svg.herokuapp.com/demo/?lines=JAYANTH+EAPEN+THOMAS" target="_blank" rel="noopener noreferrer">
+    <img src="https://readme-typing-svg.herokuapp.com/demo/?lines=JAYANTH+EAPEN+THOMAS" alt="Jayanth Eapen Thomas Typing SVG" />
   </a>
 </p>
 
@@ -60,7 +60,7 @@
 ## 📈 Skills Radar
 
 <p align="center">
-  <!-- IMPORTANT: Upload your skills-radar.svg to your repo assets folder and update the path below -->
+  <!-- Upload your skills-radar.svg to your repo and update this relative path -->
   ![Skills Radar](./assets/skills-radar.svg)
 </p>
 
@@ -104,7 +104,7 @@
 ---
 
 ## 📝 Blog & Articles
-- [Building Your First AI Model with Python](https://medium.com/@jayanththomas/building-ai-101)
+- [Building Your First AI Model with Python](https://medium.com/@jayanththomas/building-ai-101) <!-- You may update or remove if no articles yet -->
 - [DSA Tips for Beginners](https://dev.to/jayanththomas/dsa-tips)
 - [Why Open Source Matters in India](https://hashnode.com/post/why-os-india)
 
@@ -146,7 +146,7 @@
   <a href="https://orcid.org/0009-0002-5126-5511" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/-ORCID_0009_0002_5126_5511-00A0DE?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID" />
   </a>
-  <a href="https://medium.com/@jayanththomas" target="_blank" rel="noopener noreferrer">
+  <a href="https://medium.com/@jayanththomas2004" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/-Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Medium" />
   </a>
 </p>
@@ -178,4 +178,3 @@
   <br/>
   <em>Last Updated: September 2025</em>
 </p>
-
