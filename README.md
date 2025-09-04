@@ -20,7 +20,7 @@
 ## 👨‍💻 About Me
 - 🎓 Mastering **Python, DSA, and Full-Stack Development** while pursuing a B.Tech in Computer Science (India).
 - 🤖 Passionate about **AI, Machine Learning, Web Development, and Automation**.
-- 🌐 Actively contributing to **Open Source** and building scalable, real-world apps.
+- 🌐 Actively contributing to **Open Source** and building scalable real-world apps.
 - 💡 Motto: _"Code should solve problems, not create them — let's innovate responsibly!"_
 - 📚 Diving deep into emerging tech: React, Node.js, AWS Cloud, and Ethical AI.
 - ⚡ Coffee ☕ fuels my 3 AM breakthroughs; Chess ♟️ teaches algorithmic patience.
@@ -77,15 +77,15 @@
 ---
 
 ## 🚀 Featured Projects
-- [AI Chatbot](https://github.com/JET609/ai-chatbot)
-- [Full-Stack Web App](https://github.com/JET609/web-portfolio)
-- [DSA Mastery Repo](https://github.com/JET609/dsa-repo)
-- [ML Predictor](https://github.com/JET609/ml-predictor)
+- [AI Chatbot](https://github.com/JET609/ai-chatbot) — Python NLP bot.  
+- [Full-Stack Web App](https://github.com/JET609/web-portfolio) — React + Node.js prototype.  
+- [DSA Mastery Repo](https://github.com/JET609/dsa-repo) — 300+ solved problems.  
+- [ML Predictor](https://github.com/JET609/ml-predictor) — TensorFlow stock forecasting.
 
 ---
 
 ## 📝 Blog & Articles
-- [Building Your First AI Model with Python](https://medium.com/@jayanththomas/building-ai-101)
+- [How I Built My First Python Project Using AI](https://medium.com/@jayanththomas2004/how-i-built-my-first-python-project-using-ai-b66967184d04)
 
 ---
 
@@ -138,3 +138,4 @@
     <img src="https://img.shields.io/badge/Sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA" alt="GitHub Sponsors" />
   </a>
 </p>
+
