@@ -78,9 +78,9 @@
 
 ## 🚀 Featured Projects
 - [AI Chatbot](https://github.com/JET609/ai-chatbot) 
-- [Full-Stack Web App](https://github.com/JET609/web-portfolio) 
-- [DSA Mastery Repo](https://github.com/JET609/dsa-repo) 
-- [ML Predictor](https://github.com/JET609/ml-predictor) 
+- [Full-Stack Web App](https://github.com/JET609/web-portfolio)
+- [DSA Mastery Repo](https://github.com/JET609/dsa-repo)
+- [ML Predictor](https://github.com/JET609/ml-predictor)
 
 ---
 
@@ -98,8 +98,8 @@
 
 ## 🌍 Visitor Map
 <p align="center">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=JET609.JET609&left_color=black&right_color=green" alt="Visitor Badge" />
   <img src="https://profile-counter.glitch.me/JET609/count.svg" alt="Profile Views Counter" />
+  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FJET609&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false" alt="Hits Badge" />
 </p>
 
 ---
