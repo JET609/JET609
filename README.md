@@ -3,28 +3,26 @@
 </h1>
 
 <h3 align="center">
-  <span style="color:#36BCF7">🚀 Aspiring Software Developer</span> | 
-  <span style="color:#2ECC71">🌱 Lifelong Learner</span> | 
-  <span style="color:#F9BF3B">💡 Problem Solver</span>
+  🚀 <span style="color:#36BCF7">Aspiring Software Developer</span> |  
+  🌱 <span style="color:#2ECC71">Lifelong Learner</span> |  
+  💡 <span style="color:#F9BF3B">Problem Solver</span>
 </h3>
 
 ---
 
-### 👨‍💻 **About Me**
-
+## 👨‍💻 About Me
 <img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JET609&layout=compact&theme=radical&hide_border=true" width="300" alt="Top Languages"/>
 
-- 🎓 Currently mastering **Python** and **Data Structures & Algorithms**
-- 🤖 Passionate about **Artificial Intelligence** and **Web Development**
-- 🌐 Exploring **Open Source** contributions
-- 💡 Believe in _"Code should solve problems, not create them"_
-- 📚 Constantly learning new technologies and frameworks
-- ⚡ Fun fact: I'm a coffee enthusiast ☕ and chess player ♟️
+- 🎓 Currently mastering **Python** & **DSA**  
+- 🤖 Passionate about **AI** and **Web Development**  
+- 🌐 Exploring **Open Source** contributions  
+- 💡 Motto: *"Code should solve problems, not create them"*  
+- 📚 Always curious about new technologies & frameworks  
+- ⚡ Fun fact: Coffee fuels my code ☕ & Chess sharpens my logic ♟️  
 
 ---
 
-### 🛠️ **Tech Stack**
-
+## 🛠️ Tech Stack
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
   <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java"/>
@@ -38,41 +36,33 @@
 
 ---
 
-### 📊 **GitHub Analytics**
-
+## 📊 GitHub Analytics
 <p align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&theme=radical&count_private=true&hide_border=true&include_all_commits=true" alt="Stats"/>
   <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=JET609&theme=radical&hide_border=true" alt="Streak"/>
-  <br/>
-  <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JET609&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Top Languages"/>
 </p>
 
 ---
 
-### 🎯 **2025 Goals**
-
+## 🎯 2025 Goals
 <p align="center">
   <table>
     <tr>
       <td align="center">
         <img src="https://img.icons8.com/color/48/000000/python.png" width="40" alt="Python"/>
-        <br/>
-        <strong>Master Python</strong>
+        <br/> <strong>Master Python</strong>
       </td>
       <td align="center">
         <img src="https://img.icons8.com/color/48/000000/open-source.png" width="40" alt="Open Source"/>
-        <br/>
-        <strong>Open Source</strong>
+        <br/> <strong>Contribute to Open Source</strong>
       </td>
       <td align="center">
         <img src="https://img.icons8.com/color/48/000000/artificial-intelligence.png" width="40" alt="AI"/>
-        <br/>
-        <strong>AI/ML Projects</strong>
+        <br/> <strong>AI/ML Projects</strong>
       </td>
       <td align="center">
         <img src="https://img.icons8.com/color/48/000000/developer.png" width="40" alt="Portfolio"/>
-        <br/>
-        <strong>Build Portfolio</strong>
+        <br/> <strong>Build Portfolio</strong>
       </td>
     </tr>
   </table>
@@ -80,8 +70,7 @@
 
 ---
 
-### 🤝 **Let's Connect**
-
+## 🤝 Let's Connect
 <p align="center">
   <a href="https://www.linkedin.com/in/jayanth-thomas-027318221/" target="_blank">
     <img src="https://img.shields.io/badge/-Jayanth_Thomas-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
@@ -103,20 +92,19 @@
 
 ---
 
-### 🐍 **My Contribution Graph**
-
+## 🐍 Contribution Graph
 <p align="center">
   <img src="https://raw.githubusercontent.com/JET609/JET609/output/github-contribution-grid-snake.svg" alt="Contribution Snake"/>
 </p>
 
 ---
 
-> 💡 _"Just trying to do my part in the world through code and collaboration."_
-> 
-> <p align="right">- Jayanth Thomas</p>
+> 💡 *"Just trying to do my part in the world through code and collaboration."*  
+> <p align="right">— Jayanth Thomas</p>
 
-### ☕ **Support My Work**
+---
 
+## ☕ Support My Work
 <p align="center">
   <a href="https://www.buymeacoffee.com/jayteee" target="_blank">
     <img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black&labelColor=FFDD00" alt="Buy Me A Coffee"/>
@@ -124,5 +112,5 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=JET609&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views"/> 
+  <img src="https://komarev.com/ghpvc/?username=JET609&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views"/>
 </p>
