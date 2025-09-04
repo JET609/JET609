@@ -69,10 +69,10 @@
 ---
 
 ## 🎯 2025 Goals
-- Build & deploy 5 real-world Python projects by Q4
-- Contribute meaningful PRs to 10+ open-source repos
-- Launch 3 AI/ML projects on GitHub with 100+ stars
-- Deploy and market personal portfolio to 1,000+ visitors
+- Build & deploy 5 real-world Python projects 
+- Contribute meaningful PRs
+- Launch 3 AI/ML projects on GitHub
+- Deploy and market personal portfolio
 
 ---
 
