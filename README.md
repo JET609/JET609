@@ -23,7 +23,7 @@
 - 🌐 Actively contributing to **Open Source** and building scalable real-world apps.
 - 💡 Motto: _"Code should solve problems, not create them — let's innovate responsibly!"_
 - 📚 Diving deep into emerging tech: React, Node.js, AWS Cloud, and Ethical AI.
-- ⚡ Coffee ☕ fuels my 3 AM breakthroughs; Chess ♟️ teaches algorithmic patience.
+- ⚡ Coffee ☕ fuels my 3 AM breakthroughs; Chess ♟️ sharpens my algorithmic patience.
 
 ### 📜 My Journey Timeline
 - **2022:** Started coding with Python basics 🐍.
@@ -68,10 +68,10 @@
 ---
 
 ## 🎯 2025 Goals
-- Build & deploy 5 real-world Python projects.
-- Contribute meaningful PRs.
-- Launch 3 AI/ML projects on GitHub.
-- Deploy and market personal portfolio.
+- 🚀 Build & deploy 5 real-world Python projects.
+- 🤝 Contribute meaningful PRs.
+- 🤖 Launch 3 AI/ML projects on GitHub.
+- 🌐 Deploy and market personal portfolio.
 
 ---
 
@@ -96,29 +96,35 @@
 ---
 
 ## 🤝 Let's Connect
-<p align="center">
-  <a href="https://www.linkedin.com/in/jayanth-thomas-027318221/" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/-Jayanth_Thomas-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>&nbsp;
-  <a href="mailto:jayanththomas2004@gmail.com">
-    <img src="https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>&nbsp;
-  <a href="https://stackoverflow.com/users/30679522/jayath-thomas" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/-Jayath_Thomas-FE7A16?style=for-the-badge&logo=stackoverflow&logoColor=white" alt="Stack Overflow" />
-  </a><br/>
-  <a href="https://twitter.com/JAYANTHTHOMASS" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/-@JAYANTHTHOMASS-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
-  </a>&nbsp;
-  <a href="https://orcid.org/0009-0002-5126-5511" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/-ORCID_0009_0002_5126_5511-00A0DE?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID" />
-  </a>&nbsp;
-  <a href="https://medium.com/@jayanththomas2004" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/-Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Medium" />
+
+<p align="center" style="margin-top: 10px;">
+  <a href="https://www.linkedin.com/in/jayanth-thomas-027318221/" target="_blank" rel="noopener noreferrer" title="LinkedIn" style="text-decoration:none;">
+    <img src="https://img.shields.io/badge/LinkedIn-Jayanth_Thomas-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" height="40" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="mailto:jayanththomas2004@gmail.com" target="_blank" rel="noopener noreferrer" title="Email" style="text-decoration:none;">
+    <img src="https://img.shields.io/badge/Gmail-jayanththomas2004-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" height="40" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://stackoverflow.com/users/30679522/jayath-thomas" target="_blank" rel="noopener noreferrer" title="Stack Overflow" style="text-decoration:none;">
+    <img src="https://img.shields.io/badge/Stack_Overflow-Jayath_Thomas-FE7A16?style=for-the-badge&logo=stackoverflow&logoColor=white" alt="Stack Overflow" height="40" />
+  </a>
+  <br /><br />
+  <a href="https://twitter.com/JAYANTHTHOMASS" target="_blank" rel="noopener noreferrer" title="Twitter" style="text-decoration:none;">
+    <img src="https://img.shields.io/badge/Twitter-@JAYANTHTHOMASS-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" height="40" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://orcid.org/0009-0002-5126-5511" target="_blank" rel="noopener noreferrer" title="ORCID" style="text-decoration:none;">
+    <img src="https://img.shields.io/badge/ORCID-0009_0002_5126_5511-00A0DE?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID" height="40" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://medium.com/@jayanththomas2004" target="_blank" rel="noopener noreferrer" title="Medium" style="text-decoration:none;">
+    <img src="https://img.shields.io/badge/Medium-Jayanththomas2004-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Medium" height="40" />
   </a>
 </p>
 
-<p align="center">
-  <em>Open to collaborations on AI, web dev, or open-source projects — DM me on LinkedIn! 🚀</em>
+<p align="center" style="font-style: italic; margin-top: 10px;">
+  Open to collaborations on AI, web dev, or open-source projects — DM me on LinkedIn! 🚀
 </p>
 
 ---
@@ -132,7 +138,8 @@
 <p align="center">
   <a href="https://www.buymeacoffee.com/jayteee" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee" />
-  </a>&nbsp;
+  </a>
+  &nbsp;&nbsp;
   <a href="https://github.com/sponsors/JET609" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA" alt="GitHub Sponsors" />
   </a>
