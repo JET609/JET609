@@ -21,7 +21,7 @@
 - 🎓 Mastering **Python, DSA, and Full-Stack Development** while pursuing a B.Tech in Computer Science (India).
 - 🤖 Passionate about **AI, Machine Learning, Web Development, and Automation**.
 - 🌐 Actively contributing to **Open Source** and building scalable, real-world apps.
-- 💡 Motto: _"Code should solve problems, not create them—let's innovate responsibly!"_
+- 💡 Motto: _"Code should solve problems, not create them — let's innovate responsibly!"_
 - 📚 Diving deep into emerging tech: React, Node.js, AWS Cloud, and Ethical AI.
 - ⚡ Coffee ☕ fuels my 3 AM breakthroughs; Chess ♟️ teaches algorithmic patience.
 
@@ -29,7 +29,7 @@
 - **2022** Started coding with Python basics 🐍
 - **2023** Built first web app and solved DSA problems 💻
 - **2024** Contributed to open-source AI projects
-- **2025** Launching AI startups�
+- **2025** Launching AI startups ⚡
 
 ---
 
@@ -55,8 +55,8 @@
 <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask"/>
 
 ---
-## 📊 GitHub Analytics
 
+## 📊 GitHub Analytics
 <p align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&theme=radical&count_private=true&hide_border=true&include_all_commits=true" alt="GitHub Stats"/>
   <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=JET609&theme=radical&hide_border=true" alt="GitHub Streak"/>
@@ -65,6 +65,7 @@
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=JET609&theme=radical&no-frame=true&margin-w=15&column=7" alt="GitHub Trophies"/>
 </p>
+
 ---
 
 ## 🎯 2025 Goals
@@ -76,19 +77,19 @@
 ---
 
 ## 🚀 Featured Projects
-- [AI Chatbot](https://github.com/JET609/ai-chatbot) – 
-- [Full-Stack Web App](https://github.com/JET609/web-portfolio) – 
-- [DSA Mastery Repo](https://github.com/JET609/dsa-repo) – 
-- [ML Predictor](https://github.com/JET609/ml-predictor) – 
+- [AI Chatbot](https://github.com/JET609/ai-chatbot) 
+- [Full-Stack Web App](https://github.com/JET609/web-portfolio) 
+- [DSA Mastery Repo](https://github.com/JET609/dsa-repo) 
+- [ML Predictor](https://github.com/JET609/ml-predictor) 
 
 ---
 
 ## 📝 Blog & Articles
 - [Building Your First AI Model with Python](https://medium.com/@jayanththomas/building-ai-101)
+
 ---
 
 ## 📅 Recent Activity
-
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=JET609&theme=react-dark&hide_border=true&area=true&custom_title=Recent%20Contributions" alt="Recent Contributions" width="100%" />
 </p>
@@ -96,7 +97,6 @@
 ---
 
 ## 🌍 Visitor Map
-
 <p align="center">
   <img src="https://visitor-badge.laobi.icu/badge?page_id=JET609.JET609&left_color=black&right_color=green" alt="Visitor Badge" />
   <img src="https://profile-counter.glitch.me/JET609/count.svg" alt="Profile Views Counter" />
@@ -105,7 +105,6 @@
 ---
 
 ## 🤝 Let's Connect
-
 <p align="center">
   <a href="https://www.linkedin.com/in/jayanth-thomas-027318221/" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/-Jayanth_Thomas-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
@@ -135,12 +134,11 @@
 ---
 
 > 💡 _"Just trying to do my part through code, collaboration, and curiosity."_  
-> <p align="right">— Jayanth Thomas </p>
+> <p align="right">— Jayanth Thomas</p>
 
 ---
 
 ## ☕ Support My Work
-
 <p align="center">
   <a href="https://www.buymeacoffee.com/jayteee" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee" />
@@ -155,3 +153,4 @@
   <br/>
   <em>Last Updated: September 2025</em>
 </p>
+
