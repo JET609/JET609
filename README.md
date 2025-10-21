@@ -168,10 +168,151 @@ Open to collaborations on AI, web dev, or open‑source projects — DM me on Li
 
 ---
 
-### 🔧 How to Use
+## 🧭 Quick Links
 
-* Paste this into your `README.md` on the `JET609/JET609` profile repo.
-* Tweak links/usernames if you change handles.
-* Pin the 4 featured repos on your profile.
+<p align="center">
+  <a href="https://jet609.github.io" target="_blank"><b>🌐 Portfolio</b></a> •
+  <a href="https://drive.google.com/" target="_blank"><b>📄 Résumé</b></a> •
+  <a href="https://medium.com/@jayanththomas2004" target="_blank"><b>✍️ Blog</b></a> •
+  <a href="mailto:jayanththomas2004@gmail.com"><b>📬 Contact</b></a>
+</p>
 
-<sub>Note: These badges/cards are third‑party services; uptime can vary.</sub>
+---
+
+## 🏆 Highlights & Achievements
+
+* 🥇 Top student projects featured at college showcase *(add link if available)*
+* 🧩 Solved **300+** DSA problems – consistency over hype
+* 🤝 Maintainer/collaborator on small open‑source utilities
+* 🎤 Gave mini‑talks on Python automation & prompt‑engineering
+
+<details>
+  <summary><b>🏅 Badges</b> (auto from shields)</summary>
+
+![Open Source Love](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-ff4081?style=for-the-badge)
+![Made with Python](https://img.shields.io/badge/Made%20with-Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
+![Build with React](https://img.shields.io/badge/Build%20with-React-61DAFB?style=for-the-badge\&logo=react\&logoColor=black)
+
+</details>
+
+---
+
+## 🔭 What I'm Working On
+
+* 📦 **`jet-utils`**: personal CLI toolbox (packaging, release, docs)
+* 🧠 **TinyML experiments**: on‑device inference playground
+* ☁️ **Serverless**: AWS Lambda + API Gateway + DynamoDB starter
+
+---
+
+## 🧪 Live Demos
+
+> Host quick demos on GitHub Pages / Vercel.
+
+* 🔗 **AI Chatbot demo** → *(add Vercel/Pages link)*
+* 🔗 **Portfolio v2** → *(link)*
+
+---
+
+## 📚 Certifications & Coursework
+
+* ⚙️ **B.Tech CSE** — core CS fundamentals
+* 📊 **Predictive/Descriptive Analytics** — NB, KNN, LR, Clustering, Apriori
+* ☁️ **AWS Cloud Practitioner (in progress)**
+
+---
+
+## 🧠 Tech Radar
+
+**Now:** Python, React, Node, Flask, TensorFlow
+**Next:** FastAPI, LangChain, Postgres, Kafka
+**Exploring:** K8s, Supabase, Next.js, LLM evals
+
+---
+
+## 📈 Extra Stats (optional blocks)
+
+<details>
+  <summary><b>🐍 Contribution Snake</b></summary>
+
+<!-- Enable by setting up the snake action on your repo fork. -->
+
+<img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" alt="snake" />
+
+</details>
+
+<details>
+  <summary><b>⌛ WakaTime coding stats</b></summary>
+
+<!-- Replace USERNAME -->
+
+<img src="https://github-readme-stats.vercel.app/api/wakatime?username=USERNAME&theme=radical&hide_border=true" alt="WakaTime" />
+
+</details>
+
+<details>
+  <summary><b>🧮 Metrics (overall profile)</b></summary>
+
+<!-- Requires enabling metrics.lecoq.io for your account -->
+
+<img src="https://metrics.lecoq.io/JET609?template=classic&base=header,activity,community,repositories&config.timezone=Asia%2FKolkata" alt="metrics" />
+
+</details>
+
+<details>
+  <summary><b>🏹 LeetCode/Codeforces</b></summary>
+
+<!-- Share your handles and I'll wire these up -->
+
+<!-- LeetCode: https://leetcard.jacoblin.cool/<handle>?theme=dark&ext=activity -->
+
+<!-- Codeforces: https://raw.githubusercontent.com/ashutosh00710/github-readme-activity-graph/master/app.svg -->
+
+</details>
+
+---
+
+## 🧰 Starter Templates
+
+* **FastAPI + Auth + Docker** – production‑ready scaffold
+* **React + Vite + Tailwind** – opinionated UI starter
+* **Data Science Cookiecutter** – notebooks → package → app
+
+> Want these added as real repos with README, CI and license? Say the word and I’ll scaffold them.
+
+---
+
+## 🤖 Automation Ideas for This Profile
+
+* Auto‑update **Latest blog posts** via GitHub Actions (RSS → README)
+* Nightly refresh GitHub cards to avoid cache staleness
+* Tweet new releases with a simple workflow
+
+<details>
+  <summary><b>🛠️ Add “Latest Blog Posts” (Action snippet)</b></summary>
+
+```yml
+name: Update blog
+on:
+  schedule: [{ cron: '0 */12 * * *' }]
+  workflow_dispatch:
+jobs:
+  rss:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: gautamkrishnar/blog-post-workflow@master
+        with:
+          feed_list: "https://medium.com/feed/@jayanththomas2004"
+```
+
+In your README add:
+
+```md
+### 📰 Latest Posts
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
+```
+
+</details>
+
