@@ -64,14 +64,23 @@
 
 <div align="center">
 
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub stats" />
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JET609&layout=compact&theme=radical&hide_border=true" alt="Top languages" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true&bg_color=00000000">
+  <img height="160" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&hide_border=true&count_private=true&include_all_commits=true" />
+</picture>
 
-<img src="https://streak-stats.demolab.com?user=JET609&theme=radical&hide_border=true" alt="GitHub Streak" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=JET609&layout=compact&theme=radical&hide_border=true&bg_color=00000000">
+  <img height="160" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JET609&layout=compact&hide_border=true" />
+</picture>
 
-<img src="https://github-profile-trophy.vercel.app/?username=JET609&theme=radical&no-frame=true&margin-w=15&column=7" alt="GitHub trophies" />
+<img alt="GitHub Streak" src="https://streak-stats.demolab.com?user=JET609&theme=radical&hide_border=true" />
+
+<img alt="GitHub trophies" src="https://github-profile-trophy.vercel.app/?username=JET609&theme=radical&no-frame=true&margin-w=15&column=7" />
 
 </div>
+
+<sub>Tip: Cards are cached. Add `?cache_seconds=7200` to refresh every 2 hours.</sub>
 
 ---
 
@@ -85,6 +94,19 @@
 | **[Full‑Stack Web App](https://github.com/JET609/web-portfolio)** | React + Node prototype       | React, Node     | ![stars](https://img.shields.io/github/stars/JET609/web-portfolio?style=flat) ![last](https://img.shields.io/github/last-commit/JET609/web-portfolio?style=flat) |
 | **[DSA Mastery Repo](https://github.com/JET609/dsa-repo)**        | 300+ solved problems         | C/Java/Py       | ![stars](https://img.shields.io/github/stars/JET609/dsa-repo?style=flat) ![last](https://img.shields.io/github/last-commit/JET609/dsa-repo?style=flat)           |
 | **[ML Predictor](https://github.com/JET609/ml-predictor)**        | TensorFlow stock forecasting | TensorFlow      | ![stars](https://img.shields.io/github/stars/JET609/ml-predictor?style=flat) ![last](https://img.shields.io/github/last-commit/JET609/ml-predictor?style=flat)   |
+
+<details>
+  <summary><b>➕ More Projects</b></summary>
+
+* Mini APIs, bots, CLI tools, and experiments.
+
+</details>
+
+---|---|---|---|
+| **[AI Chatbot](https://github.com/JET609/ai-chatbot)** | Python NLP bot | Python, NLTK/TF | ![stars](https://img.shields.io/github/stars/JET609/ai-chatbot?style=flat) ![last](https://img.shields.io/github/last-commit/JET609/ai-chatbot?style=flat) |
+| **[Full‑Stack Web App](https://github.com/JET609/web-portfolio)** | React + Node prototype | React, Node | ![stars](https://img.shields.io/github/stars/JET609/web-portfolio?style=flat) ![last](https://img.shields.io/github/last-commit/JET609/web-portfolio?style=flat) |
+| **[DSA Mastery Repo](https://github.com/JET609/dsa-repo)** | 300+ solved problems | C/Java/Py | ![stars](https://img.shields.io/github/stars/JET609/dsa-repo?style=flat) ![last](https://img.shields.io/github/last-commit/JET609/dsa-repo?style=flat) |
+| **[ML Predictor](https://github.com/JET609/ml-predictor)** | TensorFlow stock forecasting | TensorFlow | ![stars](https://img.shields.io/github/stars/JET609/ml-predictor?style=flat) ![last](https://img.shields.io/github/last-commit/JET609/ml-predictor?style=flat) |
 
 <details>
   <summary><b>➕ More Projects</b></summary>
@@ -103,35 +125,33 @@
 
 ## 🤝 Connect
 
+> Prefer email? **[jayanththomas2004@gmail.com](mailto:jayanththomas2004@gmail.com)**
+
 <p align="center">
-  <a href="https://www.linkedin.com/in/jayanth-thomas-027318221/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-    <img src="https://img.shields.io/badge/LinkedIn-Jayanth_Thomas-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" height="40" />
+  <a href="https://www.linkedin.com/in/jayanth-thomas-027318221/" target="_blank" title="LinkedIn: Jayanth Thomas">
+    <img src="https://img.shields.io/badge/LinkedIn-Jayanth_Thomas-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn badge" height="40" />
   </a>
   &nbsp;
-  <a href="mailto:jayanththomas2004@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
-    <img src="https://img.shields.io/badge/Gmail-jayanththomas2004-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" height="40" />
+  <a href="mailto:jayanththomas2004@gmail.com" target="_blank" title="Email Jayanth">
+    <img src="https://img.shields.io/badge/Gmail-jayanththomas2004-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail badge" height="40" />
   </a>
   &nbsp;
-  <a href="https://stackoverflow.com/users/30679522/jayath-thomas" target="_blank" rel="noopener noreferrer" title="Stack Overflow">
-    <img src="https://img.shields.io/badge/Stack_Overflow-Jayath_Thomas-FE7A16?style=for-the-badge&logo=stackoverflow&logoColor=white" alt="Stack Overflow" height="40" />
+  <a href="https://stackoverflow.com/users/30679522/jayath-thomas" target="_blank" title="Stack Overflow">
+    <img src="https://img.shields.io/badge/Stack_Overflow-Jayath_Thomas-FE7A16?style=for-the-badge&logo=stackoverflow&logoColor=white" alt="Stack Overflow badge" height="40" />
   </a>
   <br /><br />
-  <a href="https://twitter.com/JAYANTHTHOMASS" target="_blank" rel="noopener noreferrer" title="Twitter">
-    <img src="https://img.shields.io/badge/Twitter-@JAYANTHTHOMASS-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" height="40" />
+  <a href="https://twitter.com/JAYANTHTHOMASS" target="_blank" title="Twitter">
+    <img src="https://img.shields.io/badge/Twitter-@JAYANTHTHOMASS-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter badge" height="40" />
   </a>
   &nbsp;
-  <a href="https://orcid.org/0009-0002-5126-5511" target="_blank" rel="noopener noreferrer" title="ORCID">
-    <img src="https://img.shields.io/badge/ORCID-0009_0002_5126_5511-00A0DE?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID" height="40" />
+  <a href="https://orcid.org/0009-0002-5126-5511" target="_blank" title="ORCID">
+    <img src="https://img.shields.io/badge/ORCID-0009_0002_5126_5511-00A0DE?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID badge" height="40" />
   </a>
   &nbsp;
-  <a href="https://medium.com/@jayanththomas2004" target="_blank" rel="noopener noreferrer" title="Medium">
-    <img src="https://img.shields.io/badge/Medium-Jayanththomas2004-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Medium" height="40" />
+  <a href="https://medium.com/@jayanththomas2004" target="_blank" title="Medium">
+    <img src="https://img.shields.io/badge/Medium-Jayanththomas2004-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Medium badge" height="40" />
   </a>
 </p>
-
-<div align="center" style="font-style: italic; margin-top: 10px;">
-Open to collaborations on AI, web dev, or open‑source projects — DM me on LinkedIn! 🚀
-</div>
 
 ---
 
@@ -172,19 +192,34 @@ Open to collaborations on AI, web dev, or open‑source projects — DM me on Li
 
 <p align="center">
   <a href="https://jet609.github.io" target="_blank"><b>🌐 Portfolio</b></a> •
-  <a href="https://drive.google.com/" target="_blank"><b>📄 Résumé</b></a> •
+  <a href="#" target="_blank"><b>📄 Résumé</b></a> •
   <a href="https://medium.com/@jayanththomas2004" target="_blank"><b>✍️ Blog</b></a> •
   <a href="mailto:jayanththomas2004@gmail.com"><b>📬 Contact</b></a>
 </p>
 
+<details>
+  <summary><b>📌 Table of Contents</b></summary>
+
+* [About Me](#-about-me)
+* [Tech Stack](#-tech-stack)
+* [GitHub Analytics](#-github-analytics)
+* [Featured Projects](#-featured-projects)
+* [Highlights & Achievements](#-highlights--achievements)
+* [What I'm Working On](#-what-im-working-on)
+* [Live Demos](#-live-demos)
+* [Certifications & Coursework](#-certifications--coursework)
+* [Tech Radar](#-tech-radar)
+* [Extra Stats](#-extra-stats-optional-blocks)
+* [Skills Matrix](#-skills-matrix)
+* [Reusable Components](#-reusable-components-mini-libs)
+* [Code Style & Principles](#-code-style--principles)
+* [FAQ](#-faq)
+* [Local Dev Quickstart](#-local-dev-quickstart-example)
+* [Support](#-support-my-work)
+
+</details>
+
 ---
-
-## 🏆 Highlights & Achievements
-
-* 🥇 Top student projects featured at college showcase *(add link if available)*
-* 🧩 Solved **300+** DSA problems – consistency over hype
-* 🤝 Maintainer/collaborator on small open‑source utilities
-* 🎤 Gave mini‑talks on Python automation & prompt‑engineering
 
 <details>
   <summary><b>🏅 Badges</b> (auto from shields)</summary>
@@ -197,14 +232,6 @@ Open to collaborations on AI, web dev, or open‑source projects — DM me on Li
 
 ---
 
-## 🔭 What I'm Working On
-
-* 📦 **`jet-utils`**: personal CLI toolbox (packaging, release, docs)
-* 🧠 **TinyML experiments**: on‑device inference playground
-* ☁️ **Serverless**: AWS Lambda + API Gateway + DynamoDB starter
-
----
-
 ## 🧪 Live Demos
 
 > Host quick demos on GitHub Pages / Vercel.
@@ -212,15 +239,7 @@ Open to collaborations on AI, web dev, or open‑source projects — DM me on Li
 * 🔗 **AI Chatbot demo** → *(add Vercel/Pages link)*
 * 🔗 **Portfolio v2** → *(link)*
 
----
 
-## 📚 Certifications & Coursework
-
-* ⚙️ **B.Tech CSE** — core CS fundamentals
-* 📊 **Predictive/Descriptive Analytics** — NB, KNN, LR, Clustering, Apriori
-* ☁️ **AWS Cloud Practitioner (in progress)**
-
----
 
 ## 🧠 Tech Radar
 
@@ -316,3 +335,76 @@ In your README add:
 
 </details>
 
+---
+
+## 🧩 Skills Matrix
+
+| Area         | Strengths                                |
+| ------------ | ---------------------------------------- |
+| **Backend**  | REST APIs, Flask basics, auth, testing   |
+| **Frontend** | React hooks, state mgmt, responsive UI   |
+| **Data/ML**  | EDA, classic ML (NB/KNN/LR), TF basics   |
+| **DevOps**   | Docker, CI basics, Git workflows         |
+| **Cloud**    | AWS (EC2/S3/Lambda), serverless starters |
+
+> Proficiency quick‑view: ████▌ (intermediate) → aiming for ██████
+
+---
+
+## 🧰 Reusable Components (mini‑libs)
+
+* `useLocalStorage()` – tiny React hook
+* `fastapi-starter` – auth, CORS, health, logging
+* `py-cli-kit` – argparse + rich logging template
+
+*(Want me to publish these as repos with docs & tests? Say the word.)*
+
+---
+
+## 🧑‍🔬 Code Style & Principles
+
+* **Small PRs** > giant rewrites
+* **Tests** guard behavior; **docs** guard memory
+* **Simplicity first**; performance follows
+* **Measure** before optimizing; **profile** before guessing
+
+---
+
+## ❓ FAQ
+
+<details>
+  <summary><b>How can we collaborate?</b></summary>
+  Open an issue on any repo or DM me on LinkedIn with a short brief.
+</details>
+<details>
+  <summary><b>Do you take freelance work?</b></summary>
+  Selectively, for AI/web tooling. Reach out with scope & timelines.
+</details>
+<details>
+  <summary><b>What stack do you prefer?</b></summary>
+  Python/FastAPI + React + Postgres, Dockerized, deployed on AWS/Vercel.
+</details>
+
+---
+
+## 🧪 Local Dev Quickstart (example)
+
+```bash
+# Clone a project
+git clone https://github.com/JET609/ai-chatbot && cd ai-chatbot
+
+# Create env
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+
+# Run
+python app.py
+```
+
+---
+
+## 📬 CTA
+
+**Have an idea or role?** Email me: [jayanththomas2004@gmail.com](mailto:jayanththomas2004@gmail.com) or DM on LinkedIn.
+
+---
