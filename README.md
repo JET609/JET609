@@ -223,8 +223,8 @@
 
 > Host quick demos on GitHub Pages / Vercel.
 
-- 🔗 **AI Chatbot demo** → *(add Vercel/Pages link)*
-- 🔗 **Portfolio v2** → *(link)*
+- 🔗 **AI Chatbot demo**
+- 🔗 **Portfolio v2** 
 
 ## 🧠 Tech Radar
 
