@@ -1,16 +1,16 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code\&pause=900\&width=600\&lines=JAYANTH+EAPEN+THOMAS;Aspiring+Software+Developer;AI+%E2%80%A2+Web+%E2%80%A2+Automation;Building+useful+things+%F0%9F%9A%80)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=900&width=600&lines=JAYANTH+EAPEN+THOMAS;Aspiring+Software+Developer;AI+%E2%80%A2+Web+%E2%80%A2+Automation;Building+useful+things+%F0%9F%9A%80)](https://git.io/typing-svg)
 
 ---
 
 ### 🚀 **Aspiring Software Developer** · 🌱 **Lifelong Learner** · 💡 **Problem Solver**
 
-![Status](https://img.shields.io/badge/Status-Building_the_Future-00C853?style=for-the-badge\&logo=code\&logoColor=white)
-![Timezone](https://img.shields.io/badge/IST_\(UTC%2B5:30\)-FFD700?style=for-the-badge\&logo=clock\&logoColor=black)
+![Status](https://img.shields.io/badge/Status-Building_the_Future-00C853?style=for-the-badge&logo=code&logoColor=white)
+![Timezone](https://img.shields.io/badge/IST_(UTC%2B5:30)-FFD700?style=for-the-badge&logo=clock&logoColor=black)
 ![Followers](https://img.shields.io/github/followers/JET609?style=for-the-badge)
 ![Stars](https://img.shields.io/github/stars/JET609?style=for-the-badge)
-![Profile Views](https://komarev.com/ghpvc/?username=JET609\&style=for-the-badge)
+![Profile Views](https://komarev.com/ghpvc/?username=JET609&style=for-the-badge)
 
 </div>
 
@@ -18,20 +18,20 @@
 
 ## 👨‍💻 About Me
 
-* 🎓 B.Tech CS (India). Learning **Python**, **DSA**, and **Full‑Stack**.
-* 🤖 Passionate about **AI/ML**, **Web Dev**, and **Automation**.
-* 🌐 Active in **Open Source**; I like shipping small but useful tools.
-* 💡 *"Code should solve problems, not create them."*
-* 🧠 Exploring **React**, **Node.js**, **AWS**, and **Ethical AI**.
-* ☕ 3 AM coffee • ♟️ chess patience • 🧪 experiment, iterate, ship.
+- 🎓 B.Tech CS (India). Learning **Python**, **DSA**, and **Full-Stack**.
+- 🤖 Passionate about **AI/ML**, **Web Dev**, and **Automation**.
+- 🌐 Active in **Open Source**; I like shipping small but useful tools.
+- 💡 *"Code should solve problems, not create them."*
+- 🧠 Exploring **React**, **Node.js**, **AWS**, and **Ethical AI**.
+- ☕ 3 AM coffee • ♟️ chess patience • 🧪 experiment, iterate, ship.
 
 <details>
   <summary><b>🗺️ My Journey (expand)</b></summary>
 
-* **2022:** Started with Python 🐍
-* **2023:** First web app + DSA grind 💻
-* **2024:** Open‑source AI contributions
-* **2025:** Prototyping/launching AI products ⚡
+- **2022:** Started with Python 🐍
+- **2023:** First web app + DSA grind 💻
+- **2024:** Open-source AI contributions
+- **2025:** Prototyping/launching AI products ⚡
 
 </details>
 
@@ -39,24 +39,24 @@
 
 ## 🛠️ Tech Stack
 
-**Languages**
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
-![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge\&logo=java\&logoColor=white)
-![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge\&logo=c\&logoColor=black)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
+**Languages**  
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-**Tools & Platforms**
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge\&logo=git\&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge\&logo=visual-studio-code\&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge\&logo=linux\&logoColor=black)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge\&logo=docker\&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge\&logo=amazon-aws\&logoColor=white)
+**Tools & Platforms**  
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
 
-**Frameworks & Libraries**
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge\&logo=react\&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge\&logo=node.js\&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge\&logo=tensorflow\&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge\&logo=flask\&logoColor=white)
+**Frameworks & Libraries**  
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 
 ---
 
@@ -88,30 +88,17 @@
 
 > Pin these repos for quick access on your profile.
 
-| Project                                                           | What it is                   | Tech            | Badges                                                                                                                                                           |
-| ----------------------------------------------------------------- | ---------------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[AI Chatbot](https://github.com/JET609/ai-chatbot)**            | Python NLP bot               | Python, NLTK/TF | ![stars](https://img.shields.io/github/stars/JET609/ai-chatbot?style=flat) ![last](https://img.shields.io/github/last-commit/JET609/ai-chatbot?style=flat)       |
-| **[Full‑Stack Web App](https://github.com/JET609/web-portfolio)** | React + Node prototype       | React, Node     | ![stars](https://img.shields.io/github/stars/JET609/web-portfolio?style=flat) ![last](https://img.shields.io/github/last-commit/JET609/web-portfolio?style=flat) |
-| **[DSA Mastery Repo](https://github.com/JET609/dsa-repo)**        | 300+ solved problems         | C/Java/Py       | ![stars](https://img.shields.io/github/stars/JET609/dsa-repo?style=flat) ![last](https://img.shields.io/github/last-commit/JET609/dsa-repo?style=flat)           |
-| **[ML Predictor](https://github.com/JET609/ml-predictor)**        | TensorFlow stock forecasting | TensorFlow      | ![stars](https://img.shields.io/github/stars/JET609/ml-predictor?style=flat) ![last](https://img.shields.io/github/last-commit/JET609/ml-predictor?style=flat)   |
-
-<details>
-  <summary><b>➕ More Projects</b></summary>
-
-* Mini APIs, bots, CLI tools, and experiments.
-
-</details>
-
----|---|---|---|
+| Project | What it is | Tech | Badges |
+| --- | --- | --- | --- |
 | **[AI Chatbot](https://github.com/JET609/ai-chatbot)** | Python NLP bot | Python, NLTK/TF | ![stars](https://img.shields.io/github/stars/JET609/ai-chatbot?style=flat) ![last](https://img.shields.io/github/last-commit/JET609/ai-chatbot?style=flat) |
-| **[Full‑Stack Web App](https://github.com/JET609/web-portfolio)** | React + Node prototype | React, Node | ![stars](https://img.shields.io/github/stars/JET609/web-portfolio?style=flat) ![last](https://img.shields.io/github/last-commit/JET609/web-portfolio?style=flat) |
+| **[Full-Stack Web App](https://github.com/JET609/web-portfolio)** | React + Node prototype | React, Node | ![stars](https://img.shields.io/github/stars/JET609/web-portfolio?style=flat) ![last](https://img.shields.io/github/last-commit/JET609/web-portfolio?style=flat) |
 | **[DSA Mastery Repo](https://github.com/JET609/dsa-repo)** | 300+ solved problems | C/Java/Py | ![stars](https://img.shields.io/github/stars/JET609/dsa-repo?style=flat) ![last](https://img.shields.io/github/last-commit/JET609/dsa-repo?style=flat) |
 | **[ML Predictor](https://github.com/JET609/ml-predictor)** | TensorFlow stock forecasting | TensorFlow | ![stars](https://img.shields.io/github/stars/JET609/ml-predictor?style=flat) ![last](https://img.shields.io/github/last-commit/JET609/ml-predictor?style=flat) |
 
 <details>
   <summary><b>➕ More Projects</b></summary>
 
-* Mini APIs, bots, CLI tools, and fun experiments coming soon.
+- Mini APIs, bots, CLI tools, and experiments.
 
 </details>
 
@@ -119,7 +106,7 @@
 
 ## 📝 Writing
 
-* **[How I Built My First Python Project Using AI](https://medium.com/@jayanththomas2004/how-i-built-my-first-python-project-using-ai-b66967184d04)**
+- **[How I Built My First Python Project Using AI](https://medium.com/@jayanththomas2004/how-i-built-my-first-python-project-using-ai-b66967184d04)**
 
 ---
 
@@ -157,10 +144,10 @@
 
 ## 🎯 2025 Goals
 
-* 🚀 Build & deploy **5** real‑world Python projects
-* 🤝 Ship meaningful **PRs** to open source
-* 🤖 Launch **3** AI/ML projects on GitHub
-* 🌐 Deploy & grow a personal portfolio
+- 🚀 Build & deploy **5** real-world Python projects
+- 🤝 Ship meaningful **PRs** to open source
+- 🤖 Launch **3** AI/ML projects on GitHub
+- 🌐 Deploy & grow a personal portfolio
 
 ---
 
@@ -200,22 +187,22 @@
 <details>
   <summary><b>📌 Table of Contents</b></summary>
 
-* [About Me](#-about-me)
-* [Tech Stack](#-tech-stack)
-* [GitHub Analytics](#-github-analytics)
-* [Featured Projects](#-featured-projects)
-* [Highlights & Achievements](#-highlights--achievements)
-* [What I'm Working On](#-what-im-working-on)
-* [Live Demos](#-live-demos)
-* [Certifications & Coursework](#-certifications--coursework)
-* [Tech Radar](#-tech-radar)
-* [Extra Stats](#-extra-stats-optional-blocks)
-* [Skills Matrix](#-skills-matrix)
-* [Reusable Components](#-reusable-components-mini-libs)
-* [Code Style & Principles](#-code-style--principles)
-* [FAQ](#-faq)
-* [Local Dev Quickstart](#-local-dev-quickstart-example)
-* [Support](#-support-my-work)
+- [About Me](#-about-me)
+- [Tech Stack](#-tech-stack)
+- [GitHub Analytics](#-github-analytics)
+- [Featured Projects](#-featured-projects)
+- [Highlights & Achievements](#-highlights--achievements)
+- [What I'm Working On](#-what-im-working-on)
+- [Live Demos](#-live-demos)
+- [Certifications & Coursework](#-certifications--coursework)
+- [Tech Radar](#-tech-radar)
+- [Extra Stats](#-extra-stats-optional-blocks)
+- [Skills Matrix](#-skills-matrix)
+- [Reusable Components](#-reusable-components-mini-libs)
+- [Code Style & Principles](#-code-style--principles)
+- [FAQ](#-faq)
+- [Local Dev Quickstart](#-local-dev-quickstart-example)
+- [Support](#-support-my-work)
 
 </details>
 
@@ -225,8 +212,8 @@
   <summary><b>🏅 Badges</b> (auto from shields)</summary>
 
 ![Open Source Love](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-ff4081?style=for-the-badge)
-![Made with Python](https://img.shields.io/badge/Made%20with-Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
-![Build with React](https://img.shields.io/badge/Build%20with-React-61DAFB?style=for-the-badge\&logo=react\&logoColor=black)
+![Made with Python](https://img.shields.io/badge/Made%20with-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Build with React](https://img.shields.io/badge/Build%20with-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 
 </details>
 
@@ -236,15 +223,13 @@
 
 > Host quick demos on GitHub Pages / Vercel.
 
-* 🔗 **AI Chatbot demo** → *(add Vercel/Pages link)*
-* 🔗 **Portfolio v2** → *(link)*
-
-
+- 🔗 **AI Chatbot demo** → *(add Vercel/Pages link)*
+- 🔗 **Portfolio v2** → *(link)*
 
 ## 🧠 Tech Radar
 
-**Now:** Python, React, Node, Flask, TensorFlow
-**Next:** FastAPI, LangChain, Postgres, Kafka
+**Now:** Python, React, Node, Flask, TensorFlow  
+**Next:** FastAPI, LangChain, Postgres, Kafka  
 **Exploring:** K8s, Supabase, Next.js, LLM evals
 
 ---
@@ -255,7 +240,6 @@
   <summary><b>🐍 Contribution Snake</b></summary>
 
 <!-- Enable by setting up the snake action on your repo fork. -->
-
 <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" alt="snake" />
 
 </details>
@@ -264,7 +248,6 @@
   <summary><b>⌛ WakaTime coding stats</b></summary>
 
 <!-- Replace USERNAME -->
-
 <img src="https://github-readme-stats.vercel.app/api/wakatime?username=USERNAME&theme=radical&hide_border=true" alt="WakaTime" />
 
 </details>
@@ -273,7 +256,6 @@
   <summary><b>🧮 Metrics (overall profile)</b></summary>
 
 <!-- Requires enabling metrics.lecoq.io for your account -->
-
 <img src="https://metrics.lecoq.io/JET609?template=classic&base=header,activity,community,repositories&config.timezone=Asia%2FKolkata" alt="metrics" />
 
 </details>
@@ -282,9 +264,7 @@
   <summary><b>🏹 LeetCode/Codeforces</b></summary>
 
 <!-- Share your handles and I'll wire these up -->
-
 <!-- LeetCode: https://leetcard.jacoblin.cool/<handle>?theme=dark&ext=activity -->
-
 <!-- Codeforces: https://raw.githubusercontent.com/ashutosh00710/github-readme-activity-graph/master/app.svg -->
 
 </details>
@@ -293,9 +273,9 @@
 
 ## 🧰 Starter Templates
 
-* **FastAPI + Auth + Docker** – production‑ready scaffold
-* **React + Vite + Tailwind** – opinionated UI starter
-* **Data Science Cookiecutter** – notebooks → package → app
+- **FastAPI + Auth + Docker** – production-ready scaffold
+- **React + Vite + Tailwind** – opinionated UI starter
+- **Data Science Cookiecutter** – notebooks → package → app
 
 > Want these added as real repos with README, CI and license? Say the word and I’ll scaffold them.
 
@@ -303,9 +283,9 @@
 
 ## 🤖 Automation Ideas for This Profile
 
-* Auto‑update **Latest blog posts** via GitHub Actions (RSS → README)
-* Nightly refresh GitHub cards to avoid cache staleness
-* Tweet new releases with a simple workflow
+- Auto-update **Latest blog posts** via GitHub Actions (RSS → README)
+- Nightly refresh GitHub cards to avoid cache staleness
+- Tweet new releases with a simple workflow
 
 <details>
   <summary><b>🛠️ Add “Latest Blog Posts” (Action snippet)</b></summary>
@@ -323,88 +303,3 @@ jobs:
       - uses: gautamkrishnar/blog-post-workflow@master
         with:
           feed_list: "https://medium.com/feed/@jayanththomas2004"
-```
-
-In your README add:
-
-```md
-### 📰 Latest Posts
-<!-- BLOG-POST-LIST:START -->
-<!-- BLOG-POST-LIST:END -->
-```
-
-</details>
-
----
-
-## 🧩 Skills Matrix
-
-| Area         | Strengths                                |
-| ------------ | ---------------------------------------- |
-| **Backend**  | REST APIs, Flask basics, auth, testing   |
-| **Frontend** | React hooks, state mgmt, responsive UI   |
-| **Data/ML**  | EDA, classic ML (NB/KNN/LR), TF basics   |
-| **DevOps**   | Docker, CI basics, Git workflows         |
-| **Cloud**    | AWS (EC2/S3/Lambda), serverless starters |
-
-> Proficiency quick‑view: ████▌ (intermediate) → aiming for ██████
-
----
-
-## 🧰 Reusable Components (mini‑libs)
-
-* `useLocalStorage()` – tiny React hook
-* `fastapi-starter` – auth, CORS, health, logging
-* `py-cli-kit` – argparse + rich logging template
-
-*(Want me to publish these as repos with docs & tests? Say the word.)*
-
----
-
-## 🧑‍🔬 Code Style & Principles
-
-* **Small PRs** > giant rewrites
-* **Tests** guard behavior; **docs** guard memory
-* **Simplicity first**; performance follows
-* **Measure** before optimizing; **profile** before guessing
-
----
-
-## ❓ FAQ
-
-<details>
-  <summary><b>How can we collaborate?</b></summary>
-  Open an issue on any repo or DM me on LinkedIn with a short brief.
-</details>
-<details>
-  <summary><b>Do you take freelance work?</b></summary>
-  Selectively, for AI/web tooling. Reach out with scope & timelines.
-</details>
-<details>
-  <summary><b>What stack do you prefer?</b></summary>
-  Python/FastAPI + React + Postgres, Dockerized, deployed on AWS/Vercel.
-</details>
-
----
-
-## 🧪 Local Dev Quickstart (example)
-
-```bash
-# Clone a project
-git clone https://github.com/JET609/ai-chatbot && cd ai-chatbot
-
-# Create env
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-
-# Run
-python app.py
-```
-
----
-
-## 📬 CTA
-
-**Have an idea or role?** Email me: [jayanththomas2004@gmail.com](mailto:jayanththomas2004@gmail.com) or DM on LinkedIn.
-
----
