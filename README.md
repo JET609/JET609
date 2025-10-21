@@ -234,7 +234,7 @@
 
 ---
 
-## 📈 Extra Stats (optional blocks)
+## 📈 Extra Stats
 
 <details>
   <summary><b>🐍 Contribution Snake</b></summary>
