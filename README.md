@@ -11,6 +11,7 @@
 ![Followers](https://img.shields.io/github/followers/JET609?style=for-the-badge)
 ![Stars](https://img.shields.io/github/stars/JET609?style=for-the-badge)
 ![Profile Views](https://komarev.com/ghpvc/?username=JET609&style=for-the-badge)
+![Wake Time](https://img.shields.io/badge/Wake%20Time-3 AM%20☕-8000FF?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 
@@ -28,9 +29,9 @@
 <details>
   <summary><b>🗺️ My Journey (expand)</b></summary>
 
-- **2022:** Started with Python 🐍
-- **2023:** First web app + DSA grind 💻
-- **2024:** Open-source AI contributions
+- **2022:** Started with Python 🐍  
+- **2023:** First web app + DSA grind 💻  
+- **2024:** Open-source AI contributions  
 - **2025:** Prototyping/launching AI products ⚡
 
 </details>
@@ -116,27 +117,27 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/jayanth-thomas-027318221/" target="_blank" title="LinkedIn: Jayanth Thomas">
-    <img src="https://img.shields.io/badge/LinkedIn-Jayanth_Thomas-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn badge" height="40" />
+    <img src="https://img.shields.io/badge/LinkedIn-Jayanth_Thomas-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" height="40" />
   </a>
   &nbsp;
   <a href="mailto:jayanththomas2004@gmail.com" target="_blank" title="Email Jayanth">
-    <img src="https://img.shields.io/badge/Gmail-jayanththomas2004-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail badge" height="40" />
+    <img src="https://img.shields.io/badge/Gmail-jayanththomas2004-D14836?style=for-the-badge&logo=gmail&logoColor=white" height="40" />
   </a>
   &nbsp;
   <a href="https://stackoverflow.com/users/30679522/jayath-thomas" target="_blank" title="Stack Overflow">
-    <img src="https://img.shields.io/badge/Stack_Overflow-Jayath_Thomas-FE7A16?style=for-the-badge&logo=stackoverflow&logoColor=white" alt="Stack Overflow badge" height="40" />
+    <img src="https://img.shields.io/badge/Stack_Overflow-Jayath_Thomas-FE7A16?style=for-the-badge&logo=stackoverflow&logoColor=white" height="40" />
   </a>
   <br /><br />
   <a href="https://twitter.com/JAYANTHTHOMASS" target="_blank" title="Twitter">
-    <img src="https://img.shields.io/badge/Twitter-@JAYANTHTHOMASS-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter badge" height="40" />
+    <img src="https://img.shields.io/badge/Twitter-@JAYANTHTHOMASS-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" height="40" />
   </a>
   &nbsp;
   <a href="https://orcid.org/0009-0002-5126-5511" target="_blank" title="ORCID">
-    <img src="https://img.shields.io/badge/ORCID-0009_0002_5126_5511-00A0DE?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID badge" height="40" />
+    <img src="https://img.shields.io/badge/ORCID-0009_0002_5126_5511-00A0DE?style=for-the-badge&logo=orcid&logoColor=white" height="40" />
   </a>
   &nbsp;
   <a href="https://medium.com/@jayanththomas2004" target="_blank" title="Medium">
-    <img src="https://img.shields.io/badge/Medium-Jayanththomas2004-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Medium badge" height="40" />
+    <img src="https://img.shields.io/badge/Medium-Jayanththomas2004-12100E?style=for-the-badge&logo=medium&logoColor=white" height="40" />
   </a>
 </p>
 
@@ -144,9 +145,9 @@
 
 ## 🎯 2025 Goals
 
-- 🚀 Build & deploy **5** real-world Python projects
-- 🤝 Ship meaningful **PRs** to open source
-- 🤖 Launch **3** AI/ML projects on GitHub
+- 🚀 Build & deploy **5** real-world Python projects  
+- 🤝 Ship meaningful **PRs** to open source  
+- 🤖 Launch **3** AI/ML projects on GitHub  
 - 🌐 Deploy & grow a personal portfolio
 
 ---
@@ -164,142 +165,12 @@
 ## ☕ Support My Work
 
 <p align="center">
-  <a href="https://www.buymeacoffee.com/jayteee" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee" />
+  <a href="https://www.buymeacoffee.com/jayteee" target="_blank">
+    <img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" />
   </a>
   &nbsp;
-  <a href="https://github.com/sponsors/JET609" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=%23EA4AAA" alt="GitHub Sponsors" />
+  <a href="https://github.com/sponsors/JET609" target="_blank">
+    <img src="https://img.shields.io/badge/Sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=%23EA4AAA" />
   </a>
 </p>
 
----
-
-## 🧭 Quick Links
-
-<p align="center">
-  <a href="https://jet609.github.io" target="_blank"><b>🌐 Portfolio</b></a> •
-  <a href="#" target="_blank"><b>📄 Résumé</b></a> •
-  <a href="https://medium.com/@jayanththomas2004" target="_blank"><b>✍️ Blog</b></a> •
-  <a href="mailto:jayanththomas2004@gmail.com"><b>📬 Contact</b></a>
-</p>
-
-<details>
-  <summary><b>📌 Table of Contents</b></summary>
-
-- [About Me](#-about-me)
-- [Tech Stack](#-tech-stack)
-- [GitHub Analytics](#-github-analytics)
-- [Featured Projects](#-featured-projects)
-- [Highlights & Achievements](#-highlights--achievements)
-- [What I'm Working On](#-what-im-working-on)
-- [Live Demos](#-live-demos)
-- [Certifications & Coursework](#-certifications--coursework)
-- [Tech Radar](#-tech-radar)
-- [Extra Stats](#-extra-stats-optional-blocks)
-- [Skills Matrix](#-skills-matrix)
-- [Reusable Components](#-reusable-components-mini-libs)
-- [Code Style & Principles](#-code-style--principles)
-- [FAQ](#-faq)
-- [Local Dev Quickstart](#-local-dev-quickstart-example)
-- [Support](#-support-my-work)
-
-</details>
-
----
-
-<details>
-  <summary><b>🏅 Badges</b> (auto from shields)</summary>
-
-![Open Source Love](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-ff4081?style=for-the-badge)
-![Made with Python](https://img.shields.io/badge/Made%20with-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Build with React](https://img.shields.io/badge/Build%20with-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-
-</details>
-
----
-
-## 🧪 Live Demos
-
-> Host quick demos on GitHub Pages / Vercel.
-
-- 🔗 **AI Chatbot demo**
-- 🔗 **Portfolio v2** 
-
-## 🧠 Tech Radar
-
-**Now:** Python, React, Node, Flask, TensorFlow  
-**Next:** FastAPI, LangChain, Postgres, Kafka  
-**Exploring:** K8s, Supabase, Next.js, LLM evals
-
----
-
-## 📈 Extra Stats (optional blocks)
-
-<details>
-  <summary><b>🐍 Contribution Snake</b></summary>
-
-<!-- Enable by setting up the snake action on your repo fork. -->
-<img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" alt="snake" />
-
-</details>
-
-<details>
-  <summary><b>⌛ WakaTime coding stats</b></summary>
-
-<!-- Replace USERNAME -->
-<img src="https://github-readme-stats.vercel.app/api/wakatime?username=USERNAME&theme=radical&hide_border=true" alt="WakaTime" />
-
-</details>
-
-<details>
-  <summary><b>🧮 Metrics (overall profile)</b></summary>
-
-<!-- Requires enabling metrics.lecoq.io for your account -->
-<img src="https://metrics.lecoq.io/JET609?template=classic&base=header,activity,community,repositories&config.timezone=Asia%2FKolkata" alt="metrics" />
-
-</details>
-
-<details>
-  <summary><b>🏹 LeetCode/Codeforces</b></summary>
-
-<!-- Share your handles and I'll wire these up -->
-<!-- LeetCode: https://leetcard.jacoblin.cool/<handle>?theme=dark&ext=activity -->
-<!-- Codeforces: https://raw.githubusercontent.com/ashutosh00710/github-readme-activity-graph/master/app.svg -->
-
-</details>
-
----
-
-## 🧰 Starter Templates
-
-- **FastAPI + Auth + Docker** – production-ready scaffold
-- **React + Vite + Tailwind** – opinionated UI starter
-- **Data Science Cookiecutter** – notebooks → package → app
-
-> Want these added as real repos with README, CI and license? Say the word and I’ll scaffold them.
-
----
-
-## 🤖 Automation Ideas for This Profile
-
-- Auto-update **Latest blog posts** via GitHub Actions (RSS → README)
-- Nightly refresh GitHub cards to avoid cache staleness
-- Tweet new releases with a simple workflow
-
-<details>
-  <summary><b>🛠️ Add “Latest Blog Posts” (Action snippet)</b></summary>
-
-```yml
-name: Update blog
-on:
-  schedule: [{ cron: '0 */12 * * *' }]
-  workflow_dispatch:
-jobs:
-  rss:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: gautamkrishnar/blog-post-workflow@master
-        with:
-          feed_list: "https://medium.com/feed/@jayanththomas2004"
