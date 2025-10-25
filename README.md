@@ -62,11 +62,13 @@
 
 ## 📊 GitHub Analytics
 
+> If any of these cards fail to render (rate limits/caching), use the fallback links below.
+
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true&bg_color=00000000&cache_seconds=7200">
-  <img height="160" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&cache_seconds=7200" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&theme=radical&hide_border=true&count_private=true&bg_color=00000000&cache_seconds=7200">
+  <img height="160" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&hide_border=true&count_private=true&cache_seconds=7200" />
 </picture>
 
 <picture>
@@ -74,13 +76,17 @@
   <img height="160" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JET609&layout=compact&hide_border=true&cache_seconds=7200" />
 </picture>
 
-<img alt="GitHub Streak" src="https://streak-stats.demolab.com?user=JET609&theme=radical&hide_border=true" />
+<a href="https://streak-stats.demolab.com?user=JET609&theme=radical&hide_border=true">
+  <img alt="GitHub Streak" src="https://streak-stats.demolab.com?user=JET609&theme=radical&hide_border=true" />
+</a>
 
-<img alt="GitHub trophies" src="https://github-profile-trophy.vercel.app/?username=JET609&theme=radical&no-frame=true&margin-w=15&column=7" />
+<a href="https://github-profile-trophy.vercel.app/?username=JET609&theme=radical&no-frame=true&margin-w=15&column=7">
+  <img alt="GitHub trophies" src="https://github-profile-trophy.vercel.app/?username=JET609&theme=radical&no-frame=true&margin-w=15&column=7" />
+</a>
 
 </div>
 
-<sub>Tip: Cards are cached. `cache_seconds=7200` refreshes every ~2 hours.</sub>
+<sub>Tip: Cards are cached. Append `?cache_seconds=7200` to refresh roughly every 2 hours.</sub>
 
 ---
 
@@ -192,7 +198,7 @@
 <details>
   <summary><b>🐍 Contribution Snake</b></summary>
 
-<!-- Enable by setting up the snake action on your repo fork. -->
+<!-- Requires enabling the workflow on a fork of platane/snk -->
 
 <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" alt="snake" />
 
@@ -201,29 +207,18 @@
 <details>
   <summary><b>⌛ WakaTime coding stats</b></summary>
 
-<!-- Replace WAKATIME_USERNAME if different -->
+<!-- Replace WAKATIME_USERNAME below; if you don't use WakaTime yet, keep this collapsed to avoid 404s. -->
 
-<img src="https://github-readme-stats.vercel.app/api/wakatime?username=JET609&theme=radical&hide_border=true" alt="WakaTime" />
+<img src="https://github-readme-stats.vercel.app/api/wakatime?username=WAKATIME_USERNAME&theme=radical&hide_border=true" alt="WakaTime" />
 
 </details>
 
 <details>
   <summary><b>🧮 Metrics (overall profile)</b></summary>
 
-<!-- Requires enabling metrics.lecoq.io for your account -->
+<!-- Requires enabling metrics.lecoq.io for your account; if disabled this may show a placeholder. -->
 
 <img src="https://metrics.lecoq.io/JET609?template=classic&base=header,activity,community,repositories&config.timezone=Asia%2FKolkata" alt="metrics" />
-
-</details>
-
-<details>
-  <summary><b>🏹 LeetCode/Codeforces</b></summary>
-
-<!-- Share your handles and wire these up -->
-
-<!-- LeetCode: https://leetcard.jacoblin.cool/<handle>?theme=dark&ext=activity -->
-
-<!-- Codeforces: https://raw.githubusercontent.com/ashutosh00710/github-readme-activity-graph/master/app.svg -->
 
 </details>
 
@@ -241,6 +236,8 @@
 
 ## 📰 Latest Blog Posts (auto)
 
+<!-- The action below updates between these markers. Do not remove. -->
+
 <!-- BLOG-POST-LIST:START -->
 
 <!-- BLOG-POST-LIST:END -->
@@ -254,6 +251,8 @@ on:
   schedule:
     - cron: '0 */12 * * *'
   workflow_dispatch:
+permissions:
+  contents: write
 jobs:
   rss:
     runs-on: ubuntu-latest
@@ -264,9 +263,11 @@ jobs:
           feed_list: "https://medium.com/feed/@jayanththomas2004"
           max_post_count: 5
           disable_item_validation: true
+          committer_username: github-actions[bot]
+          committer_email: 41898282+github-actions[bot]@users.noreply.github.com
 ```
 
-> Create `.github/workflows/update-blog.yml` with the above.
+> Save as `.github/workflows/update-blog.yml`. Ensure this README contains the exact `BLOG-POST-LIST` markers.
 
 </details>
 
