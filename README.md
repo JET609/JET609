@@ -156,7 +156,7 @@ I’m **Jayanth** — B.Tech CSE · builder · systems brain:
 
 ---
 
-## 🐍 Contribution Snake (Always Visible)
+## 🐍 Snake 
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" alt="snake animation" />
@@ -228,7 +228,7 @@ I’m **Jayanth** — B.Tech CSE · builder · systems brain:
 
 ---
 
-## ☕ Support / Respect the Grind
+## ☕ Support
 
 <div align="center">
 
@@ -248,5 +248,5 @@ I’m **Jayanth** — B.Tech CSE · builder · systems brain:
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&height=140&section=footer&color=0:000814,50:001F3F,100:00E5FF" alt="footer" />
   <br/>
-  <sub>Reading this is easy. Matching the output is the challenge.</sub>
+  <sub>U got this lad. </sub>
 </div>
