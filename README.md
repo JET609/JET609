@@ -1,6 +1,6 @@
 <!--
   JET609 / Jayanth Eapen Thomas
-  Ultra-Animated Neo-Teal GitHub Profile
+  Neo-Teal Futuristic Profile README
 -->
 
 <!-- TOP WAVE BANNER -->
@@ -10,7 +10,7 @@
 
 <!-- ANIMATED TYPING INTRO -->
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=20&duration=1900&pause=500&color=00E5FF&center=true&vCenter=true&width=720&lines=Aspiring+Software+Developer;AI+%E2%80%A2+Web+%E2%80%A2+Automation+%E2%80%A2+Systems;Building+useful+things+that+actually+ship;Learning+Every+Single+Day;Living+inside+GitHub's+Matrix+%F0%9F%92%AB" alt="Typing Intro" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=20&duration=1900&pause=500&color=00E5FF&center=true&vCenter=true&width=760&lines=Aspiring+Software+Developer;AI+%E2%80%A2+Web+%E2%80%A2+Automation+%E2%80%A2+Systems;Building+useful+things+that+actually+ship;Learning+Every+Single+Day;Living+inside+GitHub's+Matrix%20%F0%9F%92%AB" alt="Typing Intro" />
 </div>
 
 <!-- CORE STATUS BADGES -->
@@ -28,29 +28,29 @@
   <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00E5FF&section=header" alt="line" />
 </div>
 
-## 🧭 Core Identity
+## 🧭 Who I Am
 
-I’m **Jayanth** — B.Tech CSE · builder · obsessed with:
+I’m **Jayanth** — B.Tech CSE · builder · systems brain:
 
-- ⚙️ **Automation** & **AI** that actually solve problems  
-- 🧠 **ML, analytics & intelligent systems**  
-- 🌐 **Modern web apps** with clean UX & clear structure  
-- 🏗️ Turning ideas → **shippable, documented, readable repos**
+- ⚙️ **Automation & AI** that actually solve problems  
+- 🌐 **Modern web**: fast, clean, no cringe  
+- 📊 **ML, analytics & intelligent systems** (not just models, full pipeline)  
+- 🏗️ Repos that look like **mini products**, not random dumps  
 
 > _“Discipline compounds. Small commits. Daily learning. Long-term leverage.”_
 
 <details>
   <summary><b>📜 Journey Timeline</b></summary>
 
-- **2022** → Python, C, debugging, fundamentals  
-- **2023** → Web dev, DSA, first real deployments  
-- **2024** → ML/NLP/CV experiments, infra curiosity, serious GitHub  
-- **2025** → Building AI tools, automations, polishing systems & brand  
+- **2022** → Python, C, first scripts, debugging obsession  
+- **2023** → Web dev, DSA, shipped first real projects  
+- **2024** → ML/NLP/CV experiments, infra curiosity, GitHub as home  
+- **2025** → AI tools, automations, polishing craft & public profile  
 </details>
 
 ---
 
-## ⚡ Tech Stack · Animated Wall
+## ⚡ Tech Stack · Neon Wall
 
 <div align="center">
 
@@ -76,18 +76,16 @@ I’m **Jayanth** — B.Tech CSE · builder · obsessed with:
 </div>
 
 <details>
-  <summary><b>🧪 Currently Dialed-In On</b></summary>
+  <summary><b>🧪 Current Focus Stack</b></summary>
 
-- **Now:** Python, React, Flask, TensorFlow, GitHub Actions  
-- **Next:** FastAPI, Next.js, Postgres, LangChain, MLOps  
-- **Exploring:** Supabase, Kafka, Kubernetes, scalable AI systems  
+**Now:** Python · React · Flask · TensorFlow · GitHub Actions  
+**Next:** FastAPI · Next.js · Postgres · LangChain · MLOps  
+**Exploring:** Supabase · Kafka · k8s · scalable AI systems  
 </details>
 
 ---
 
-## 🧠 Signature Builds (Animated Grid)
-
-> Only projects that reflect serious learning & execution.
+## 🧠 Signature Projects
 
 <div align="center">
 
@@ -95,13 +93,13 @@ I’m **Jayanth** — B.Tech CSE · builder · obsessed with:
   <tr>
     <td align="center">
       <b><a href="https://github.com/JET609/skin-cancer-ai">🩺 Skin Cancer Detection</a></b><br/>
-      <sub>CNN-based lesion classifier with clean pipeline & visuals.</sub><br/>
+      <sub>CNN-based lesion classifier with proper pipeline & clarity.</sub><br/>
       <img src="https://img.shields.io/badge/Python-111827?style=flat&logo=python&logoColor=00E5FF" />
       <img src="https://img.shields.io/badge/TensorFlow-111827?style=flat&logo=tensorflow&logoColor=FF6F00" />
     </td>
     <td align="center">
       <b><a href="https://github.com/JET609/fake-news-ml">📰 Fake News Detector</a></b><br/>
-      <sub>End-to-end NLP: cleaning → vectorizing → model → metrics.</sub><br/>
+      <sub>End-to-end NLP: preprocess → vectorize → model → metrics.</sub><br/>
       <img src="https://img.shields.io/badge/Python-111827?style=flat&logo=python&logoColor=00E5FF" />
       <img src="https://img.shields.io/badge/Sklearn-111827?style=flat&logo=scikitlearn&logoColor=F7931E" />
     </td>
@@ -109,13 +107,13 @@ I’m **Jayanth** — B.Tech CSE · builder · obsessed with:
   <tr>
     <td align="center">
       <b><a href="https://github.com/JET609/portfolio">🌐 Portfolio Site</a></b><br/>
-      <sub>Neon, fast, responsive personal site.</sub><br/>
+      <sub>Neon, clean, responsive portfolio.</sub><br/>
       <img src="https://img.shields.io/badge/React-111827?style=flat&logo=react&logoColor=61DAFB" />
       <img src="https://img.shields.io/badge/Tailwind-111827?style=flat&logo=tailwind-css&logoColor=06B6D4" />
     </td>
     <td align="center">
       <b><a href="https://github.com/JET609/dsa-repo">📚 DSA Repo</a></b><br/>
-      <sub>Patterns, notes, solutions — interview-focused.</sub><br/>
+      <sub>Patterns, notes, solutions; built for revision & interviews.</sub><br/>
       <img src="https://img.shields.io/badge/C/Java/Python-111827?style=flat" />
     </td>
   </tr>
@@ -123,18 +121,9 @@ I’m **Jayanth** — B.Tech CSE · builder · obsessed with:
 
 </div>
 
-<details>
-  <summary><b>🔬 Labs & Playground</b></summary>
-
-- CLI tools for automation  
-- API experiments  
-- ML/DS notebooks & PoCs  
-- Frontend micro-interactions & animations  
-</details>
-
 ---
 
-## 📊 The Animated Matrix Wall
+## 📊 The Matrix Wall (Always Moving)
 
 <div align="center">
 
@@ -151,10 +140,10 @@ I’m **Jayanth** — B.Tech CSE · builder · obsessed with:
 </picture>
 
 <!-- STREAK -->
-<img alt="Streak" src="https://streak-stats.demolab.com?user=JET609&theme=tokyonight&hide_border=true&date_format=M%20j%5B,%20Y%5D" />
+<img alt="GitHub Streak" src="https://streak-stats.demolab.com?user=JET609&theme=tokyonight&hide_border=true&date_format=M%20j%5B,%20Y%5D" />
 
 <!-- TROPHIES -->
-<img alt="Trophies" src="https://github-profile-trophy.vercel.app/?username=JET609&theme=tokyonight&no-frame=true&margin-w=8&row=1" />
+<img alt="GitHub Trophies" src="https://github-profile-trophy.vercel.app/?username=JET609&theme=tokyonight&no-frame=true&margin-w=8&row=1" />
 
 <!-- CONTRIBUTION GRAPH -->
 <img alt="Contribution Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=JET609&theme=tokyo-night&hide_border=true&area=true&radius=10&custom_title=Contribution%20Heatmap" width="100%" />
@@ -162,37 +151,45 @@ I’m **Jayanth** — B.Tech CSE · builder · obsessed with:
 </div>
 
 <div align="center">
-  <sub>External cards are cached. The grind behind them is not.</sub>
+  <sub>Widgets are cached. The mindset is live.</sub>
 </div>
 
 ---
 
-## 🎛️ Live “Now” Panel (Static Visual, Animated Feel)
+## 🐍 Contribution Snake (Always Visible)
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" alt="snake animation" />
+</div>
+
+---
+
+## 🎛️ Current Mode
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/Now-Building_AI_Projects-00E5FF?style=for-the-badge&logo=rocket&logoColor=000814" />
-<img src="https://img.shields.io/badge/Focus-ML_%26_Automation-111827?style=for-the-badge&logo=tensorflow&logoColor=FF6F00" />
-<img src="https://img.shields.io/badge/Reading-Docs_Over_Tutorials-111827?style=for-the-badge&logo=readthedocs&logoColor=00E5FF" />
+<img src="https://img.shields.io/badge/Now-Building_AI_%26_Automation_Projects-00E5FF?style=for-the-badge&logo=rocket&logoColor=000814" />
+<img src="https://img.shields.io/badge/Focus-Deep_Work_%26_Consistency-111827?style=for-the-badge&logo=target&logoColor=00E5FF" />
+<img src="https://img.shields.io/badge/Philosophy-Show_Don't_Tell-111827?style=for-the-badge&logo=markdown&logoColor=FFFFFF" />
 
 </div>
 
 ---
 
-## 🧠 Operating System (How I Work)
+## 🧠 How I Work
 
-- 📦 Ship **small, complete** things often  
-- 🧹 Prefer **clean repos**: clear README, env, usage, examples  
-- 🔁 Iteration > perfection; public work > private fantasy  
-- 🕹️ Use automation, CI, scripts where it makes sense  
+- 📦 Ship **small, complete** projects  
+- 🧹 Keep repos **readable & structured**  
+- 🔁 Iterate in public; avoid tutorial hell  
+- ⚙️ Use automation & scripts when it saves brainpower  
 
 <details>
-  <summary><b>🎯 2025 Targets</b></summary>
+  <summary><b>🎯 2025 Goals</b></summary>
 
-- 5+ polished, deployed projects  
-- Real contributions to OSS in ML / tooling  
-- Better system design thinking for AI-backed products  
-- Turn GitHub into a **living studio**, not just storage  
+- Ship **5+** real, hosted projects  
+- Contribute to OSS: ML, tools, docs  
+- Improve system design & infra understanding  
+- Make this profile reflect actual discipline  
 </details>
 
 ---
@@ -203,7 +200,7 @@ I’m **Jayanth** — B.Tech CSE · builder · obsessed with:
 
 ---
 
-## 🌐 Connect · Collaborate
+## 🌐 Connect
 
 <div align="center">
 
@@ -231,7 +228,7 @@ I’m **Jayanth** — B.Tech CSE · builder · obsessed with:
 
 ---
 
-## ☕ Support / Flex
+## ☕ Support / Respect the Grind
 
 <div align="center">
 
@@ -247,35 +244,9 @@ I’m **Jayanth** — B.Tech CSE · builder · obsessed with:
 
 ---
 
-## 🐍 Animated Contribution Snake
-
-<details>
-  <summary><b>Show snake animation</b></summary>
-  <br />
-  <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" alt="snake" />
-</details>
-
----
-
-## 🛠 Future Automation Hooks (Optional)
-
-> Ready for when you want even more dynamic madness (via GitHub Actions).
-
-<details>
-  <summary><b>🔁 Auto-update latest blog posts (template)</b></summary>
-
-```yml
-name: Update blog section
-on:
-  schedule:
-    - cron: '0 */12 * * *'
-  workflow_dispatch:
-
-jobs:
-  update-blog:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: gautamkrishnar/blog-post-workflow@master
-        with:
-          feed_list: "https://medium.com/feed/@jayanththomas2004"
+<!-- BOTTOM WAVE FOOTER -->
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=140&section=footer&color=0:000814,50:001F3F,100:00E5FF" alt="footer" />
+  <br/>
+  <sub>Reading this is easy. Matching the output is the challenge.</sub>
+</div>
