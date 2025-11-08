@@ -1,116 +1,151 @@
-<!-- PROFILE README: JET609 -->
+<!--
+  JET609 / Jayanth Eapen Thomas
+  Cinematic GitHub Profile README
+  Theme: Neo-Teal • Midnight • Futuristic
+-->
 
+<!-- TOP BANNER -->
 <div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&text=JAYANTH%20EAPEN%20THOMAS&fontAlign=50&fontAlignY=40&color=0:000814,50:001F3F,100:00E5FF&fontColor=FFFFFF&fontSize=34&desc=AI%20%7C%20Web%20%7C%20Automation%20%7C%20Systems&descAlignY=62&animation=twinkling" alt="header" />
+</div>
 
-<!-- Animated Header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&height=180&text=JAYANTH%20EAPEN%20THOMAS&fontAlign=50&fontAlignY=35&color=0:00111F,100:00E5FF&textBg=false&section=header&fontColor=FFFFFF&fontSize=32" alt="header" />
+<!-- TYPING INTRO -->
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=20&duration=2200&pause=800&color=00E5FF&center=true&vCenter=true&width=640&lines=Aspiring+Software+Developer;AI+%E2%80%A2+Web+%E2%80%A2+Automation+%E2%80%A2+Systems;Building+useful+things+that+actually+ship;Learning+Every+Single+Day" alt="Typing SVG" />
+  </a>
+</div>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=900&color=00E5FF&center=true&vCenter=true&width=680&lines=Aspiring+Software+Developer;AI+%E2%80%A2+Web+%E2%80%A2+Automation;Building+useful+things+%F0%9F%9A%80;Learning+Every+Single+Day)](https://git.io/typing-svg)
-
----
-
-### 🚀 Aspiring Software Developer & Problem Solver
-
-![Status](https://img.shields.io/badge/Status-Building_the_Future-00C853?style=for-the-badge&logo=code&logoColor=white)
-![Timezone](https://img.shields.io/badge/IST_(UTC%2B5:30)-0A192F?style=for-the-badge&logo=clock&logoColor=00E5FF)
-![Followers](https://img.shields.io/github/followers/JET609?style=for-the-badge&label=Followers)
-![Stars](https://img.shields.io/github/stars/JET609?style=for-the-badge&label=Profile%20Stars)
-![Views](https://komarev.com/ghpvc/?username=JET609&style=for-the-badge&color=00E5FF)
-
+<!-- CORE BADGES -->
+<div align="center">
+  <img src="https://img.shields.io/badge/Status-Building_the_Future-00C853?style=for-the-badge&logo=code&logoColor=white" />
+  <img src="https://img.shields.io/badge/Location-India-00E5FF?style=for-the-badge&logo=google-maps&logoColor=white" />
+  <img src="https://img.shields.io/badge/Timezone-IST_(UTC%2B5:30)-001F3F?style=for-the-badge&logo=clock&logoColor=00E5FF" />
+  <img src="https://img.shields.io/github/followers/JET609?style=for-the-badge&label=Followers&color=111827" />
+  <img src="https://img.shields.io/github/stars/JET609?style=for-the-badge&label=Profile%20Stars&color=111827" />
+  <img src="https://komarev.com/ghpvc/?username=JET609&style=for-the-badge&color=00E5FF&label=Profile%20Views" />
 </div>
 
 ---
 
-## 👨‍💻 Who I Am
+## 🧭 Core Identity
 
-I’m **Jayanth**, a B.Tech CSE student from India, obsessed with:
+I’m **Jayanth** — B.Tech CSE • builder mindset • obsessed with:
 
-- ⚙️ **Automation & AI** that actually solve problems  
-- 🌐 **Clean, modern web apps** with strong UX  
-- 📊 **ML, analytics, and intelligent systems**  
-- 🧱 Slowly stacking skills → long-term compounding
+- ⚙️ **Automation & AI** that solve real problems
+- 🧠 **ML, analytics & intelligent systems**
+- 🌐 **Clean, fast, modern web apps**
+- 🏗️ Turning ideas → **shippable products**, not just notes
 
-> _“Discipline compounds. Tiny commits. Daily learning. Unfair edge.”_
+> _“Discipline compounds. Small commits. Daily learning. Long-term leverage.”_
 
 <details>
-  <summary><b>🗺️ Journey Timeline</b></summary>
+  <summary><b>📜 Journey So Far</b></summary>
 
-- **2022** → Python, C, fundamentals, debugging chaos  
-- **2023** → Web dev, DSA grind, first real projects  
-- **2024** → ML/NLP, open-source, infra curiosity  
-- **2025** → Shipping AI tools, automations, portfolio & brand
+- **2022** → Python, C, basic scripting, falling in love with debugging
+- **2023** → Web dev, DSA, first deployed projects
+- **2024** → ML / NLP / CV experiments, infra curiosity, GitHub as home base
+- **2025** → Building AI tools, automations, and sharpening systems thinking
 </details>
 
 ---
 
-## 🛠 Tech Stack (Signal Only)
+## ⚡ Tech Stack · Neo Grid
 
 <div align="center">
 
 <!-- Languages -->
-<img src="https://img.shields.io/badge/Python-0A192F?style=for-the-badge&logo=python&logoColor=00E5FF" />
-<img src="https://img.shields.io/badge/JavaScript-0A192F?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
-<img src="https://img.shields.io/badge/Java-0A192F?style=for-the-badge&logo=openjdk&logoColor=F89820" />
-<img src="https://img.shields.io/badge/C-0A192F?style=for-the-badge&logo=c&logoColor=00E5FF" />
+<img src="https://img.shields.io/badge/Python-000814?style=for-the-badge&logo=python&logoColor=00E5FF" />
+<img src="https://img.shields.io/badge/JavaScript-000814?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
+<img src="https://img.shields.io/badge/Java-000814?style=for-the-badge&logo=openjdk&logoColor=F89820" />
+<img src="https://img.shields.io/badge/C-000814?style=for-the-badge&logo=c&logoColor=00E5FF" />
 
 <!-- Frameworks -->
-<img src="https://img.shields.io/badge/React-0A192F?style=for-the-badge&logo=react&logoColor=61DAFB" />
-<img src="https://img.shields.io/badge/Node.js-0A192F?style=for-the-badge&logo=node.js&logoColor=00E676" />
-<img src="https://img.shields.io/badge/Flask-0A192F?style=for-the-badge&logo=flask&logoColor=FFFFFF" />
-<img src="https://img.shields.io/badge/TensorFlow-0A192F?style=for-the-badge&logo=tensorflow&logoColor=FF6F00" />
+<img src="https://img.shields.io/badge/React-020817?style=for-the-badge&logo=react&logoColor=61DAFB" />
+<img src="https://img.shields.io/badge/Node.js-020817?style=for-the-badge&logo=node.js&logoColor=00E676" />
+<img src="https://img.shields.io/badge/Flask-020817?style=for-the-badge&logo=flask&logoColor=FFFFFF" />
+<img src="https://img.shields.io/badge/TensorFlow-020817?style=for-the-badge&logo=tensorflow&logoColor=FF6F00" />
 
 <!-- Tools -->
-<img src="https://img.shields.io/badge/Git-0A192F?style=for-the-badge&logo=git&logoColor=F4511E" />
-<img src="https://img.shields.io/badge/Docker-0A192F?style=for-the-badge&logo=docker&logoColor=00BFFF" />
-<img src="https://img.shields.io/badge/Linux-0A192F?style=for-the-badge&logo=linux&logoColor=FFFFFF" />
-<img src="https://img.shields.io/badge/AWS-0A192F?style=for-the-badge&logo=amazon-aws&logoColor=FF9900" />
-<img src="https://img.shields.io/badge/VS_Code-0A192F?style=for-the-badge&logo=visual-studio-code&logoColor=00E5FF" />
+<img src="https://img.shields.io/badge/Git-020817?style=for-the-badge&logo=git&logoColor=F4511E" />
+<img src="https://img.shields.io/badge/Docker-020817?style=for-the-badge&logo=docker&logoColor=00BFFF" />
+<img src="https://img.shields.io/badge/Linux-020817?style=for-the-badge&logo=linux&logoColor=FFFFFF" />
+<img src="https://img.shields.io/badge/AWS-020817?style=for-the-badge&logo=amazon-aws&logoColor=FF9900" />
+<img src="https://img.shields.io/badge/VS_Code-020817?style=for-the-badge&logo=visual-studio-code&logoColor=00E5FF" />
 
 </div>
 
----
-
-## 🧬 What Makes Me Different
-
-- I like **systems**: not just code, but how projects are built, deployed, and used.  
-- I care about **readability, DX, and maintainability** as much as clever logic.  
-- I actually **finish things** (even small) instead of infinite tutorials.  
-- I’m building a profile that looks like a **mini product studio**, not a random student.
-
----
-
-## 🧠 Featured Projects
-
-> Pinned repos = my real work. Click in. Read the code.
-
-| 🔹 Project | 💡 Description | 🛠 Tech |
-|-----------|----------------|--------|
-| **[Skin Cancer Detection](https://github.com/JET609/skin-cancer-ai)** | CNN-based classifier for benign vs malignant lesions | Python · TensorFlow |
-| **[Fake News Detector](https://github.com/JET609/fake-news-ml)** | End-to-end NLP pipeline (vectorization → model → eval) | Python · Sklearn · NLTK |
-| **[Portfolio Site](https://github.com/JET609/portfolio)** | Clean, animated dev portfolio for web | React · Tailwind |
-| **[DSA Prep Repo](https://github.com/JET609/dsa-repo)** | Structured problems, patterns & notes | C · Java · Python |
-
 <details>
-  <summary><b>🔍 More Experiments</b></summary>
+  <summary><b>🧪 Current Focus Stack</b></summary>
 
-- CLI tools & automation scripts  
-- API integrations & mini services  
-- ML experiments for classification, predictions, etc.
+- **Now:** Python, React, Flask, TensorFlow, GitHub Actions  
+- **Next:** FastAPI, Next.js, Postgres, LangChain, MLOps basics  
+- **Exploring:** Supabase, Kafka, k8s, system design for AI products  
 </details>
 
 ---
 
-## 📊 Code & Contribution Analytics
+## 🧠 Signature Projects (Curated)
+
+> Not “everything I’ve ever done” — only the ones that represent how I think & build.
 
 <div align="center">
 
-<!-- Stats -->
+<table>
+  <tr>
+    <td align="center">
+      <b><a href="https://github.com/JET609/skin-cancer-ai">🩺 Skin Cancer Detection</a></b><br/>
+      <sub>CNN-based classifier (benign vs malignant). Focus on pipeline, clarity & interpretability.</sub><br/>
+      <img src="https://img.shields.io/badge/Python-111827?style=flat&logo=python&logoColor=00E5FF" />
+      <img src="https://img.shields.io/badge/TensorFlow-111827?style=flat&logo=tensorflow&logoColor=FF6F00" />
+    </td>
+    <td align="center">
+      <b><a href="https://github.com/JET609/fake-news-ml">📰 Fake News Detector</a></b><br/>
+      <sub>Full NLP pipeline: preprocessing → vectorization → model → evaluation.</sub><br/>
+      <img src="https://img.shields.io/badge/Python-111827?style=flat&logo=python&logoColor=00E5FF" />
+      <img src="https://img.shields.io/badge/Scikit--learn-111827?style=flat&logo=scikitlearn&logoColor=F7931E" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b><a href="https://github.com/JET609/portfolio">🌐 Portfolio</a></b><br/>
+      <sub>Modern, responsive dev portfolio. Dark, sharp, fast.</sub><br/>
+      <img src="https://img.shields.io/badge/React-111827?style=flat&logo=react&logoColor=61DAFB" />
+      <img src="https://img.shields.io/badge/Tailwind-111827?style=flat&logo=tailwind-css&logoColor=06B6D4" />
+    </td>
+    <td align="center">
+      <b><a href="https://github.com/JET609/dsa-repo">📚 DSA Repo</a></b><br/>
+      <sub>Structured problems, patterns, solution notes.</sub><br/>
+      <img src="https://img.shields.io/badge/C-111827?style=flat&logo=c&logoColor=00E5FF" />
+      <img src="https://img.shields.io/badge/Java-111827?style=flat&logo=openjdk&logoColor=F89820" />
+      <img src="https://img.shields.io/badge/Python-111827?style=flat&logo=python&logoColor=00E5FF" />
+    </td>
+  </tr>
+</table>
+
+</div>
+
+<details>
+  <summary><b>🧪 Labs & Playground</b></summary>
+
+- Micro APIs, bots, cron jobs, CLI utilities  
+- ML notebooks for classification, prediction & experimentation  
+- Frontend experiments with React / Tailwind / animations  
+</details>
+
+---
+
+## 📊 The Matrix Wall (Live Stats & Animations)
+
+<div align="center">
+
+<!-- GitHub Stats -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github&bg_color=00000000">
   <img height="165" alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&hide_border=true&count_private=true&include_all_commits=true" />
 </picture>
 
-<!-- Top Langs -->
+<!-- Top Languages -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=JET609&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000">
   <img height="165" alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JET609&layout=compact&hide_border=true" />
@@ -120,24 +155,42 @@ I’m **Jayanth**, a B.Tech CSE student from India, obsessed with:
 <img alt="GitHub Streak" src="https://streak-stats.demolab.com?user=JET609&theme=tokyonight&hide_border=true&date_format=M%20j%5B,%20Y%5D" />
 
 <!-- Trophies -->
-<img alt="GitHub Trophies" src="https://github-profile-trophy.vercel.app/?username=JET609&theme=tokyonight&no-frame=true&margin-w=6&row=1" />
+<img alt="GitHub Trophies" src="https://github-profile-trophy.vercel.app/?username=JET609&theme=tokyonight&no-frame=true&margin-w=8&row=1" />
 
 <!-- Activity Graph -->
-<img alt="Contribution Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=JET609&theme=tokyo-night&hide_border=true&area=true&radius=8&custom_title=Recent%20Contribution%20Graph" width="100%" />
+<img alt="Contribution Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=JET609&theme=tokyo-night&hide_border=true&area=true&radius=8&custom_title=Contribution%20Heatmap" width="100%" />
 
 </div>
 
-<sub><div align="center">Some widgets are cached; numbers might lag a bit. Streak stays real 💪</div></sub>
+<sub><div align="center">These widgets are cached externally, so numbers may lag slightly. Streak mindset doesn’t.</div></sub>
+
+---
+
+## 🧠 Mindset & Operating System
+
+- ✅ **Show, don’t claim** → code, commits, deployed links
+- 🧹 Clean repos: clear READMEs, structure, requirements, examples
+- 🔁 Iterate in public: small improvements > silent perfectionism
+- 🧩 Prefer systems (pipelines, workflows) over one-off hacks
+
+<details>
+  <summary><b>🎯 2025 Intentions</b></summary>
+
+- Ship **5+** production-grade projects  
+- Contribute to **open-source ML / tooling**  
+- Learn & apply **system design for AI-backed products**  
+- Turn GitHub into a living portfolio, not a dump
+</details>
 
 ---
 
 ## ✍️ Writing
 
-- 📰 [How I Built My First Python Project Using AI](https://medium.com/@jayanththomas2004/how-i-built-my-first-python-project-using-ai-b66967184d04)
+- 📝 [How I Built My First Python Project Using AI](https://medium.com/@jayanththomas2004/how-i-built-my-first-python-project-using-ai-b66967184d04)
 
 ---
 
-## 🤝 Let’s Connect
+## 🌐 Connect · Work · Collab
 
 <div align="center">
 
@@ -165,7 +218,7 @@ I’m **Jayanth**, a B.Tech CSE student from India, obsessed with:
 
 ---
 
-## ☕ Support / Show Love
+## ☕ Support & Signal
 
 <div align="center">
 
@@ -174,27 +227,47 @@ I’m **Jayanth**, a B.Tech CSE student from India, obsessed with:
 </a>
 &nbsp;
 <a href="https://github.com/sponsors/JET609" target="_blank">
-  <img src="https://img.shields.io/badge/Sponsor_On_GitHub-30363D?style=for-the-badge&logo=github-sponsors&logoColor=EA4AAA" />
+  <img src="https://img.shields.io/badge/Sponsor_On_GitHub-111827?style=for-the-badge&logo=github-sponsors&logoColor=EA4AAA" />
 </a>
 
 </div>
 
 ---
 
-## 🐍 Just for Fun
+## 🐍 Animated Contribution Snake
 
 <details>
-  <summary><b>Animated Contribution Snake</b></summary>
+  <summary><b>Show the snake</b></summary>
   <br />
-  <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" alt="snake" />
+  <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" alt="snake animation" />
 </details>
 
 ---
 
-<div align="center">
+## 🛠 Automation Ideas (For Future Me)
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:00111F,100:00E5FF" alt="footer" />
+> Plug these in as GitHub Actions when needed.
 
-<sub>Built with focus. No fluff. More shipping soon.</sub>
+- Auto-update **latest blog posts** in this README
+- Auto-sync **WakaTime coding stats**
+- Auto-refresh **metrics** / summary cards
+- Auto-tag and format new repos with a starter README
 
-</div>
+<details>
+  <summary><b>Example: Blog Auto-Update Workflow (template)</b></summary>
+
+```yml
+name: Update blog section
+on:
+  schedule:
+    - cron: '0 */12 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-blog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: gautamkrishnar/blog-post-workflow@master
+        with:
+          feed_list: "https://medium.com/feed/@jayanththomas2004"
