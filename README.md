@@ -167,7 +167,12 @@ I’m **Jayanth** — B.Tech CSE · builder · systems brain:
   <sub>Widgets are cached. The mindset is live.</sub>
 </div>
 
----
+---## 🚀 Auto-Selected Top Projects
+
+<!--PROJECTS_START-->
+Loading highlighted projects...
+<!--PROJECTS_END-->
+
 
 ## 🐍 Contribution Snake
 
@@ -211,6 +216,12 @@ I’m **Jayanth** — B.Tech CSE · builder · systems brain:
 
 - 📝 [How I Built My First Python Project Using AI](https://medium.com/@jayanththomas2004/how-i-built-my-first-python-project-using-ai-b66967184d04)
 
+
+## ✍️ Latest from My Blog
+
+<!--BLOG_START-->
+Loading latest posts...
+<!--BLOG_END-->
 ---
 
 ## 🌐 Connect
