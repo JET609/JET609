@@ -1,0 +1,32 @@
+name: "\u23f0 Daily Contribution"
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  make-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Update timestamp
+        run: |
+          echo "Last update: $(date)" > .github/daily-update.txt
+
+      - name: Commit changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add .github/daily-update.txt
+            git commit -m "chore: \u23f0 daily contribution" || exit 0
+            git push
+          else
+            echo "No changes to commit."
+          fi
