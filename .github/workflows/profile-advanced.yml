@@ -99,6 +99,7 @@ jobs:
                   print("GitHub API error:", e)
                   return []
 
+              # filter out profile repo and junk if needed
               ignore = {user, f"{user}.github.io", "JET609"}
               clean = [
                   r for r in repos
@@ -107,6 +108,7 @@ jobs:
                   and not r.get("name", "").lower().startswith("test")
               ]
 
+              # sort by stargazers + recent activity
               clean.sort(key=lambda r: (r.get("stargazers_count", 0), r.get("pushed_at") or ""), reverse=True)
               return clean[:limit]
 
@@ -116,6 +118,7 @@ jobs:
               lines = ["\n"]
               for r in repos:
                   name = r["name"]
+                  full = r["full_name"]
                   desc = (r.get("description") or "No description yet.").strip()
                   stars = r.get("stargazers_count", 0)
                   lang = r.get("language") or "Tech"
@@ -127,12 +130,18 @@ jobs:
               lines.append("\n")
               return "\n".join(lines)
 
+          # ---------- Apply updates ----------
           updated = text
 
+          # 1) Last updated + random quote
           updated = update_last_updated_and_quote(updated)
+
+          # 2) Blog posts from Medium
           posts = fetch_medium_posts_feed("https://medium.com/feed/@jayanththomas2004")
           blog_md = build_blog_md(posts)
           updated = replace_block("BLOG", blog_md, updated)
+
+          # 3) Auto top projects from GitHub
           repos = fetch_top_repos("JET609")
           proj_md = build_projects_md(repos)
           updated = replace_block("PROJECTS", proj_md, updated)
@@ -142,41 +151,17 @@ jobs:
               print("README updated.")
           else:
               print("No changes made.")
-          PY - name: Commit & push if changed
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          if [ -n "$(git status --porcelain)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add README.md
-            git commit -m "chore: \U0001F920 auto-update profile sections" || exit 0
-            git push
-          else
-            echo "No changes to commit."
-          fi
+          PY
+
       - name: Commit & push if changed
         env:
-   - nafimfi
-e: Commit & push if changed
-        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if [ -n "$(git status --porcelain)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add README.md
-            git commit -m "chore: \U0001F920 auto-update profile sections" || exit 0
-            git push
-          else
-            echo "No changes to commit."
-          fi      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          if [ -n "$(git status --porcelain)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add README.md
-            git commit -m "chore: 🤠 auto-update profile sections" || exit 0
+            git commit -m "chore: 🧠 auto-update profile sections" || exit 0
             git push
           else
             echo "No changes to commit."
