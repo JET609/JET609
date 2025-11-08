@@ -1,0 +1,167 @@
+name: "🤠 Advanced Profile Automations"
+
+on:
+  schedule:
+    # Runs every day at 18:15 IST (12:45 UTC)
+    - cron: "45 12 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  update-profile:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Update dynamic sections
+        run: |
+          python - << 'PY'
+          import re
+          import json
+          import datetime
+          import random
+          import pathlib
+          import urllib.request
+          import xml.etree.ElementTree as ET
+
+          READ_ME = pathlib.Path("README.md")
+          text = READ_ME.read_text(encoding="utf-8")
+
+          # ---------- Helpers ----------
+          def replace_block(tag, new_content, src):
+              pattern = rf"<!--{tag}_START-->(.*?)<!--{tag}_END-->"
+              repl = f"<!--{tag}_START-->{new_content}<!--{tag}_END-->"
+              return re.sub(pattern, repl, src, flags=re.DOTALL)
+
+          def update_last_updated_and_quote(src):
+              # IST time
+              ist = datetime.datetime.utcnow() + datetime.timedelta(hours=5, minutes=30)
+              last_updated = ist.strftime("%Y-%m-%d %H:%M IST")
+
+              quotes = [
+                  "Discipline compounds. Tiny steps, big outcomes.",
+                  "Code. Ship. Learn. Repeat.",
+                  "Consistency beats motivation.",
+                  "Build things that outlive the tutorial.",
+                  "Your GitHub is your portfolio. Treat it like one.",
+                  "Small progress daily becomes an unfair advantage.",
+              ]
+              quote = random.choice(quotes)
+
+              def repl(tag, val, s):
+                  pattern = rf"<!--{tag}-->(.*?)<!--/{tag}-->"
+                  new = f"<!--{tag}-->{val}<!--/{tag}-->"
+                  return re.sub(pattern, new, s, flags=re.DOTALL)
+
+              src = repl("LAST_UPDATED", last_updated, src)
+              src = repl("RANDOM_QUOTE", quote, src)
+              return src
+
+          def fetch_medium_posts_feed(feed_url, limit=3):
+              try:
+                  with urllib.request.urlopen(feed_url, timeout=10) as r:
+                      data = r.read()
+                  root = ET.fromstring(data)
+                  channel = root.find("channel")
+                  if channel is None:
+                      return []
+                  items = channel.findall("item")[:limit]
+                  posts = []
+                  for it in items:
+                      title = (it.findtext("title") or "").strip()
+                      link = (it.findtext("link") or "").strip()
+                      if title and link:
+                          posts.append((title, link))
+                  return posts
+              except Exception as e:
+                  print("Medium fetch error:", e)
+                  return []
+
+          def build_blog_md(posts):
+              if not posts:
+                  return "\nLoading latest posts...\n"
+              lines = ["\n"]
+              for title, link in posts:
+                  lines.append(f"- [{title}]({link})")
+              lines.append("\n")
+              return "\n".join(lines)
+
+          def fetch_top_repos(user, limit=4):
+              try:
+                  url = f"https://api.github.com/users/{user}/repos?per_page=100&sort=updated"
+                  with urllib.request.urlopen(url, timeout=10) as r:
+                      repos = json.load(r)
+              except Exception as e:
+                  print("GitHub API error:", e)
+                  return []
+
+              # filter out profile repo and junk if needed
+              ignore = {user, f"{user}.github.io", "JET609"}  # adjust if needed
+              clean = [
+                  r for r in repos
+                  if not r.get("fork")
+                  and r.get("name") not in ignore
+                  and not r.get("name", "").lower().startswith("test")
+              ]
+
+              # sort by stargazers + recent activity
+              clean.sort(key=lambda r: (r.get("stargazers_count", 0), r.get("pushed_at") or ""), reverse=True)
+              return clean[:limit]
+
+          def build_projects_md(repos):
+              if not repos:
+                  return "\nHighlighting key projects soon...\n"
+              lines = ["\n"]
+              for r in repos:
+                  name = r["name"]
+                  full = r["full_name"]
+                  desc = (r.get("description") or "No description yet.").strip()
+                  stars = r.get("stargazers_count", 0)
+                  lang = r.get("language") or "Tech"
+                  url = r.get("html_url")
+                  lines.append(
+                      f"- [{name}]({url}) — {desc} "
+                      f"· ⭐ {stars} · *{lang}*"
+                  )
+              lines.append("\n")
+              return "\n".join(lines)
+
+          # ---------- Apply updates ----------
+          updated = text
+
+          # 1) Last updated + random quote
+          updated = update_last_updated_and_quote(updated)
+
+          # 2) Blog posts from Medium
+          posts = fetch_medium_posts_feed("https://medium.com/feed/@jayanththomas2004")
+          blog_md = build_blog_md(posts)
+          updated = replace_block("BLOG", blog_md, updated)
+
+          # 3) Auto top projects from GitHub
+          repos = fetch_top_repos("JET609")
+          proj_md = build_projects_md(repos)
+          updated = replace_block("PROJECTS", proj_md, updated)
+
+          if updated != text:
+              READ_ME.write_text(updated, encoding="utf-8")
+              print("README updated.")
+          else:
+              print("No changes made.")
+          PY
+
+      - name: Commit & push if changed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "chore: 🤠 auto-update profile sections" || exit 0
+            git push
+          else:
+            echo "No changes to commit."
