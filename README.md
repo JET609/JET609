@@ -23,6 +23,13 @@
   <img src="https://komarev.com/ghpvc/?username=JET609&style=for-the-badge&color=00E5FF&label=Profile%20Views" />
 </div>
 
+<!-- PORTFOLIO SITE BADGE -->
+<div align="center">
+  <a href="https://jaytee.world" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-jaytee.world-00E5FF?style=for-the-badge&logo=google-chrome&logoColor=000814" alt="jaytee.world" />
+  </a>
+</div>
+
 <!-- NEON SEPARATOR -->
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00E5FF&section=header" alt="line" />
@@ -43,18 +50,19 @@
 
 ## 🧭 Who I Am
 
-I’m **Jayanth** — B.Tech CSE 
+I’m **Jayanth** — B.Tech CSE
 
-- ⚙️ **Automation & AI** 
-- 🌐 **Modern web**: 
+- ⚙️ **Automation & AI**
+- 🌐 **Modern web**
 - 📊 **ML, analytics & intelligent systems**
 - 🏗️ Repos that look like **mini products**
+- 🌍 Live portfolio at **[jaytee.world](https://jaytee.world)**
 
 <details>
   <summary><b>📜 Journey Timeline</b></summary>
 
-- **2022** → Python, C, first scripts
-- **2023** → Web dev, DSA,first real projects  
+- **2022** → Python, C, first scripts  
+- **2023** → Web dev, DSA, first real projects  
 - **2024** → ML experiments, infra curiosity, GitHub  
 - **2025** → AI tools, automations, polishing craft & public profile  
 </details>
@@ -103,28 +111,37 @@ I’m **Jayanth** — B.Tech CSE
 <table>
   <tr>
     <td align="center">
-      <b><a href="https://github.com/JET609/skin-cancer-ai">🩺 Skin Cancer Detection</a></b><br/>
-      <sub>CNN-based lesion classifier with proper pipeline & clarity.</sub><br/>
+      <b>🩺 Skin Cancer Detection Visual Dashboard</b><br/>
+      <sub>
+        End-to-end <b>dermoscopic lesion analysis</b>:
+        upload a <code>.keras/.h5</code> model & images → prediction cards, charts, CSV & zipped evidence pack.
+      </sub><br/>
+      <a href="https://github.com/JET609/skin-cancer-ai">
+        <img src="https://img.shields.io/badge/GitHub-Repo-111827?style=flat&logo=github&logoColor=ffffff" />
+      </a>
+      <a href="https://jaytee.world/skin-cancer.html">
+        <img src="https://img.shields.io/badge/Live-Case_Study-00E5FF?style=flat&logo=google-chrome&logoColor=000814" />
+      </a><br/>
       <img src="https://img.shields.io/badge/Python-111827?style=flat&logo=python&logoColor=00E5FF" />
       <img src="https://img.shields.io/badge/TensorFlow-111827?style=flat&logo=tensorflow&logoColor=FF6F00" />
+      <img src="https://img.shields.io/badge/Colab-ready-111827?style=flat&logo=google-colab&logoColor=F9AB00" />
     </td>
     <td align="center">
       <b><a href="https://github.com/JET609/fake-news-ml">📰 Fake News Detector</a></b><br/>
-      <sub>End-to-end NLP: preprocess → vectorize → model → metrics.</sub><br/>
+      <sub>Clean → vectorize → model → metrics, built as a proper ML pipeline.</sub><br/>
       <img src="https://img.shields.io/badge/Python-111827?style=flat&logo=python&logoColor=00E5FF" />
       <img src="https://img.shields.io/badge/Sklearn-111827?style=flat&logo=scikitlearn&logoColor=F7931E" />
     </td>
   </tr>
   <tr>
     <td align="center">
-      <b><a href="https://github.com/JET609/portfolio">🌐 Portfolio Site</a></b><br/>
-      <sub>Neon, clean, responsive portfolio.</sub><br/>
-      <img src="https://img.shields.io/badge/React-111827?style=flat&logo=react&logoColor=61DAFB" />
-      <img src="https://img.shields.io/badge/Tailwind-111827?style=flat&logo=tailwind-css&logoColor=06B6D4" />
+      <b><a href="https://github.com/JET609/portfolio">🌐 Portfolio Code</a></b><br/>
+      <sub>Source for <b>jaytee.world</b> — neo-teal, responsive, animated.</sub><br/>
+      <img src="https://img.shields.io/badge/HTML/CSS/JS-111827?style=flat&logo=html5&logoColor=E34F26" />
     </td>
     <td align="center">
       <b><a href="https://github.com/JET609/dsa-repo">📚 DSA Repo</a></b><br/>
-      <sub>Patterns, notes, solutions; built for revision & interviews.</sub><br/>
+      <sub>Patterns, notes & solutions for fast revision & interviews.</sub><br/>
       <img src="https://img.shields.io/badge/C/Java/Python-111827?style=flat" />
     </td>
   </tr>
@@ -165,17 +182,20 @@ I’m **Jayanth** — B.Tech CSE
   <sub>Widgets are cached. The mindset is live.</sub>
 </div>
 
----## 🚀 Auto-Selected Top Projects
+---
+
+## 🚀 Auto-Selected Top Projects
 
 <!--PROJECTS_START-->
 
-- [portfolio](https://github.com/JET609/portfolio) — No description yet. · ⭐ 0 · *HTML*
-- [jaytee-world](https://github.com/JET609/jaytee-world) — No description yet. · ⭐ 0 · *HTML*
-- [devops](https://github.com/JET609/devops) — No description yet. · ⭐ 0 · *Tech*
-- [quotes](https://github.com/JET609/quotes) — No description yet. · ⭐ 0 · *Tech*
+- [portfolio](https://github.com/JET609/portfolio) — Powers the live portfolio at jaytee.world. · *HTML*
+- [jaytee-world](https://github.com/JET609/jaytee-world) — Deployed personal site + case studies. · *HTML*
+- [devops](https://github.com/JET609/devops) — Experiments with CI/CD, infra & automation. · *Tech*
+- [quotes](https://github.com/JET609/quotes) — Micro projects / text snippets / utils. · *Tech*
 
 <!--PROJECTS_END-->
 
+---
 
 ## 🐍 Contribution Snake
 
@@ -219,18 +239,22 @@ I’m **Jayanth** — B.Tech CSE
 
 - 📝 [How I Built My First Python Project Using AI](https://medium.com/@jayanththomas2004/how-i-built-my-first-python-project-using-ai-b66967184d04)
 
-
 ## ✍️ Latest from My Blog
 
 <!--BLOG_START-->
 Loading latest posts...
 <!--BLOG_END-->
+
 ---
 
 ## 🌐 Connect
 
 <div align="center">
 
+<a href="https://jaytee.world" target="_blank">
+  <img src="https://img.shields.io/badge/Website-jaytee.world-00E5FF?style=for-the-badge&logo=google-chrome&logoColor=000814" />
+</a>
+&nbsp;
 <a href="https://www.linkedin.com/in/jayanth-thomas-027318221/" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-Jayanth_Thomas-0A66C2?style=for-the-badge&logo=linkedin&logoColor=ffffff" />
 </a>
