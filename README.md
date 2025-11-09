@@ -104,7 +104,7 @@ I’m **Jayanth** — B.Tech CSE
 
 ---
 
-## 🧠 Signature Projects
+## Projects
 
 <div align="center">
 
