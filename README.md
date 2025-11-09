@@ -156,6 +156,18 @@ I’m **Jayanth** — B.Tech CSE
 
 ---
 
+## ✍️ Writing
+
+- 📝 [How I Built My First Python Project Using AI](https://medium.com/@jayanththomas2004/how-i-built-my-first-python-project-using-ai-b66967184d04)
+
+## 📰 Latest from My Blog
+
+<!--BLOG_START-->
+Loading latest posts...
+<!--BLOG_END-->
+
+---
+
 ## 🌐 Connect
 
 <div align="center">
