@@ -43,21 +43,19 @@
 
 ## 🧭 Who I Am
 
-I’m **Jayanth** — B.Tech CSE · builder · systems brain:
+I’m **Jayanth** — B.Tech CSE 
 
-- ⚙️ **Automation & AI** that actually solve problems  
-- 🌐 **Modern web**: fast, clean, no cringe  
-- 📊 **ML, analytics & intelligent systems** (not just models, full pipeline)  
-- 🏗️ Repos that look like **mini products**, not random dumps  
-
-> _“Discipline compounds. Small commits. Daily learning. Long-term leverage.”_
+- ⚙️ **Automation & AI** 
+- 🌐 **Modern web**: 
+- 📊 **ML, analytics & intelligent systems**
+- 🏗️ Repos that look like **mini products**
 
 <details>
   <summary><b>📜 Journey Timeline</b></summary>
 
-- **2022** → Python, C, first scripts, debugging obsession  
-- **2023** → Web dev, DSA, shipped first real projects  
-- **2024** → ML/NLP/CV experiments, infra curiosity, GitHub as home  
+- **2022** → Python, C, first scripts
+- **2023** → Web dev, DSA,first real projects  
+- **2024** → ML experiments, infra curiosity, GitHub  
 - **2025** → AI tools, automations, polishing craft & public profile  
 </details>
 
