@@ -69,7 +69,7 @@ I’m **Jayanth** — B.Tech CSE
 
 ---
 
-## ⚡ Tech Stack · Neon Wall
+## Tech
 
 <div align="center">
 
@@ -151,7 +151,7 @@ I’m **Jayanth** — B.Tech CSE
 
 ---
 
-## 📊 The Matrix Wall
+## Matrix Wall
 
 <div align="center">
 
@@ -214,24 +214,6 @@ I’m **Jayanth** — B.Tech CSE
 <img src="https://img.shields.io/badge/Philosophy-Show_Don't_Tell-111827?style=for-the-badge&logo=markdown&logoColor=FFFFFF" />
 
 </div>
-
----
-
-## 🧠 How I Work
-
-- 📦 Ship **small, complete** projects  
-- 🧹 Keep repos **readable & structured**  
-- 🔁 Iterate in public; avoid tutorial hell  
-- ⚙️ Use automation & scripts when it saves brainpower  
-
-<details>
-  <summary><b>🎯 2025 Goals</b></summary>
-
-- Ship **5+** real, hosted projects  
-- Contribute to OSS: ML, tools, docs  
-- Improve system design & infra understanding  
-- Make this profile reflect actual discipline  
-</details>
 
 ---
 
