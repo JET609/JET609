@@ -108,19 +108,20 @@ I’m **Jayanth Eapen Thomas**, B.Tech CSE student.
 ## 📊 Matrix Wall
 <div align="center">
 
-<picture>
-<source media="(prefers-color-scheme:dark)" srcset="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" />
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&hide_border=true&count_private=true" />
-</picture>
+<table>
+<tr>
+<td>
+<img src="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github&bg_color=00000000" height="165" />
+</td>
+<td>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JET609&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000" height="165" />
+</td>
+</tr>
+</table>
 
-<picture>
-<source media="(prefers-color-scheme:dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=JET609&layout=compact&theme=tokyonight&hide_border=true" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JET609&layout=compact&hide_border=true" />
-</picture>
-
-<img src="https://streak-stats.demolab.com?user=JET609&theme=tokyonight&hide_border=true" />
-<img src="https://github-profile-trophy.vercel.app/?username=JET609&theme=tokyonight&no-frame=true&margin-w=8&row=1" />
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=JET609&theme=tokyo-night&hide_border=true&area=true&radius=10" width="100%" />
+<img src="https://streak-stats.demolab.com?user=JET609&theme=tokyonight&hide_border=true&date_format=M%20j%5B,%20Y%5D" /><br/>
+<img src="https://github-profile-trophy.vercel.app/?username=JET609&theme=tokyonight&no-frame=true&margin-w=8&row=1" /><br/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=JET609&theme=tokyo-night&hide_border=true&area=true&radius=10&custom_title=Contribution%20Heatmap" width="100%" />
 
 </div>
 <div align="center"><sub>Widgets are cached. Mindset is live.</sub></div>
