@@ -38,8 +38,8 @@
 <!-- UPDATE INFO -->
 <div align="center">
   <sub>
-    <b>Last updated:</b> <!--LAST_UPDATED-->2025-11-29 18:36 IST<!--/LAST_UPDATED--> •
-    <b>Quote:</b> <!--RANDOM_QUOTE-->Build things that outlive the tutorial.<!--/RANDOM_QUOTE-->
+    <b>Last updated:</b> <!--LAST_UPDATED-->2025-11-30 18:36 IST<!--/LAST_UPDATED--> •
+    <b>Quote:</b> <!--RANDOM_QUOTE-->Your GitHub is your portfolio. Treat it like one.<!--/RANDOM_QUOTE-->
   </sub>
 </div>
 
