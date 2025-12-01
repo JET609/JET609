@@ -16,7 +16,7 @@ runs:
         if [ -n "$(git status --porcelain)" ]; then
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add ${{ inputs.files }}
+          git add -- ${{ inputs.files }}
           git commit -m "${{ inputs.commit-message }}" || exit 0
           git push
         else
