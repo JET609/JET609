@@ -14,6 +14,7 @@
 ;
 ; Note: This creates a .COM file (tiny model, max 64KB total)
 ;       which is simpler and more portable than .EXE format.
+;       COM files have code and data in a single segment.
 ;
 ; Compatibility Notes:
 ;   - Works with MS-DOS 2.0 and later versions
@@ -23,9 +24,8 @@
 ;==============================================================================
 
 ; COM files load at offset 100h in the Program Segment Prefix (PSP)
+; No section declarations needed for flat binary COM format
 ORG 100h
-
-section .text
 
 start:
     ; Display the message using DOS interrupt
@@ -38,9 +38,8 @@ start:
     xor     al, al          ; Return code 0 (success) - XOR is smaller than MOV
     int     21h             ; Call DOS interrupt
 
-section .data
-    ; Message string - must end with '$' for DOS function 09h
-    message: db 'Hello, World!', 0Dh, 0Ah, '$'
-    ; 0Dh = Carriage Return (CR)
-    ; 0Ah = Line Feed (LF)
-    ; '$'  = String terminator for INT 21h/AH=09h
+; Data placed after code (typical COM file structure)
+message: db 'Hello, World!', 0Dh, 0Ah, '$'
+; 0Dh = Carriage Return (CR)
+; 0Ah = Line Feed (LF)
+; '$'  = String terminator for INT 21h/AH=09h

@@ -177,7 +177,7 @@ echo %ERRORLEVEL%
 ### MS-DOS Version Compatibility
 | DOS Version | Compatibility |
 |-------------|---------------|
-| MS-DOS 1.x  | ⚠️ Limited (no INT 21h/4Ch) |
+| MS-DOS 1.x  | ⚠️ Limited (uses INT 21h/00h for termination, not 4Ch) |
 | MS-DOS 2.0+ | ✅ Full support |
 | PC-DOS      | ✅ Full support |
 | DR-DOS      | ✅ Full support |
