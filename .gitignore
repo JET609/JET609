@@ -1,0 +1,7 @@
+# CodeQL artifacts
+_codeql_detected_source_root
+
+# Compiled DOS programs (local builds)
+*.com
+*.exe
+*.obj
