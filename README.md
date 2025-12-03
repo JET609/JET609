@@ -38,8 +38,8 @@
 <!-- UPDATE INFO -->
 <div align="center">
   <sub>
-    <b>Last updated:</b> <!--LAST_UPDATED-->2025-12-02 18:53 IST<!--/LAST_UPDATED--> •
-    <b>Quote:</b> <!--RANDOM_QUOTE-->Build things that outlive the tutorial.<!--/RANDOM_QUOTE-->
+    <b>Last updated:</b> <!--LAST_UPDATED-->2025-12-03 18:53 IST<!--/LAST_UPDATED--> •
+    <b>Quote:</b> <!--RANDOM_QUOTE-->Code. Ship. Learn. Repeat.<!--/RANDOM_QUOTE-->
   </sub>
 </div>
 
