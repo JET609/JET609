@@ -38,8 +38,8 @@
 <!-- UPDATE INFO -->
 <div align="center">
   <sub>
-    <b>Last updated:</b> <!--LAST_UPDATED-->2025-12-08 18:51 IST<!--/LAST_UPDATED--> •
-    <b>Quote:</b> <!--RANDOM_QUOTE-->Discipline compounds. Tiny steps, big outcomes.<!--/RANDOM_QUOTE-->
+    <b>Last updated:</b> <!--LAST_UPDATED-->2025-12-09 18:52 IST<!--/LAST_UPDATED--> •
+    <b>Quote:</b> <!--RANDOM_QUOTE-->Small progress daily becomes an unfair advantage.<!--/RANDOM_QUOTE-->
   </sub>
 </div>
 
