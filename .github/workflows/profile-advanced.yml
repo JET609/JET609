@@ -13,6 +13,10 @@ concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: false
 
+env:
+  GITHUB_USERNAME: JET609
+  MEDIUM_USERNAME: jayanththomas2004
+
 jobs:
   update-profile:
     runs-on: ubuntu-latest
@@ -30,6 +34,10 @@ jobs:
           python-version: '3.11'
 
       - name: Update dynamic sections
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USERNAME: ${{ env.GITHUB_USERNAME }}
+          MEDIUM_USER: ${{ env.MEDIUM_USERNAME }}
         run: |
           python3 << 'PYTHON_SCRIPT'
           import re
@@ -41,6 +49,7 @@ jobs:
           import urllib.error
           import xml.etree.ElementTree as ET
           import sys
+          import os
 
           READ_ME = pathlib.Path("README.md")
           
@@ -50,6 +59,11 @@ jobs:
               sys.exit(1)
           
           text = READ_ME.read_text(encoding="utf-8")
+          
+          # Get configuration from environment
+          gh_token = os.environ.get("GH_TOKEN", "")
+          gh_username = os.environ.get("GH_USERNAME", "JET609")
+          medium_username = os.environ.get("MEDIUM_USER", "jayanththomas2004")
 
           # ---------- Helpers ----------
           def replace_block(tag, new_content, src):
@@ -92,8 +106,9 @@ jobs:
               src = repl("RANDOM_QUOTE", quote, src)
               return src
 
-          def fetch_medium_posts_feed(feed_url, limit=3):
+          def fetch_medium_posts_feed(username, limit=3):
               """Fetch latest posts from Medium RSS feed"""
+              feed_url = f"https://medium.com/feed/@{username}"
               try:
                   req = urllib.request.Request(
                       feed_url,
@@ -132,14 +147,17 @@ jobs:
               lines.append("\n")
               return "\n".join(lines)
 
-          def fetch_top_repos(user, limit=4):
+          def fetch_top_repos(user, token, limit=4):
               """Fetch top repositories from GitHub API"""
               try:
                   url = f"https://api.github.com/users/{user}/repos?per_page=100&sort=updated"
-                  req = urllib.request.Request(
-                      url,
-                      headers={'User-Agent': 'Mozilla/5.0 (GitHub Actions Bot)'}
-                  )
+                  headers = {'User-Agent': 'Mozilla/5.0 (GitHub Actions Bot)'}
+                  
+                  # Add authentication if token is available (increases rate limit to 5000/hr)
+                  if token:
+                      headers['Authorization'] = f'Bearer {token}'
+                  
+                  req = urllib.request.Request(url, headers=headers)
                   with urllib.request.urlopen(req, timeout=15) as r:
                       repos = json.load(r)
               except urllib.error.URLError as e:
@@ -191,14 +209,14 @@ jobs:
           updated = update_last_updated_and_quote(updated)
 
           # 2) Blog posts from Medium
-          print("📝 Fetching Medium posts...")
-          posts = fetch_medium_posts_feed("https://medium.com/feed/@jayanththomas2004")
+          print(f"📝 Fetching Medium posts for @{medium_username}...")
+          posts = fetch_medium_posts_feed(medium_username)
           blog_md = build_blog_md(posts)
           updated = replace_block("BLOG", blog_md, updated)
 
           # 3) Auto top projects from GitHub (optional section)
-          print("🚀 Fetching top repositories...")
-          repos = fetch_top_repos("JET609")
+          print(f"🚀 Fetching top repositories for {gh_username}...")
+          repos = fetch_top_repos(gh_username, gh_token)
           proj_md = build_projects_md(repos)
           updated = replace_block("PROJECTS", proj_md, updated)
 

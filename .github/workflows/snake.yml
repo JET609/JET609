@@ -12,6 +12,9 @@ concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: false
 
+env:
+  GITHUB_USERNAME: JET609
+
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -24,7 +27,7 @@ jobs:
       - name: Generate snake animation
         uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: JET609
+          github_user_name: ${{ env.GITHUB_USERNAME }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
