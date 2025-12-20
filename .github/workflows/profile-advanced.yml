@@ -58,13 +58,15 @@ jobs:
               repl = f"<!--{tag}_START-->{new_content}<!--{tag}_END-->"
               result = re.sub(pattern, repl, src, flags=re.DOTALL)
               if result == src:
-                  print(f"⚠️  Warning: Tag {tag} not found in README")
+                  print(f"ℹ️  Info: Tag {tag} not found in README (skipping)")
+                  return src
               return result
 
           def update_last_updated_and_quote(src):
               """Update last updated timestamp and random quote"""
-              # IST time (UTC + 5:30)
-              ist = datetime.datetime.utcnow() + datetime.timedelta(hours=5, minutes=30)
+              # IST time (UTC + 5:30) - using timezone-aware datetime
+              now_utc = datetime.datetime.now(datetime.timezone.utc)
+              ist = now_utc + datetime.timedelta(hours=5, minutes=30)
               last_updated = ist.strftime("%Y-%m-%d %H:%M IST")
 
               quotes = [
@@ -82,7 +84,8 @@ jobs:
                   new = f"<!--{tag}-->{val}<!--/{tag}-->"
                   result = re.sub(pattern, new, s, flags=re.DOTALL)
                   if result == s:
-                      print(f"⚠️  Warning: Tag {tag} not found in README")
+                      print(f"ℹ️  Info: Tag {tag} not found in README (skipping)")
+                      return s
                   return result
 
               src = repl("LAST_UPDATED", last_updated, src)
@@ -113,7 +116,7 @@ jobs:
                   print(f"✅ Fetched {len(posts)} posts from Medium")
                   return posts
               except urllib.error.URLError as e:
-                  print(f"⚠️  Medium fetch error: {e}")
+                  print(f"⚠️  Medium fetch error (network issue, using fallback): {e}")
                   return []
               except Exception as e:
                   print(f"⚠️  Unexpected error fetching Medium posts: {e}")
@@ -140,7 +143,7 @@ jobs:
                   with urllib.request.urlopen(req, timeout=15) as r:
                       repos = json.load(r)
               except urllib.error.URLError as e:
-                  print(f"⚠️  GitHub API error: {e}")
+                  print(f"⚠️  GitHub API error (network issue, using fallback): {e}")
                   return []
               except Exception as e:
                   print(f"⚠️  Unexpected error fetching repos: {e}")
@@ -193,7 +196,7 @@ jobs:
           blog_md = build_blog_md(posts)
           updated = replace_block("BLOG", blog_md, updated)
 
-          # 3) Auto top projects from GitHub
+          # 3) Auto top projects from GitHub (optional section)
           print("🚀 Fetching top repositories...")
           repos = fetch_top_repos("JET609")
           proj_md = build_projects_md(repos)
