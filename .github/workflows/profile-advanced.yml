@@ -4,41 +4,66 @@ on:
   schedule:
     # Runs every day at 18:15 IST (12:45 UTC)
     - cron: "45 12 * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
 
 jobs:
   update-profile:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
+    timeout-minutes: 10
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1 # Shallow clone for faster checkout
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
       - name: Update dynamic sections
         run: |
-          python - << 'PY'
+          python3 << 'PYTHON_SCRIPT'
           import re
           import json
           import datetime
           import random
           import pathlib
           import urllib.request
+          import urllib.error
           import xml.etree.ElementTree as ET
+          import sys
 
           READ_ME = pathlib.Path("README.md")
+          
+          # Verify README exists
+          if not READ_ME.exists():
+              print("❌ ERROR: README.md not found")
+              sys.exit(1)
+          
           text = READ_ME.read_text(encoding="utf-8")
 
           # ---------- Helpers ----------
           def replace_block(tag, new_content, src):
+              """Replace content between comment tags"""
               pattern = rf"<!--{tag}_START-->(.*?)<!--{tag}_END-->"
               repl = f"<!--{tag}_START-->{new_content}<!--{tag}_END-->"
-              return re.sub(pattern, repl, src, flags=re.DOTALL)
+              result = re.sub(pattern, repl, src, flags=re.DOTALL)
+              if result == src:
+                  print(f"⚠️  Warning: Tag {tag} not found in README")
+              return result
 
           def update_last_updated_and_quote(src):
-              # IST time
+              """Update last updated timestamp and random quote"""
+              # IST time (UTC + 5:30)
               ist = datetime.datetime.utcnow() + datetime.timedelta(hours=5, minutes=30)
               last_updated = ist.strftime("%Y-%m-%d %H:%M IST")
 
@@ -55,19 +80,28 @@ jobs:
               def repl(tag, val, s):
                   pattern = rf"<!--{tag}-->(.*?)<!--/{tag}-->"
                   new = f"<!--{tag}-->{val}<!--/{tag}-->"
-                  return re.sub(pattern, new, s, flags=re.DOTALL)
+                  result = re.sub(pattern, new, s, flags=re.DOTALL)
+                  if result == s:
+                      print(f"⚠️  Warning: Tag {tag} not found in README")
+                  return result
 
               src = repl("LAST_UPDATED", last_updated, src)
               src = repl("RANDOM_QUOTE", quote, src)
               return src
 
           def fetch_medium_posts_feed(feed_url, limit=3):
+              """Fetch latest posts from Medium RSS feed"""
               try:
-                  with urllib.request.urlopen(feed_url, timeout=10) as r:
+                  req = urllib.request.Request(
+                      feed_url,
+                      headers={'User-Agent': 'Mozilla/5.0 (GitHub Actions Bot)'}
+                  )
+                  with urllib.request.urlopen(req, timeout=15) as r:
                       data = r.read()
                   root = ET.fromstring(data)
                   channel = root.find("channel")
                   if channel is None:
+                      print("⚠️  No channel found in Medium feed")
                       return []
                   items = channel.findall("item")[:limit]
                   posts = []
@@ -76,12 +110,17 @@ jobs:
                       link = (it.findtext("link") or "").strip()
                       if title and link:
                           posts.append((title, link))
+                  print(f"✅ Fetched {len(posts)} posts from Medium")
                   return posts
+              except urllib.error.URLError as e:
+                  print(f"⚠️  Medium fetch error: {e}")
+                  return []
               except Exception as e:
-                  print("Medium fetch error:", e)
+                  print(f"⚠️  Unexpected error fetching Medium posts: {e}")
                   return []
 
           def build_blog_md(posts):
+              """Build Markdown for blog posts"""
               if not posts:
                   return "\nLoading latest posts...\n"
               lines = ["\n"]
@@ -91,15 +130,23 @@ jobs:
               return "\n".join(lines)
 
           def fetch_top_repos(user, limit=4):
+              """Fetch top repositories from GitHub API"""
               try:
                   url = f"https://api.github.com/users/{user}/repos?per_page=100&sort=updated"
-                  with urllib.request.urlopen(url, timeout=10) as r:
+                  req = urllib.request.Request(
+                      url,
+                      headers={'User-Agent': 'Mozilla/5.0 (GitHub Actions Bot)'}
+                  )
+                  with urllib.request.urlopen(req, timeout=15) as r:
                       repos = json.load(r)
+              except urllib.error.URLError as e:
+                  print(f"⚠️  GitHub API error: {e}")
+                  return []
               except Exception as e:
-                  print("GitHub API error:", e)
+                  print(f"⚠️  Unexpected error fetching repos: {e}")
                   return []
 
-              # filter out profile repo and junk if needed
+              # Filter out profile repo and test repos
               ignore = {user, f"{user}.github.io", "JET609"}
               clean = [
                   r for r in repos
@@ -108,17 +155,19 @@ jobs:
                   and not r.get("name", "").lower().startswith("test")
               ]
 
-              # sort by stargazers + recent activity
+              # Sort by stars + recent activity
               clean.sort(key=lambda r: (r.get("stargazers_count", 0), r.get("pushed_at") or ""), reverse=True)
-              return clean[:limit]
+              filtered = clean[:limit]
+              print(f"✅ Fetched {len(filtered)} top repositories")
+              return filtered
 
           def build_projects_md(repos):
+              """Build Markdown for projects"""
               if not repos:
                   return "\nHighlighting key projects soon...\n"
               lines = ["\n"]
               for r in repos:
                   name = r["name"]
-                  full = r["full_name"]
                   desc = (r.get("description") or "No description yet.").strip()
                   stars = r.get("stargazers_count", 0)
                   lang = r.get("language") or "Tech"
@@ -131,38 +180,45 @@ jobs:
               return "\n".join(lines)
 
           # ---------- Apply updates ----------
+          print("🔄 Starting README update...")
           updated = text
 
           # 1) Last updated + random quote
+          print("📅 Updating timestamp and quote...")
           updated = update_last_updated_and_quote(updated)
 
           # 2) Blog posts from Medium
+          print("📝 Fetching Medium posts...")
           posts = fetch_medium_posts_feed("https://medium.com/feed/@jayanththomas2004")
           blog_md = build_blog_md(posts)
           updated = replace_block("BLOG", blog_md, updated)
 
           # 3) Auto top projects from GitHub
+          print("🚀 Fetching top repositories...")
           repos = fetch_top_repos("JET609")
           proj_md = build_projects_md(repos)
           updated = replace_block("PROJECTS", proj_md, updated)
 
+          # Write changes
           if updated != text:
               READ_ME.write_text(updated, encoding="utf-8")
-              print("README updated.")
+              print("✅ README.md updated successfully")
           else:
-              print("No changes made.")
-          PY
+              print("ℹ️  No changes made to README.md")
+          PYTHON_SCRIPT
 
       - name: Commit & push if changed
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if [ -n "$(git status --porcelain)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          if [[ -n "$(git status --porcelain)" ]]; then
             git add README.md
-            git commit -m "chore: 🧠 auto-update profile sections" || exit 0
+            git commit -m "chore: 🧠 auto-update profile sections $(date -u +"%Y-%m-%d")" || exit 0
             git push
+            echo "✅ Changes committed and pushed successfully"
           else
-            echo "No changes to commit."
+            echo "ℹ️  No changes to commit"
           fi
