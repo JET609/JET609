@@ -38,8 +38,8 @@
 <!-- UPDATE INFO -->
 <div align="center">
   <sub>
-    <b>Last updated:</b> <!--LAST_UPDATED-->2026-01-06 18:53 IST<!--/LAST_UPDATED--> •
-    <b>Quote:</b> <!--RANDOM_QUOTE-->Discipline compounds. Tiny steps, big outcomes.<!--/RANDOM_QUOTE-->
+    <b>Last updated:</b> <!--LAST_UPDATED-->2026-01-07 18:55 IST<!--/LAST_UPDATED--> •
+    <b>Quote:</b> <!--RANDOM_QUOTE-->Code. Ship. Learn. Repeat.<!--/RANDOM_QUOTE-->
   </sub>
 </div>
 
