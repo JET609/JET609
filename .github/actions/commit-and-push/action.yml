@@ -1,0 +1,24 @@
+name: "Commit and Push Changes"
+description: "Checks for changes, commits with a message, and pushes to the repository"
+inputs:
+  files:
+    description: "Files to add to the commit (space-separated)"
+    required: true
+  commit-message:
+    description: "The commit message"
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - name: Commit & push if changed
+      shell: bash
+      run: |
+        if [ -n "$(git status --porcelain)" ]; then
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- ${{ inputs.files }}
+          git commit -m "${{ inputs.commit-message }}" || exit 0
+          git push
+        else
+          echo "No changes to commit."
+        fi
