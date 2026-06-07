@@ -109,9 +109,9 @@ I’m **Jayanth Eapen Thomas**, a B.Tech CSE student who likes building practica
 <h2 id="live-display">Live display</h2>
 
 <div align="center">
-  <a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/JET609/JET609/main/arcade/index.html" target="_blank"><img src="https://img.shields.io/badge/Start_Run-00E5FF?style=for-the-badge&logo=github&logoColor=000814" /></a>
-  <a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/JET609/JET609/main/arcade/index.html" target="_blank"><img src="https://img.shields.io/badge/Open_Arcade-111827?style=for-the-badge&logo=vercel&logoColor=ffffff" /></a>
-  <a href="#live-display"><img src="https://img.shields.io/badge/View_Controls-DC2626?style=for-the-badge&logo=markdown&logoColor=ffffff" /></a>
+  <a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/JET609/JET609/main/arcade/index.html" target="_blank"><img src="https://img.shields.io/badge/Start_Run-00E5FF?style=for-the-badge" /></a>
+  <a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/JET609/JET609/main/arcade/index.html" target="_blank"><img src="https://img.shields.io/badge/Open_Arcade-111827?style=for-the-badge" /></a>
+  <a href="#live-display"><img src="https://img.shields.io/badge/View_Controls-DC2626?style=for-the-badge" /></a>
 </div>
 
 <div align="center">
