@@ -143,9 +143,10 @@ Loading the AI radar...
 
 <div align="center">
   <img src="https://img.shields.io/badge/Arcade_Mode-Locked-FF6B6B?style=for-the-badge" />
+  <a href="https://jet609.github.io/JET609/"><img src="https://img.shields.io/badge/Play_Neon_Arena-00E5FF?style=for-the-badge&logo=github&logoColor=000814" /></a>
 </div>
 
-<sub>GitHub README can’t run Doom directly. If you want, I can build a separate GitHub Pages mini-game next.</sub>
+<sub>GitHub README can’t run Doom directly, but the hosted Neon Arena can. It’s a legal Doom-inspired tribute built for GitHub Pages.</sub>
 
 ## Pit stop checklist
 
@@ -153,6 +154,7 @@ Loading the AI radar...
 - [x] Keep the automation markers working
 - [x] Add the contribution snake
 - [x] Add live AI radar
+- [x] Build a hosted arcade mini-game
 - [ ] Add even stranger details later
 
 ---
