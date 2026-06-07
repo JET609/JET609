@@ -110,8 +110,8 @@ I’m **Jayanth Eapen Thomas**, a B.Tech CSE student who likes building practica
 <h2 id="live-display">Live display</h2>
 
 <div align="center">
-  <a href="https://jet609.github.io/JET609/"><img src="https://img.shields.io/badge/Start_Run-00E5FF?style=for-the-badge&logo=github&logoColor=000814" /></a>
-  <a href="https://jet609.github.io/JET609/" target="_blank"><img src="https://img.shields.io/badge/Open_Arcade-111827?style=for-the-badge&logo=vercel&logoColor=ffffff" /></a>
+  <a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/JET609/JET609/main/arcade/index.html" target="_blank"><img src="https://img.shields.io/badge/Start_Run-00E5FF?style=for-the-badge&logo=github&logoColor=000814" /></a>
+  <a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/JET609/JET609/main/arcade/index.html" target="_blank"><img src="https://img.shields.io/badge/Open_Arcade-111827?style=for-the-badge&logo=vercel&logoColor=ffffff" /></a>
   <a href="#live-display"><img src="https://img.shields.io/badge/View_Controls-DC2626?style=for-the-badge&logo=markdown&logoColor=ffffff" /></a>
 </div>
 
@@ -129,7 +129,7 @@ I’m **Jayanth Eapen Thomas**, a B.Tech CSE student who likes building practica
 
 </details>
 
-<sub>The display above is clickable, and the arcade page itself is fully playable.</sub>
+<sub>The display above is clickable, and the arcade page opens without the GitHub Pages 404.</sub>
 
 ---
 
