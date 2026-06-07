@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&text=JAYANTH%20EAPEN%20THOMAS&fontAlign=50&fontAlignY=40&color=0:000814,50:001F3F,100:00E5FF&fontColor=FFFFFF&fontSize=34&desc=Retro-FPS%20Programmer%20Workstation&descAlignY=65&animation=twinkling" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&text=JAYANTH%20EAPEN%20THOMAS&fontAlign=50&fontAlignY=40&color=0:000814,50:001F3F,100:00E5FF&fontColor=FFFFFF&fontSize=34&animation=twinkling" />
 </div>
 
 <div align="center">
