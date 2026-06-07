@@ -1,13 +1,13 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&text=JAYANTH%20EAPEN%20THOMAS&fontAlign=50&fontAlignY=40&color=0:000814,50:001F3F,100:00E5FF&fontColor=FFFFFF&fontSize=34&desc=AI%20%7C%20Web%20%7C%20Automation%20%7C%20Systems&descAlignY=65&animation=twinkling" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&text=JAYANTH%20EAPEN%20THOMAS&fontAlign=50&fontAlignY=40&color=0:000814,50:001F3F,100:00E5FF&fontColor=FFFFFF&fontSize=34&desc=AI%20%7C%20Web%20%7C%20Automation%20%7C%20Speed&descAlignY=65&animation=twinkling" />
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=20&duration=1900&pause=500&color=00E5FF&center=true&vCenter=true&width=760&lines=Aspiring+Software+Developer;Building+useful+things+that+ship;Automation+%E2%80%A2+AI+%E2%80%A2+Web;Learning+something+new+every+day" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=20&duration=1900&pause=500&color=00E5FF&center=true&vCenter=true&width=760&lines=Aspiring+Software+Developer;Building+at+pole-position+pace;Automation+%E2%80%A2+AI+%E2%80%A2+Web;Learning+something+new+every+day" />
 </div>
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Status-Building-00C853?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Pole_Position-00C853?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Location-India-00E5FF?style=for-the-badge&logo=google-maps&logoColor=ffffff" />
   <img src="https://img.shields.io/badge/Timezone-IST_(UTC%2B5:30)-001F3F?style=for-the-badge" />
   <img src="https://komarev.com/ghpvc/?username=JET609&style=for-the-badge&color=00E5FF&label=Profile%20Views" />
@@ -87,6 +87,22 @@ I’m **Jayanth Eapen Thomas**, a B.Tech CSE student who likes building practica
   <img src="https://streak-stats.demolab.com?user=JET609&theme=tokyonight&hide_border=true&date_format=M%20j%5B,%20Y%5D" /><br/>
   <img src="https://github-profile-trophy.vercel.app/?username=JET609&theme=tokyonight&no-frame=true&margin-w=8&row=1" /><br/>
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=JET609&theme=tokyo-night&hide_border=true&area=true&radius=10&custom_title=Contribution%20Heatmap" width="100%" />
+</div>
+
+---
+
+## Race grid
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=78&color=0:000814,50:dc2626,100:f59e0b&text=POLE%20POSITION&fontColor=FFFFFF&fontSize=28&fontAlignY=45&animation=twinkling" />
+  <br/>
+  <img src="https://img.shields.io/badge/Race_Mode-ON-DC2626?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Checkered_Flag-Building-111827?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Lap_Time-Improving-00E5FF?style=for-the-badge" />
+</div>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" alt="Contribution snake" />
 </div>
 
 ---
