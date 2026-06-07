@@ -182,6 +182,7 @@
     let score = 0;
     let kills = 0;
     let gameOver = true;
+    let screenShake = 0; // New variable for screen shake
 
     const keys = {};
     const mouse = { x: world.w / 2, y: world.h / 2, down: false };
@@ -244,6 +245,7 @@
       score = 0;
       kills = 0;
       gameOver = false;
+      screenShake = 0;
       enemies = [];
       bullets = [];
       sparks = [];
@@ -284,6 +286,10 @@
     function update(dt) {
       if (gameOver) return;
 
+      // Handle screen shake decay
+      if (screenShake > 0) screenShake -= dt * 40;
+      if (screenShake < 0) screenShake = 0;
+
       // Player movement
       let dx = 0, dy = 0;
       if (keys["w"] || keys["ArrowUp"]) dy -= 1;
@@ -310,19 +316,28 @@
       player.angle = Math.atan2(mouse.y - player.y, mouse.x - player.x);
       player.fireCd -= dt;
 
-      // Firing mechanics
+      // Firing mechanics - UPDATED TO SHOTGUN SPREAD
       if (mouse.down && player.fireCd <= 0) {
-        const fireDx = Math.cos(player.angle);
-        const fireDy = Math.sin(player.angle);
-        bullets.push({ 
-          x: player.x + fireDx * 20, 
-          y: player.y + fireDy * 20, 
-          vx: fireDx * 1000, 
-          vy: fireDy * 1000, 
-          life: 1.2 
-        });
-        player.fireCd = 0.13;
+        screenShake = Math.max(screenShake, 6); // Add kinetic kick
         
+        // 3-round shotgun spread
+        const spreadAngles = [player.angle - 0.12, player.angle, player.angle + 0.12];
+        
+        spreadAngles.forEach(ang => {
+            const fireDx = Math.cos(ang);
+            const fireDy = Math.sin(ang);
+            bullets.push({ 
+                x: player.x + Math.cos(player.angle) * 20, 
+                y: player.y + Math.sin(player.angle) * 20, 
+                vx: fireDx * 1200, 
+                vy: fireDy * 1200, 
+                life: 0.8 // Shorter life for shotgun pellets
+            });
+        });
+
+        player.fireCd = 0.35; // Slower fire rate for shotgun pump
+        
+        // Eject casing
         casings.push({
           x: player.x - Math.cos(player.angle) * 18,
           y: player.y - Math.sin(player.angle) * 18,
@@ -333,12 +348,15 @@
           r: 4 + Math.random() * 1.5
         });
 
-        for (let i = 0; i < 10; i++) {
+        // Muzzle flash sparks
+        const mainFireDx = Math.cos(player.angle);
+        const mainFireDy = Math.sin(player.angle);
+        for (let i = 0; i < 15; i++) {
           sparks.push({
-            x: player.x + fireDx * 30,
-            y: player.y + fireDy * 30,
-            vx: fireDx * 300 + (Math.random() - 0.5) * 200,
-            vy: fireDy * 300 + (Math.random() - 0.5) * 200,
+            x: player.x + mainFireDx * 30,
+            y: player.y + mainFireDy * 30,
+            vx: mainFireDx * 400 + (Math.random() - 0.5) * 300,
+            vy: mainFireDy * 400 + (Math.random() - 0.5) * 300,
             life: Math.random() * 0.3,
             color: "#ffbd4a"
           });
@@ -366,7 +384,8 @@
         }
 
         if (dist < e.r + 15) {
-          player.health -= 20 * dt;
+          player.health -= 30 * dt;
+          screenShake = Math.max(screenShake, 4); // Shake when damaged
         }
 
         bullets.forEach(b => {
@@ -813,6 +832,13 @@
 
     function draw() {
       ctx.clearRect(0, 0, world.w, world.h);
+      
+      ctx.save();
+      // Apply screen shake translation
+      if (screenShake > 0) {
+        ctx.translate((Math.random() - 0.5) * screenShake, (Math.random() - 0.5) * screenShake);
+      }
+
       drawBattlefield();
       drawSmoke();
       drawEmbers();
@@ -870,6 +896,8 @@
       ctx.strokeStyle = "rgba(255,255,255,0.12)";
       ctx.strokeRect(28, 72, 180, 10);
       ctx.restore();
+
+      ctx.restore(); // Restore global screen shake
     }
 
     function loop(ts) {
