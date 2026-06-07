@@ -10,8 +10,6 @@
   <img src="https://img.shields.io/badge/Status-Pole_Position-00C853?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Location-India-00E5FF?style=for-the-badge&logo=google-maps&logoColor=ffffff" />
   <img src="https://img.shields.io/badge/Timezone-IST_(UTC%2B5:30)-001F3F?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Mode-DRS_%2B_Full_Throttle-DC2626?style=for-the-badge" />
-  <img src="https://komarev.com/ghpvc/?username=JET609&style=for-the-badge&color=00E5FF&label=Profile%20Views" />
 </div>
 
 <div align="center">
