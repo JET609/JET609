@@ -61,8 +61,8 @@ class Main {
 
 <div align="center">
   <sub>
-    <b>Last updated:</b> <!--LAST_UPDATED-->2026-06-06 19:48 IST<!--/LAST_UPDATED--> •
-    <b>Quote:</b> <!--RANDOM_QUOTE-->Discipline compounds. Tiny steps, big outcomes.<!--/RANDOM_QUOTE-->
+    <b>Last updated:</b> <!--LAST_UPDATED-->2026-06-07 20:01 IST<!--/LAST_UPDATED--> •
+    <b>Quote:</b> <!--RANDOM_QUOTE-->Code. Ship. Learn. Repeat.<!--/RANDOM_QUOTE-->
   </sub>
 </div>
 
@@ -98,12 +98,12 @@ I’m **Jayanth Eapen Thomas**, a B.Tech CSE student who likes building practica
 ## Starting grid
 
 <!--PROJECTS_START-->
-| Car | Track | Notes |
-| --- | --- | --- |
-| [Skin Cancer Detection](https://jaytee.world/skin-cancer.html) | Vision lane | Deep-learning dashboard for lesion classification. |
-| [Fake News Detector](https://jaytee.world/fake-news.html) | NLP circuit | Detecting false information with a pipeline. |
-| [Portfolio Website](https://jaytee.world) | Front-row | Animated personal site showcasing my work. |
-| [DSA Repository](https://jaytee.world/dsa.html) | Practice lane | Quick-revision algorithms and notes. |
+
+- [.github-workflows-daily-streak.yml](https://github.com/JET609/.github-workflows-daily-streak.yml) — No description yet. · ⭐ 0 · *Tech*
+- [devops](https://github.com/JET609/devops) — No description yet. · ⭐ 0 · *Tech*
+- [teamsync1](https://github.com/JET609/teamsync1) — No description yet. · ⭐ 0 · *TypeScript*
+- [ai-employee-dir](https://github.com/JET609/ai-employee-dir) — No description yet. · ⭐ 0 · *Tech*
+
 <!--PROJECTS_END-->
 
 ---
