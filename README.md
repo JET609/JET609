@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&text=JAYANTH%20EAPEN%20THOMAS&fontAlign=50&fontAlignY=40&color=0:000814,50:001F3F,100:00E5FF&fontColor=FFFFFF&fontSize=34&desc=AI%20%7C%20Web%20%7C%20Automation%20%7C%20Speed&descAlignY=65&animation=twinkling" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&text=JAYANTH%20EAPEN%20THOMAS&fontAlign=50&fontAlignY=40&color=0:000814,50:001F3F,100:00E5FF&fontColor=FFFFFF&fontSize=34&desc=Web%20%7C%20Automation%20%7C%20Speed&descAlignY=65&animation=twinkling" />
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=20&duration=1900&pause=500&color=00E5FF&center=true&vCenter=true&width=760&lines=Aspiring+Software+Developer;Building+at+pole-position+pace;Automation+%E2%80%A2+AI+%E2%80%A2+Web;Learning+something+new+every+day" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=20&duration=1900&pause=500&color=00E5FF&center=true&vCenter=true&width=760&lines=Aspiring+Software+Developer;Building+at+pole-position+pace;Automation+%E2%80%A2+Web+%E2%80%A2+Systems;Learning+something+new+every+day" />
 </div>
 
 <div align="center">
@@ -37,7 +37,7 @@
 
 I’m **Jayanth Eapen Thomas**, a B.Tech CSE student who likes building practical things.
 
-- ⚙️ Automation, AI, and systems
+- ⚙️ Automation and systems
 - 🌐 Modern web apps and polished UI
 - 📊 ML, analytics, and useful experiments
 - 🌍 Live portfolio: [**jaytee.world**](https://jaytee.world)
@@ -75,7 +75,7 @@ I’m **Jayanth Eapen Thomas**, a B.Tech CSE student who likes building practica
 <table>
   <tr>
     <td><b>Sector 1</b><br/>Automation</td>
-    <td><b>Sector 2</b><br/>AI + ML</td>
+    <td><b>Sector 2</b><br/>Models + Data</td>
     <td><b>Sector 3</b><br/>Web + UI</td>
   </tr>
   <tr>
@@ -85,18 +85,12 @@ I’m **Jayanth Eapen Thomas**, a B.Tech CSE student who likes building practica
   </tr>
 </table>
 
-## AI radar
-
-<!--AI_NEWS_START-->
-Loading the AI radar...
-<!--AI_NEWS_END-->
-
 ## Starting grid
 
 <!--PROJECTS_START-->
 | Car | Track | Notes |
 | --- | --- | --- |
-| [Skin Cancer Detection](https://jaytee.world/skin-cancer.html) | AI sprint | Deep-learning dashboard for lesion classification. |
+| [Skin Cancer Detection](https://jaytee.world/skin-cancer.html) | Vision lane | Deep-learning dashboard for lesion classification. |
 | [Fake News Detector](https://jaytee.world/fake-news.html) | NLP circuit | Detecting false information with a pipeline. |
 | [Portfolio Website](https://jaytee.world) | Front-row | Animated personal site showcasing my work. |
 | [DSA Repository](https://jaytee.world/dsa.html) | Practice lane | Quick-revision algorithms and notes. |
@@ -139,29 +133,23 @@ Loading the AI radar...
   <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" alt="Contribution snake" />
 </div>
 
-## Arcade bay
+## Live display
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Arcade_Mode-Locked-FF6B6B?style=for-the-badge" />
   <a href="https://jet609.github.io/JET609/"><img src="https://img.shields.io/badge/Play_Neon_Arena-00E5FF?style=for-the-badge&logo=github&logoColor=000814" /></a>
 </div>
 
-<sub>GitHub README can’t run Doom directly, but the hosted Neon Arena can. It’s a legal Doom-inspired tribute built for GitHub Pages.</sub>
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=84&color=0:000814,50:00e5ff,100:dc2626&text=LIVE%20DISPLAY&fontColor=FFFFFF&fontSize=28&fontAlignY=45&animation=twinkling" />
+</div>
 
-## Pit stop checklist
-
-- [x] Build the profile around a racing theme
-- [x] Keep the automation markers working
-- [x] Add the contribution snake
-- [x] Add live AI radar
-- [x] Build a hosted arcade mini-game
-- [ ] Add even stranger details later
+<sub>A live showcase for the arcade page sits above, and the rest of the profile stays focused on racing, projects, and signals.</sub>
 
 ---
 
 ## Writing
 
-- 📝 [How I Built My First Python Project Using AI](https://medium.com/@jayanththomas2004/how-i-built-my-first-python-project-using-ai-b66967184d04)
+- 📝 [How I Built My First Python Project](https://medium.com/@jayanththomas2004/how-i-built-my-first-python-project-using-ai-b66967184d04)
 
 ## Latest from my blog
 
