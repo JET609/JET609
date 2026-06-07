@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -47,18 +47,16 @@
     }
     h1 {
       margin: 0;
-      font-size: 18px;
-      letter-spacing: 0.16em;
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
       text-transform: uppercase;
+      color: var(--red);
     }
-    .meta, .controls {
-      font-size: 12px;
-      color: var(--muted);
-      line-height: 1.5;
-    }
-    .hud {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+    .meta { font-size: 13px; color: var(--muted); margin-top: 4px; }
+    .controls { font-size: 12px; color: var(--muted); text-align: right; line-height: 1.5; }
+    .stats {
+      display: flex;
       gap: 12px;
       padding: 14px 20px;
       border-bottom: 1px solid var(--line);
@@ -71,8 +69,8 @@
       border-radius: 14px;
     }
     .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--muted); }
-    .value { margin-top: 4px; font-size: 20px; font-weight: 700; }
-    .canvas-wrap { position: relative; padding: 16px; }
+    .val { font-size: 20px; font-weight: 800; margin-top: 2px; }
+    .view { position: relative; padding: 20px; }
     canvas {
       width: 100%;
       aspect-ratio: 16 / 9;
@@ -102,36 +100,36 @@
       background: rgba(9, 10, 18, 0.92);
       box-shadow: 0 0 40px rgba(255, 91, 91, 0.08);
     }
-    .card h2 { margin: 0 0 10px; font-size: 30px; }
+    .card h2 { margin: 0 0 10px; font-size: 30px; text-transform: uppercase; color: var(--red); }
     .card p { margin: 0 0 14px; color: var(--muted); }
+    .danger { color: var(--red); }
     .button {
-      display: inline-block;
-      border: 0;
-      cursor: pointer;
-      padding: 12px 18px;
+      appearance: none;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
       color: #021018;
       font-weight: 800;
       border-radius: 999px;
-      background: linear-gradient(90deg, var(--cyan), #d5fff5);
-      box-shadow: 0 12px 24px rgba(95, 246, 255, 0.18);
+      background: linear-gradient(90deg, var(--red), var(--amber));
+      box-shadow: 0 12px 24px rgba(255, 91, 91, 0.18);
+      cursor: pointer;
+      transition: transform 0.1s;
     }
+    .button:active { transform: scale(0.96); }
     .footer {
       display: flex;
       justify-content: space-between;
-      gap: 12px;
-      padding: 14px 20px 18px;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
+      padding: 16px 20px;
       font-size: 12px;
-    }
-    .danger { color: #ff7d81; }
-    @media (max-width: 760px) {
-      .hud { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      header, .footer { flex-direction: column; align-items: flex-start; }
+      color: var(--muted);
+      background: rgba(5, 7, 12, 0.6);
+      border-top: 1px solid var(--line);
     }
   </style>
 </head>
 <body>
+
   <div class="shell">
     <header>
       <div>
@@ -140,21 +138,20 @@
       </div>
       <div class="controls">
         Move: WASD / Arrows<br />
-        Shoot: Mouse / Space · Dash: Shift · Restart: R
+        Aim & Fire: Mouse
       </div>
     </header>
 
-    <section class="hud">
-      <div class="stat"><div class="label">Score</div><div class="value" id="score">0</div></div>
-      <div class="stat"><div class="label">Wave</div><div class="value" id="wave">1</div></div>
-      <div class="stat"><div class="label">Health</div><div class="value" id="health">100</div></div>
-      <div class="stat"><div class="label">Ammo</div><div class="value" id="ammo">∞</div></div>
-    </section>
+    <div class="stats">
+      <div class="stat"><div class="label">Kills</div><div class="val" id="kills">0</div></div>
+      <div class="stat"><div class="label">Wave</div><div class="val" id="wave">1</div></div>
+      <div class="stat"><div class="label">Score</div><div class="val" id="score">0</div></div>
+    </div>
 
-    <div class="canvas-wrap">
+    <div class="view">
       <canvas id="game" width="1280" height="720"></canvas>
       <div class="overlay" id="overlay">
-        <div class="card">
+        <div class="card" id="card">
           <h2>Drop into Mars</h2>
           <p>Survive the demonic breach inside the research complex. Burn through the swarm and keep the last corridor alive.</p>
           <button class="button" id="startBtn">Deploy Marine</button>
@@ -172,36 +169,40 @@
     const canvas = document.getElementById("game");
     const ctx = canvas.getContext("2d");
     const overlay = document.getElementById("overlay");
+    const card = document.getElementById("card");
     const startBtn = document.getElementById("startBtn");
-    const scoreEl = document.getElementById("score");
-    const waveEl = document.getElementById("wave");
-    const healthEl = document.getElementById("health");
-    const ammoEl = document.getElementById("ammo");
 
-    const keys = new Set();
-    const mouse = { x: canvas.width / 2, y: canvas.height / 2, down: false };
-    const world = { w: canvas.width, h: canvas.height };
+    const uiKills = document.getElementById("kills");
+    const uiWave = document.getElementById("wave");
+    const uiScore = document.getElementById("score");
+
+    const world = { w: 1280, h: 720 };
+    let last = 0;
+    let wave = 1;
+    let score = 0;
+    let kills = 0;
+    let gameOver = true;
+
+    const keys = {};
+    const mouse = { x: world.w / 2, y: world.h / 2, down: false };
 
     const player = {
       x: world.w / 2,
       y: world.h / 2,
-      r: 18,
-      speed: 240,
-      dash: 0,
-      health: 100,
+      vx: 0,
+      vy: 0,
       angle: 0,
-      fireCd: 0
+      health: 100,
+      fireCd: 0,
+      dashCooldown: 0
     };
 
-    let gameOver = false;
-    let score = 0;
-    let wave = 1;
-    let last = 0;
     let enemies = [];
     let bullets = [];
     let sparks = [];
     let casings = [];
     let bursts = [];
+
     const smoke = Array.from({ length: 36 }, (_, i) => ({
       x: Math.random() * world.w,
       y: Math.random() * world.h,
@@ -211,6 +212,7 @@
       alpha: 0.03 + Math.random() * 0.08,
       wobble: Math.random() * Math.PI * 2
     }));
+
     const embers = Array.from({ length: 48 }, () => ({
       x: Math.random() * world.w,
       y: Math.random() * world.h,
@@ -218,6 +220,7 @@
       vy: -18 - Math.random() * 28,
       r: 1 + Math.random() * 2.2
     }));
+
     const enemyKinds = [
       { kind: "demon", color: "#7b0f18", accent: "#ffbd4a", hp: 1, speed: 1, r: 1 },
       { kind: "skull", color: "#d8d3c8", accent: "#ff5b5b", hp: 1, speed: 1.15, r: 0.85 },
@@ -225,14 +228,21 @@
       { kind: "beast", color: "#3b1012", accent: "#92ff3e", hp: 3, speed: 0.78, r: 1.5 }
     ];
 
+    function syncHud() {
+      uiKills.innerText = kills;
+      uiWave.innerText = wave;
+      uiScore.innerText = score;
+    }
+
     function reset() {
       player.x = world.w / 2;
       player.y = world.h / 2;
+      player.vx = 0;
+      player.vy = 0;
       player.health = 100;
-      player.fireCd = 0;
-      player.dash = 0;
-      score = 0;
       wave = 1;
+      score = 0;
+      kills = 0;
       gameOver = false;
       enemies = [];
       bullets = [];
@@ -244,24 +254,18 @@
       syncHud();
     }
 
-    function syncHud() {
-      scoreEl.textContent = score;
-      waveEl.textContent = wave;
-      healthEl.textContent = Math.max(0, Math.round(player.health));
-      ammoEl.textContent = "∞";
-    }
-
     function spawnWave() {
-      const count = 4 + wave * 2;
+      const count = 5 + wave * 3;
       for (let i = 0; i < count; i++) {
         const edge = Math.floor(Math.random() * 4);
-        const pad = 40;
+        const pad = 50;
         const pos = [
           [Math.random() * world.w, -pad],
           [world.w + pad, Math.random() * world.h],
           [Math.random() * world.w, world.h + pad],
           [-pad, Math.random() * world.h]
         ][edge];
+        
         const archetype = enemyKinds[(Math.random() * enemyKinds.length) | 0];
         enemies.push({
           x: pos[0],
@@ -277,106 +281,139 @@
       }
     }
 
-    function shoot() {
-      if (player.fireCd > 0 || gameOver) return;
-      const dx = mouse.x - player.x;
-      const dy = mouse.y - player.y;
-      const len = Math.hypot(dx, dy) || 1;
-      const vx = (dx / len) * 720;
-      const vy = (dy / len) * 720;
-      bullets.push({ x: player.x, y: player.y, vx, vy, life: 1.2 });
-      player.fireCd = 0.13;
-      casings.push({
-        x: player.x - Math.cos(player.angle) * 18,
-        y: player.y - Math.sin(player.angle) * 18,
-        vx: -Math.sin(player.angle) * (120 + Math.random() * 80) + (Math.random() - 0.5) * 50,
-        vy: Math.cos(player.angle) * (120 + Math.random() * 80) - 80 - Math.random() * 40,
-        spin: (Math.random() - 0.5) * 10,
-        life: 1.8 + Math.random() * 0.8,
-        r: 4 + Math.random() * 1.5
-      });
-      for (let i = 0; i < 10; i++) {
-        sparks.push({
-          x: player.x,
-          y: player.y,
-          vx: (Math.random() - 0.5) * 220,
-          vy: (Math.random() - 0.5) * 220,
-          life: 0.25 + Math.random() * 0.2,
-          color: Math.random() > 0.5 ? "#00e5ff" : "#ff5a5f"
-        });
-      }
-    }
-
     function update(dt) {
       if (gameOver) return;
-      const moveX = (keys.has("d") || keys.has("ArrowRight") ? 1 : 0) - (keys.has("a") || keys.has("ArrowLeft") ? 1 : 0);
-      const moveY = (keys.has("s") || keys.has("ArrowDown") ? 1 : 0) - (keys.has("w") || keys.has("ArrowUp") ? 1 : 0);
-      const len = Math.hypot(moveX, moveY) || 1;
-      const dash = keys.has("Shift") && player.dash <= 0;
-      const speed = dash ? player.speed * 2.4 : player.speed;
-      player.x += (moveX / len) * speed * dt;
-      player.y += (moveY / len) * speed * dt;
-      player.x = Math.max(player.r, Math.min(world.w - player.r, player.x));
-      player.y = Math.max(player.r, Math.min(world.h - player.r, player.y));
-      if (dash) player.dash = 0.65;
-      player.dash = Math.max(0, player.dash - dt);
+
+      // Player movement
+      let dx = 0, dy = 0;
+      if (keys["w"] || keys["ArrowUp"]) dy -= 1;
+      if (keys["s"] || keys["ArrowDown"]) dy += 1;
+      if (keys["a"] || keys["ArrowLeft"]) dx -= 1;
+      if (keys["d"] || keys["ArrowRight"]) dx += 1;
+
+      const len = Math.hypot(dx, dy);
+      if (len > 0) {
+        dx /= len; dy /= len;
+      }
+
+      const speed = keys["Shift"] ? 400 : 200;
+      player.vx += (dx * speed - player.vx) * 10 * dt;
+      player.vy += (dy * speed - player.vy) * 10 * dt;
+
+      player.x += player.vx * dt;
+      player.y += player.vy * dt;
+
+      // Restrict player to arena bounds
+      player.x = Math.max(20, Math.min(world.w - 20, player.x));
+      player.y = Math.max(20, Math.min(world.h - 20, player.y));
 
       player.angle = Math.atan2(mouse.y - player.y, mouse.x - player.x);
-      player.fireCd = Math.max(0, player.fireCd - dt);
+      player.fireCd -= dt;
 
-      if (mouse.down || keys.has(" ")) shoot();
+      // Firing mechanics
+      if (mouse.down && player.fireCd <= 0) {
+        const fireDx = Math.cos(player.angle);
+        const fireDy = Math.sin(player.angle);
+        bullets.push({ 
+          x: player.x + fireDx * 20, 
+          y: player.y + fireDy * 20, 
+          vx: fireDx * 1000, 
+          vy: fireDy * 1000, 
+          life: 1.2 
+        });
+        player.fireCd = 0.13;
+        
+        casings.push({
+          x: player.x - Math.cos(player.angle) * 18,
+          y: player.y - Math.sin(player.angle) * 18,
+          vx: -Math.sin(player.angle) * (120 + Math.random() * 80) + (Math.random() - 0.5) * 50,
+          vy: Math.cos(player.angle) * (120 + Math.random() * 80) - 80 - Math.random() * 40,
+          spin: (Math.random() - 0.5) * 10,
+          life: 1.8 + Math.random() * 0.8,
+          r: 4 + Math.random() * 1.5
+        });
 
-      bullets.forEach((b) => {
+        for (let i = 0; i < 10; i++) {
+          sparks.push({
+            x: player.x + fireDx * 30,
+            y: player.y + fireDy * 30,
+            vx: fireDx * 300 + (Math.random() - 0.5) * 200,
+            vy: fireDy * 300 + (Math.random() - 0.5) * 200,
+            life: Math.random() * 0.3,
+            color: "#ffbd4a"
+          });
+        }
+      }
+
+      // Update bullets
+      bullets.forEach(b => {
         b.x += b.vx * dt;
         b.y += b.vy * dt;
         b.life -= dt;
       });
-      bullets = bullets.filter((b) => b.life > 0 && b.x > -20 && b.x < world.w + 20 && b.y > -20 && b.y < world.h + 20);
+      bullets = bullets.filter(b => b.life > 0);
 
-      enemies.forEach((e) => {
-        const dx = player.x - e.x;
-        const dy = player.y - e.y;
-        const dist = Math.hypot(dx, dy) || 1;
-        e.x += (dx / dist) * e.speed * dt;
-        e.y += (dy / dist) * e.speed * dt;
-        e.wobble += dt * 6;
-
-        if (dist < player.r + e.r) {
-          player.health -= 20 * dt * (1 + wave * 0.15);
+      // Update enemies & collision
+      enemies.forEach(e => {
+        const ex = player.x - e.x;
+        const ey = player.y - e.y;
+        const dist = Math.hypot(ex, ey);
+        e.wobble += dt * 5;
+        
+        if (dist > 0) {
+          e.x += (ex / dist) * e.speed * dt;
+          e.y += (ey / dist) * e.speed * dt;
         }
-      });
 
-      bullets.forEach((b) => {
-        enemies.forEach((e) => {
-          const dx = b.x - e.x;
-          const dy = b.y - e.y;
-          const dist = Math.hypot(dx, dy);
-          if (dist < e.r + 4) {
+        if (dist < e.r + 15) {
+          player.health -= 20 * dt;
+        }
+
+        bullets.forEach(b => {
+          if (b.life > 0 && Math.hypot(b.x - e.x, b.y - e.y) < e.r + 4) {
             b.life = 0;
             e.hp -= 1;
             score += 15;
-            bursts.push({
-              x: b.x,
-              y: b.y,
-              r: 8,
-              life: 0.4,
-              color: e.accent
-            });
+            bursts.push({ x: b.x, y: b.y, r: 8, life: 0.4, color: e.accent });
             for (let i = 0; i < 12; i++) {
               sparks.push({
-                x: b.x,
-                y: b.y,
-                vx: (Math.random() - 0.5) * 340,
-                vy: (Math.random() - 0.5) * 340,
-                life: 0.2 + Math.random() * 0.25,
-                color: i % 2 ? "#ffd166" : "#00e5ff"
+                x: b.x, y: b.y,
+                vx: (Math.random() - 0.5) * 400,
+                vy: (Math.random() - 0.5) * 400,
+                life: Math.random() * 0.4,
+                color: e.accent
               });
             }
           }
         });
       });
 
-      enemies = enemies.filter((e) => e.hp > 0);
+      const aliveCount = enemies.length;
+      enemies = enemies.filter((e) => {
+        if (e.hp <= 0) {
+          kills++;
+          return false;
+        }
+        return true;
+      });
+
+      if (aliveCount > 0 && enemies.length === 0) {
+        wave++;
+        spawnWave();
+      }
+
+      if (player.health <= 0) {
+        gameOver = true;
+        card.innerHTML = `
+          <h2 class="danger">Run Failed</h2>
+          <p>The horde overtook you on Wave ${wave}.<br/>Total Score: ${score}</p>
+          <button class="button" id="startBtn">Deploy Again</button>
+        `;
+        document.getElementById("startBtn").addEventListener("click", reset);
+        overlay.style.display = "grid";
+      }
+
+      // Physics/Particles
       casings.forEach((c) => {
         c.x += c.vx * dt;
         c.y += c.vy * dt;
@@ -396,28 +433,24 @@
         s.x += s.vx * dt;
         s.y += s.vy * dt;
         s.life -= dt;
-        s.vx *= 0.96;
-        s.vy *= 0.96;
       });
-      sparks = sparks.filter((s) => s.life > 0);
+      sparks = sparks.filter(s => s.life > 0);
 
-      if (!enemies.length) {
-        wave += 1;
-        spawnWave();
-      }
+      smoke.forEach(s => {
+        s.x += s.vx * dt;
+        s.y += s.vy * dt;
+        s.wobble += dt;
+        if (s.x > world.w + s.r) s.x = -s.r;
+        if (s.x < -s.r) s.x = world.w + s.r;
+        if (s.y > world.h + s.r) s.y = -s.r;
+        if (s.y < -s.r) s.y = world.h + s.r;
+      });
 
-      if (player.health <= 0) {
-        player.health = 0;
-        gameOver = true;
-        overlay.innerHTML = `
-          <div class="card">
-            <h2 class="danger">Run failed</h2>
-            <p>Final score: ${score}. Hit restart to launch another lap through the arena.</p>
-            <button class="button" id="restartBtn">Retry</button>
-          </div>`;
-        overlay.style.display = "grid";
-        document.getElementById("restartBtn").onclick = reset;
-      }
+      embers.forEach(e => {
+        e.x += e.vx * dt;
+        e.y += e.vy * dt;
+        if (e.y < -10) { e.y = world.h + 10; e.x = Math.random() * world.w; }
+      });
 
       syncHud();
     }
@@ -452,7 +485,7 @@
       ctx.fillStyle = "#0f1119";
       ctx.fillRect(0, world.h * 0.18, world.w, world.h * 0.72);
 
-      // corridor walls
+      // Corridor walls
       ctx.fillStyle = "#1b1f2c";
       ctx.fillRect(0, 0, 92, world.h);
       ctx.fillRect(world.w - 92, 0, 92, world.h);
@@ -460,7 +493,7 @@
       ctx.fillRect(92, 0, world.w - 184, 28);
       ctx.fillRect(92, world.h - 30, world.w - 184, 30);
 
-      // floor panels
+      // Floor panels
       ctx.save();
       ctx.globalAlpha = 0.55;
       for (let y = 122; y < world.h - 80; y += 52) {
@@ -479,7 +512,7 @@
       }
       ctx.restore();
 
-      // lava channels
+      // Lava channels
       const lavaBands = [
         [{ x: 140, y: 500 }, { x: 420, y: 470 }, { x: 700, y: 486 }, { x: 1140, y: 442 }, { x: 1140, y: 520 }, { x: 720, y: 566 }, { x: 420, y: 548 }, { x: 140, y: 580 }],
         [{ x: 118, y: 270 }, { x: 428, y: 246 }, { x: 704, y: 256 }, { x: 1082, y: 220 }, { x: 1082, y: 286 }, { x: 708, y: 320 }, { x: 430, y: 308 }, { x: 118, y: 336 }]
@@ -499,7 +532,7 @@
         ctx.restore();
       });
 
-      // structural walkways and debris
+      // Structural walkways and debris
       const beams = [
         { x: 180, y: 116, w: 122, h: 16, rot: -0.08 },
         { x: 958, y: 156, w: 126, h: 14, rot: 0.12 },
@@ -517,7 +550,7 @@
         ctx.restore();
       });
 
-      // terminals and pipes
+      // Terminals and pipes
       const consoles = [
         { x: 88, y: 172, w: 60, h: 34, tint: "#92ff3e" },
         { x: 1130, y: 168, w: 62, h: 34, tint: "#5ff6ff" },
@@ -539,7 +572,7 @@
         ctx.restore();
       });
 
-      // hazard lights
+      // Hazard lights
       for (let i = 0; i < 10; i++) {
         const x = 120 + i * 110;
         const blink = 0.5 + 0.5 * Math.sin((i + 1) * 2 + last * 0.004);
@@ -553,7 +586,7 @@
         ctx.restore();
       }
 
-      // warning signage
+      // Warning signage
       ctx.save();
       ctx.fillStyle = "rgba(255,189,74,0.88)";
       ctx.fillRect(560, 62, 160, 28);
@@ -562,7 +595,7 @@
       ctx.fillText("WARNING / BIOHAZARD", 578, 81);
       ctx.restore();
 
-      // steam vents and smoke ports
+      // Steam vents
       for (const vent of [
         { x: 170, y: 618, r: 20 },
         { x: 1060, y: 110, r: 26 },
@@ -576,17 +609,6 @@
         ctx.fill();
         ctx.restore();
       }
-
-      // lava highlights
-      ctx.save();
-      ctx.globalCompositeOperation = "screen";
-      for (let i = 0; i < 9; i++) {
-        const y = 210 + i * 62 + Math.sin(last * 0.001 + i) * 8;
-        ctx.fillStyle = "rgba(255,189,74,0.08)";
-        ctx.fillRect(140, y, world.w - 280, 8);
-      }
-      ctx.restore();
-      ctx.restore();
     }
 
     function drawSmoke() {
@@ -615,14 +637,18 @@
       ctx.save();
       ctx.translate(player.x, player.y);
       ctx.rotate(player.angle);
-
-      // shadow
+      
+      // Shadow
       ctx.fillStyle = "rgba(0,0,0,0.42)";
       ctx.beginPath();
+      ctx.moveTo(22, 0);
+      ctx.lineTo(-16, -12);
+      ctx.lineTo(-8, 0);
+      ctx.lineTo(-16, 12);
       ctx.ellipse(-6, 12, 34, 22, 0.1, 0, Math.PI * 2);
       ctx.fill();
 
-      // shotgun
+      // Shotgun
       ctx.save();
       ctx.translate(0, -3);
       ctx.shadowBlur = 22;
@@ -635,7 +661,7 @@
       ctx.fillRect(34, -2, 14, 2);
       ctx.restore();
 
-      // torso armor
+      // Torso armor
       const torso = ctx.createLinearGradient(-20, -20, 20, 20);
       torso.addColorStop(0, "#8b95a7");
       torso.addColorStop(0.5, "#424956");
@@ -653,13 +679,13 @@
       ctx.strokeStyle = "rgba(255,255,255,0.06)";
       ctx.stroke();
 
-      // green armor strips
+      // Green armor strips
       ctx.fillStyle = "#92ff3e";
       ctx.fillRect(-12, -12, 4, 20);
       ctx.fillRect(8, -12, 4, 20);
       ctx.fillRect(-2, 8, 4, 12);
 
-      // shoulders and helmet
+      // Shoulders and helmet
       ctx.fillStyle = "#5a6575";
       ctx.beginPath(); ctx.arc(-22, -14, 9, 0, Math.PI * 2); ctx.fill();
       ctx.beginPath(); ctx.arc(22, -14, 9, 0, Math.PI * 2); ctx.fill();
@@ -670,7 +696,7 @@
       ctx.shadowColor = "rgba(146,255,62,0.8)";
       ctx.beginPath(); ctx.arc(0, -26, 4.5, 0, Math.PI * 2); ctx.fill();
 
-      // scratches and burn marks
+      // Scratches
       ctx.shadowBlur = 0;
       ctx.strokeStyle = "rgba(10, 10, 10, 0.55)";
       for (let i = 0; i < 5; i++) {
@@ -680,7 +706,7 @@
         ctx.stroke();
       }
 
-      // legs
+      // Legs
       ctx.fillStyle = "#1a1f29";
       ctx.fillRect(-14, 22, 10, 16);
       ctx.fillRect(4, 22, 10, 16);
@@ -790,6 +816,7 @@
       drawBattlefield();
       drawSmoke();
       drawEmbers();
+      
       bursts.forEach((p) => {
         ctx.save();
         ctx.globalCompositeOperation = "screen";
@@ -803,6 +830,7 @@
         ctx.stroke();
         ctx.restore();
       });
+
       bullets.forEach((b) => circle(b.x, b.y, 4, "#ffbd4a", "rgba(255,189,74,0.95)"));
       casings.forEach((c) => {
         ctx.save();
@@ -815,9 +843,13 @@
         ctx.restore();
       });
       sparks.forEach((s) => circle(s.x, s.y, 2, s.color, s.color));
-      enemies.forEach(drawEnemy);
-      drawMarine();
+      
+      if (!gameOver) {
+        enemies.forEach(drawEnemy);
+        drawMarine();
+      }
 
+      // HUD Overlay
       ctx.save();
       ctx.fillStyle = "rgba(0,0,0,0.32)";
       ctx.fillRect(18, 18, 236, 86);
@@ -829,38 +861,40 @@
       ctx.fillStyle = "#f0f5ff";
       ctx.font = "bold 14px monospace";
       ctx.fillText(`WAVE ${wave}`, 28, 60);
-      ctx.fillStyle = "#92ff3e";
-      ctx.fillRect(28, 72, 180 * (player.health / 100), 10);
+      
+      // Health Bar
+      ctx.fillStyle = "#111";
+      ctx.fillRect(28, 72, 180, 10);
+      ctx.fillStyle = player.health > 30 ? "#92ff3e" : "#ff5b5b";
+      ctx.fillRect(28, 72, 180 * Math.max(0, player.health / 100), 10);
       ctx.strokeStyle = "rgba(255,255,255,0.12)";
       ctx.strokeRect(28, 72, 180, 10);
       ctx.restore();
     }
 
     function loop(ts) {
-      const dt = Math.min(0.033, (ts - last) / 1000 || 0);
+      const dt = Math.min((ts - last) / 1000, 0.1);
       last = ts;
       update(dt);
       draw();
       requestAnimationFrame(loop);
     }
 
-    window.addEventListener("keydown", (e) => {
-      keys.add(e.key);
-      if ((e.key === " " || e.key.toLowerCase() === "r") && gameOver) reset();
-      if (e.key.toLowerCase() === "r") reset();
-    });
-    window.addEventListener("keyup", (e) => keys.delete(e.key));
-    canvas.addEventListener("mousemove", (e) => {
+    // Input Events
+    window.addEventListener("keydown", e => keys[e.key] = true);
+    window.addEventListener("keyup", e => keys[e.key] = false);
+    canvas.addEventListener("mousemove", e => {
       const rect = canvas.getBoundingClientRect();
-      mouse.x = (e.clientX - rect.left) * (canvas.width / rect.width);
-      mouse.y = (e.clientY - rect.top) * (canvas.height / rect.height);
+      const scaleX = canvas.width / rect.width;
+      const scaleY = canvas.height / rect.height;
+      mouse.x = (e.clientX - rect.left) * scaleX;
+      mouse.y = (e.clientY - rect.top) * scaleY;
     });
-    canvas.addEventListener("mousedown", () => (mouse.down = true));
-    window.addEventListener("mouseup", () => (mouse.down = false));
-    startBtn.addEventListener("click", () => reset());
+    canvas.addEventListener("mousedown", () => mouse.down = true);
+    window.addEventListener("mouseup", () => mouse.down = false);
+    startBtn.addEventListener("click", reset);
 
-    spawnWave();
-    requestAnimationFrame(loop);
+    requestAnimationFrame((ts) => { last = ts; loop(ts); });
   </script>
 </body>
 </html>
