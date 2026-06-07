@@ -77,15 +77,16 @@ I’m **Jayanth Eapen Thomas**, a B.Tech CSE student who likes building practica
   <table>
     <tr>
       <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github&bg_color=00000000" height="165" />
+        <img src="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github&bg_color=00000000&card_width=420" height="170" />
       </td>
       <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JET609&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000" height="165" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JET609&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000&card_width=420" height="170" />
       </td>
     </tr>
   </table>
 
   <img src="https://streak-stats.demolab.com?user=JET609&theme=tokyonight&hide_border=true&date_format=M%20j%5B,%20Y%5D" /><br/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=JET609&theme=tokyonight" /><br/>
   <img src="https://github-profile-trophy.vercel.app/?username=JET609&theme=tokyonight&no-frame=true&margin-w=8&row=1" /><br/>
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=JET609&theme=tokyo-night&hide_border=true&area=true&radius=10&custom_title=Contribution%20Heatmap" width="100%" />
 </div>
@@ -106,17 +107,29 @@ I’m **Jayanth Eapen Thomas**, a B.Tech CSE student who likes building practica
   <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" alt="Contribution snake" />
 </div>
 
-## Live display
+<h2 id="live-display">Live display</h2>
 
 <div align="center">
-  <a href="https://jet609.github.io/JET609/"><img src="https://img.shields.io/badge/Play_Neon_Arena-00E5FF?style=for-the-badge&logo=github&logoColor=000814" /></a>
+  <a href="https://jet609.github.io/JET609/"><img src="https://img.shields.io/badge/Start_Run-00E5FF?style=for-the-badge&logo=github&logoColor=000814" /></a>
+  <a href="https://jet609.github.io/JET609/" target="_blank"><img src="https://img.shields.io/badge/Open_Arcade-111827?style=for-the-badge&logo=vercel&logoColor=ffffff" /></a>
+  <a href="#live-display"><img src="https://img.shields.io/badge/View_Controls-DC2626?style=for-the-badge&logo=markdown&logoColor=ffffff" /></a>
 </div>
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&height=84&color=0:000814,50:00e5ff,100:dc2626&text=LIVE%20DISPLAY&fontColor=FFFFFF&fontSize=28&fontAlignY=45&animation=twinkling" />
 </div>
 
-<sub>A live showcase for the arcade page sits above, and the rest of the profile stays focused on racing, projects, and signals.</sub>
+<details>
+<summary>Controls</summary>
+
+- Move with `WASD` or arrow keys
+- Shoot with mouse or `Space`
+- Dash with `Shift`
+- Restart with `R`
+
+</details>
+
+<sub>The display above is clickable, and the arcade page itself is fully playable.</sub>
 
 ---
 
