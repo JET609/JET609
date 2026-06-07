@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&text=JAYANTH%20EAPEN%20THOMAS&fontAlign=50&fontAlignY=40&color=0:000814,50:001F3F,100:00E5FF&fontColor=FFFFFF&fontSize=34&desc=Web%20%7C%20Automation%20%7C%20Speed&descAlignY=65&animation=twinkling" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&text=JAYANTH%20EAPEN%20THOMAS&fontAlign=50&fontAlignY=40&color=0:000814,50:001F3F,100:00E5FF&fontColor=FFFFFF&fontSize=34&desc=Retro-FPS%20Programmer%20Workstation&descAlignY=65&animation=twinkling" />
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=20&duration=1900&pause=500&color=00E5FF&center=true&vCenter=true&width=760&lines=Aspiring+Software+Developer;Building+at+pole-position+pace;Automation+%E2%80%A2+Web+%E2%80%A2+Systems;Learning+something+new+every+day" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=20&duration=1900&pause=500&color=00E5FF&center=true&vCenter=true&width=760&lines=Retro-Futuristic+Developer;Python+%E2%80%A2+C+%E2%80%A2+Java;Terminal+windows+and+code+snippets;Building+fast+and+shipping+clean" />
 </div>
 
 <div align="center">
@@ -20,6 +20,43 @@
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00E5FF&section=header" />
+</div>
+
+<div align="center">
+  <table>
+    <tr>
+      <td>
+        <pre>
+Python.py
+----------------
+print("LOADOUT READY")
+for step in deploy:
+    ship(step)
+        </pre>
+      </td>
+      <td>
+        <pre>
+main.c
+----------------
+int main(void) {
+    printf("MARS ONLINE");
+    return 0;
+}
+        </pre>
+      </td>
+      <td>
+        <pre>
+Main.java
+----------------
+class Main {
+  public static void main(String[] args) {
+    System.out.println("SYSTEMS ARMED");
+  }
+}
+        </pre>
+      </td>
+    </tr>
+  </table>
 </div>
 
 <div align="center">
