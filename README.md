@@ -40,16 +40,6 @@ I’m **Jayanth Eapen Thomas**, a B.Tech CSE student who likes building practica
 - 📊 ML, analytics, and useful experiments
 - 🌍 Live portfolio: [**jaytee.world**](https://jaytee.world)
 
-## Pit wall radio
-
-> “If it can be automated, it can be improved. If it can be measured, it can be tuned.”
-
-<div align="center">
-  <img src="https://img.shields.io/badge/Lap_Style-Consistent-00E5FF?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Focus-Execution-111827?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Target-Out_of_the_box_moves-DC2626?style=for-the-badge" />
-</div>
-
 ---
 
 ## Tech stack
@@ -67,21 +57,6 @@ I’m **Jayanth Eapen Thomas**, a B.Tech CSE student who likes building practica
 </div>
 
 ---
-
-## Telemetry
-
-<table>
-  <tr>
-    <td><b>Sector 1</b><br/>Automation</td>
-    <td><b>Sector 2</b><br/>Models + Data</td>
-    <td><b>Sector 3</b><br/>Web + UI</td>
-  </tr>
-  <tr>
-    <td>Fast repeatable workflows</td>
-    <td>Practical models and experiments</td>
-    <td>Interfaces that feel sharp</td>
-  </tr>
-</table>
 
 ## Starting grid
 
