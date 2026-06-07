@@ -90,6 +90,35 @@ jobs:
               lines.append("\n")
               return "\n".join(lines)
 
+          def fetch_rss_items(source_name, feed_url, limit=1):
+              try:
+                  with urllib.request.urlopen(feed_url, timeout=10) as r:
+                      data = r.read()
+                  root = ET.fromstring(data)
+                  channel = root.find("channel")
+                  if channel is None:
+                      return []
+                  items = channel.findall("item")[:limit]
+                  results = []
+                  for it in items:
+                      title = (it.findtext("title") or "").strip()
+                      link = (it.findtext("link") or "").strip()
+                      if title and link:
+                          results.append((source_name, title, link))
+                  return results
+              except Exception as e:
+                  print(f"{source_name} fetch error:", e)
+                  return []
+
+          def build_ai_news_md(items):
+              if not items:
+                  return "\nLoading the AI radar...\n"
+              lines = ["\n"]
+              for source, title, link in items:
+                  lines.append(f"- [{source}: {title}]({link})")
+              lines.append("\n")
+              return "\n".join(lines)
+
           def fetch_top_repos(user, limit=4):
               try:
                   url = f"https://api.github.com/users/{user}/repos?per_page=100&sort=updated"
@@ -141,7 +170,16 @@ jobs:
           blog_md = build_blog_md(posts)
           updated = replace_block("BLOG", blog_md, updated)
 
-          # 3) Auto top projects from GitHub
+          # 3) AI news radar from public RSS feeds
+          ai_items = []
+          ai_items.extend(fetch_rss_items("OpenAI", "https://openai.com/news/rss.xml"))
+          ai_items.extend(fetch_rss_items("Google AI", "https://blog.google/technology/ai/rss/"))
+          ai_items.extend(fetch_rss_items("Hugging Face", "https://huggingface.co/blog/feed.xml"))
+          ai_items.extend(fetch_rss_items("MIT Tech Review AI", "https://www.technologyreview.com/topic/artificial-intelligence/feed/"))
+          ai_md = build_ai_news_md(ai_items[:4])
+          updated = replace_block("AI_NEWS", ai_md, updated)
+
+          # 4) Auto top projects from GitHub
           repos = fetch_top_repos("JET609")
           proj_md = build_projects_md(repos)
           updated = replace_block("PROJECTS", proj_md, updated)

@@ -10,6 +10,7 @@
   <img src="https://img.shields.io/badge/Status-Pole_Position-00C853?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Location-India-00E5FF?style=for-the-badge&logo=google-maps&logoColor=ffffff" />
   <img src="https://img.shields.io/badge/Timezone-IST_(UTC%2B5:30)-001F3F?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Mode-DRS_%2B_Full_Throttle-DC2626?style=for-the-badge" />
   <img src="https://komarev.com/ghpvc/?username=JET609&style=for-the-badge&color=00E5FF&label=Profile%20Views" />
 </div>
 
@@ -41,6 +42,16 @@ I’m **Jayanth Eapen Thomas**, a B.Tech CSE student who likes building practica
 - 📊 ML, analytics, and useful experiments
 - 🌍 Live portfolio: [**jaytee.world**](https://jaytee.world)
 
+## Pit wall radio
+
+> “If it can be automated, it can be improved. If it can be measured, it can be tuned.”
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Lap_Style-Consistent-00E5FF?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Focus-Execution-111827?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Target-Out_of_the_box_moves-DC2626?style=for-the-badge" />
+</div>
+
 ---
 
 ## Tech stack
@@ -59,13 +70,36 @@ I’m **Jayanth Eapen Thomas**, a B.Tech CSE student who likes building practica
 
 ---
 
-## Featured projects
+## Telemetry
+
+<table>
+  <tr>
+    <td><b>Sector 1</b><br/>Automation</td>
+    <td><b>Sector 2</b><br/>AI + ML</td>
+    <td><b>Sector 3</b><br/>Web + UI</td>
+  </tr>
+  <tr>
+    <td>Fast repeatable workflows</td>
+    <td>Practical models and experiments</td>
+    <td>Interfaces that feel sharp</td>
+  </tr>
+</table>
+
+## AI radar
+
+<!--AI_NEWS_START-->
+Loading the AI radar...
+<!--AI_NEWS_END-->
+
+## Starting grid
 
 <!--PROJECTS_START-->
-- [Skin Cancer Detection](https://jaytee.world/skin-cancer.html) — deep-learning dashboard for lesion classification.
-- [Fake News Detector](https://jaytee.world/fake-news.html) — NLP pipeline for detecting false information.
-- [Portfolio Website](https://jaytee.world) — animated personal site showcasing my work.
-- [DSA Repository](https://jaytee.world/dsa.html) — quick-revision algorithms and notes.
+| Car | Track | Notes |
+| --- | --- | --- |
+| [Skin Cancer Detection](https://jaytee.world/skin-cancer.html) | AI sprint | Deep-learning dashboard for lesion classification. |
+| [Fake News Detector](https://jaytee.world/fake-news.html) | NLP circuit | Detecting false information with a pipeline. |
+| [Portfolio Website](https://jaytee.world) | Front-row | Animated personal site showcasing my work. |
+| [DSA Repository](https://jaytee.world/dsa.html) | Practice lane | Quick-revision algorithms and notes. |
 <!--PROJECTS_END-->
 
 ---
@@ -104,6 +138,22 @@ I’m **Jayanth Eapen Thomas**, a B.Tech CSE student who likes building practica
 <div align="center">
   <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" alt="Contribution snake" />
 </div>
+
+## Arcade bay
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Arcade_Mode-Locked-FF6B6B?style=for-the-badge" />
+</div>
+
+<sub>GitHub README can’t run Doom directly. If you want, I can build a separate GitHub Pages mini-game next.</sub>
+
+## Pit stop checklist
+
+- [x] Build the profile around a racing theme
+- [x] Keep the automation markers working
+- [x] Add the contribution snake
+- [x] Add live AI radar
+- [ ] Add even stranger details later
 
 ---
 
