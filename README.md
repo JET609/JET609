@@ -86,7 +86,6 @@ I’m **Jayanth Eapen Thomas**, a B.Tech CSE student who likes building practica
   </table>
 
   <img src="https://streak-stats.demolab.com?user=JET609&theme=tokyonight&hide_border=true&date_format=M%20j%5B,%20Y%5D" /><br/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=JET609&theme=tokyonight" /><br/>
   <img src="https://github-profile-trophy.vercel.app/?username=JET609&theme=tokyonight&no-frame=true&margin-w=8&row=1" /><br/>
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=JET609&theme=tokyo-night&hide_border=true&area=true&radius=10&custom_title=Contribution%20Heatmap" width="100%" />
 </div>
