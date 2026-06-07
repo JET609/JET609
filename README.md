@@ -113,9 +113,6 @@ I’m **Jayanth Eapen Thomas**, a B.Tech CSE student who likes building practica
 <div align="center">
   <table>
     <tr>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JET609&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000&card_width=420" height="170" />
-      </td>
     </tr>
   </table>
 
