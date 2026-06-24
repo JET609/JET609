@@ -28,19 +28,19 @@ jobs:
           import urllib.request
           import xml.etree.ElementTree as ET
 
-          READ_ME = pathlib.Path("README.md")
-          text = READ_ME.read_text(encoding="utf-8")
+          README_PATH = pathlib.Path("README.md")
+          readme_content = README_PATH.read_text(encoding="utf-8")
 
           # ---------- Helpers ----------
-          def replace_block(tag, new_content, src):
-              pattern = rf"<!--{tag}_START-->(.*?)<!--{tag}_END-->"
-              repl = f"<!--{tag}_START-->{new_content}<!--{tag}_END-->"
-              return re.sub(pattern, repl, src, flags=re.DOTALL)
+          def replace_block(block_tag, new_content, source_text):
+              pattern = rf"<!--{block_tag}_START-->(.*?)<!--{block_tag}_END-->"
+              replacement = f"<!--{block_tag}_START-->{new_content}<!--{block_tag}_END-->"
+              return re.sub(pattern, replacement, source_text, flags=re.DOTALL)
 
-          def update_last_updated_and_quote(src):
+          def update_last_updated_and_quote(source_text):
               # IST time
-              ist = datetime.datetime.utcnow() + datetime.timedelta(hours=5, minutes=30)
-              last_updated = ist.strftime("%Y-%m-%d %H:%M IST")
+              indian_standard_time = datetime.datetime.utcnow() + datetime.timedelta(hours=5, minutes=30)
+              last_updated = indian_standard_time.strftime("%Y-%m-%d %H:%M IST")
 
               quotes = [
                   "Discipline compounds. Tiny steps, big outcomes.",
@@ -50,104 +50,103 @@ jobs:
                   "Your GitHub is your portfolio. Treat it like one.",
                   "Small progress daily becomes an unfair advantage.",
               ]
-              quote = random.choice(quotes)
+              selected_quote = random.choice(quotes)
 
-              def repl(tag, val, s):
-                  pattern = rf"<!--{tag}-->(.*?)<!--/{tag}-->"
-                  new = f"<!--{tag}-->{val}<!--/{tag}-->"
-                  return re.sub(pattern, new, s, flags=re.DOTALL)
+              def replace_tag_content(tag_name, value, text):
+                  pattern = rf"<!--{tag_name}-->(.*?)<!--/{tag_name}-->"
+                  new_content = f"<!--{tag_name}-->{value}<!--/{tag_name}-->"
+                  return re.sub(pattern, new_content, text, flags=re.DOTALL)
 
-              src = repl("LAST_UPDATED", last_updated, src)
-              src = repl("RANDOM_QUOTE", quote, src)
-              return src
+              source_text = replace_tag_content("LAST_UPDATED", last_updated, source_text)
+              source_text = replace_tag_content("RANDOM_QUOTE", selected_quote, source_text)
+              return source_text
 
-          def fetch_medium_posts_feed(feed_url, limit=3):
+          def fetch_medium_posts_feed(feed_url, max_posts=3):
               try:
-                  with urllib.request.urlopen(feed_url, timeout=10) as r:
-                      data = r.read()
-                  root = ET.fromstring(data)
-                  channel = root.find("channel")
-                  if channel is None:
+                  with urllib.request.urlopen(feed_url, timeout=10) as response:
+                      feed_data = response.read()
+                  xml_root = ET.fromstring(feed_data)
+                  rss_channel = xml_root.find("channel")
+                  if rss_channel is None:
                       return []
-                  items = channel.findall("item")[:limit]
-                  posts = []
-                  for it in items:
-                      title = (it.findtext("title") or "").strip()
-                      link = (it.findtext("link") or "").strip()
+                  feed_items = rss_channel.findall("item")[:max_posts]
+                  blog_posts = []
+                  for item in feed_items:
+                      title = (item.findtext("title") or "").strip()
+                      link = (item.findtext("link") or "").strip()
                       if title and link:
-                          posts.append((title, link))
-                  return posts
-              except Exception as e:
-                  print("Medium fetch error:", e)
+                          blog_posts.append((title, link))
+                  return blog_posts
+              except Exception as error:
+                  print("Medium fetch error:", error)
                   return []
 
-          def build_blog_md(posts):
-              if not posts:
+          def build_blog_markdown(blog_posts):
+              if not blog_posts:
                   return "\nLoading latest posts...\n"
-              lines = ["\n"]
-              for title, link in posts:
-                  lines.append(f"- [{title}]({link})")
-              lines.append("\n")
-              return "\n".join(lines)
+              markdown_lines = ["\n"]
+              for title, link in blog_posts:
+                  markdown_lines.append(f"- [{title}]({link})")
+              markdown_lines.append("\n")
+              return "\n".join(markdown_lines)
 
-          def fetch_top_repos(user, limit=4):
+          def fetch_top_repos(github_username, max_repos=4):
               try:
-                  url = f"https://api.github.com/users/{user}/repos?per_page=100&sort=updated"
-                  with urllib.request.urlopen(url, timeout=10) as r:
-                      repos = json.load(r)
-              except Exception as e:
-                  print("GitHub API error:", e)
+                  api_url = f"https://api.github.com/users/{github_username}/repos?per_page=100&sort=updated"
+                  with urllib.request.urlopen(api_url, timeout=10) as response:
+                      repositories = json.load(response)
+              except Exception as error:
+                  print("GitHub API error:", error)
                   return []
 
               # filter out profile repo and junk if needed
-              ignore = {user, f"{user}.github.io", "JET609"}
-              clean = [
-                  r for r in repos
-                  if not r.get("fork")
-                  and r.get("name") not in ignore
-                  and not r.get("name", "").lower().startswith("test")
+              repos_to_ignore = {github_username, f"{github_username}.github.io", "JET609"}
+              filtered_repos = [
+                  repo for repo in repositories
+                  if not repo.get("fork")
+                  and repo.get("name") not in repos_to_ignore
+                  and not repo.get("name", "").lower().startswith("test")
               ]
 
               # sort by stargazers + recent activity
-              clean.sort(key=lambda r: (r.get("stargazers_count", 0), r.get("pushed_at") or ""), reverse=True)
-              return clean[:limit]
+              filtered_repos.sort(key=lambda repo: (repo.get("stargazers_count", 0), repo.get("pushed_at") or ""), reverse=True)
+              return filtered_repos[:max_repos]
 
-          def build_projects_md(repos):
-              if not repos:
+          def build_projects_markdown(repositories):
+              if not repositories:
                   return "\nHighlighting key projects soon...\n"
-              lines = ["\n"]
-              for r in repos:
-                  name = r["name"]
-                  full = r["full_name"]
-                  desc = (r.get("description") or "No description yet.").strip()
-                  stars = r.get("stargazers_count", 0)
-                  lang = r.get("language") or "Tech"
-                  url = r.get("html_url")
-                  lines.append(
-                      f"- [{name}]({url}) — {desc} "
-                      f"· ⭐ {stars} · *{lang}*"
+              markdown_lines = ["\n"]
+              for repo in repositories:
+                  repo_name = repo["name"]
+                  description = (repo.get("description") or "No description yet.").strip()
+                  star_count = repo.get("stargazers_count", 0)
+                  language = repo.get("language") or "Tech"
+                  repo_url = repo.get("html_url")
+                  markdown_lines.append(
+                      f"- [{repo_name}]({repo_url}) — {description} "
+                      f"· ⭐ {star_count} · *{language}*"
                   )
-              lines.append("\n")
-              return "\n".join(lines)
+              markdown_lines.append("\n")
+              return "\n".join(markdown_lines)
 
           # ---------- Apply updates ----------
-          updated = text
+          updated_readme = readme_content
 
           # 1) Last updated + random quote
-          updated = update_last_updated_and_quote(updated)
+          updated_readme = update_last_updated_and_quote(updated_readme)
 
           # 2) Blog posts from Medium
-          posts = fetch_medium_posts_feed("https://medium.com/feed/@jayanththomas2004")
-          blog_md = build_blog_md(posts)
-          updated = replace_block("BLOG", blog_md, updated)
+          blog_posts = fetch_medium_posts_feed("https://medium.com/feed/@jayanththomas2004")
+          blog_posts_markdown = build_blog_markdown(blog_posts)
+          updated_readme = replace_block("BLOG", blog_posts_markdown, updated_readme)
 
           # 3) Auto top projects from GitHub
-          repos = fetch_top_repos("JET609")
-          proj_md = build_projects_md(repos)
-          updated = replace_block("PROJECTS", proj_md, updated)
+          github_repos = fetch_top_repos("JET609")
+          projects_markdown = build_projects_markdown(github_repos)
+          updated_readme = replace_block("PROJECTS", projects_markdown, updated_readme)
 
-          if updated != text:
-              READ_ME.write_text(updated, encoding="utf-8")
+          if updated_readme != readme_content:
+              README_PATH.write_text(updated_readme, encoding="utf-8")
               print("README updated.")
           else:
               print("No changes made.")
