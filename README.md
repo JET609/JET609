@@ -61,8 +61,8 @@ class Main {
 
 <div align="center">
   <sub>
-    <b>Last updated:</b> <!--LAST_UPDATED-->2026-06-26 20:44 IST<!--/LAST_UPDATED--> •
-    <b>Quote:</b> <!--RANDOM_QUOTE-->Discipline compounds. Tiny steps, big outcomes.<!--/RANDOM_QUOTE-->
+    <b>Last updated:</b> <!--LAST_UPDATED-->2026-06-27 19:45 IST<!--/LAST_UPDATED--> •
+    <b>Quote:</b> <!--RANDOM_QUOTE-->Build things that outlive the tutorial.<!--/RANDOM_QUOTE-->
   </sub>
 </div>
 
