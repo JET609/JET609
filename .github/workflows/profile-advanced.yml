@@ -92,7 +92,8 @@ jobs:
 
           def fetch_top_repos(user, limit=4):
               try:
-                  url = f"https://api.github.com/users/{user}/repos?per_page=100&sort=updated"
+                  # Fetch limited repos - buffer of 10 accounts for filtered repos (forks, profile, test repos)
+                  url = f"https://api.github.com/users/{user}/repos?per_page={limit + 10}&sort=updated"
                   with urllib.request.urlopen(url, timeout=10) as r:
                       repos = json.load(r)
               except Exception as e:
@@ -101,15 +102,15 @@ jobs:
 
               # filter out profile repo and junk if needed
               ignore = {user, f"{user}.github.io", "JET609"}
-              clean = [
-                  r for r in repos
-                  if not r.get("fork")
-                  and r.get("name") not in ignore
-                  and not r.get("name", "").lower().startswith("test")
-              ]
-
-              # sort by stargazers + recent activity
-              clean.sort(key=lambda r: (r.get("stargazers_count", 0), r.get("pushed_at") or ""), reverse=True)
+              # Filter and sort in one operation for cleaner code
+              clean = sorted(
+                  (r for r in repos
+                   if not r.get("fork")
+                   and r.get("name") not in ignore
+                   and not r.get("name", "").lower().startswith("test")),
+                  key=lambda r: (r.get("stargazers_count", 0), r.get("pushed_at") or ""),
+                  reverse=True
+              )
               return clean[:limit]
 
           def build_projects_md(repos):
