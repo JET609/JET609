@@ -134,7 +134,7 @@
     <header>
       <div>
         <h1>Martian Outbreak // JET609</h1>
-        <div class="meta">Retro-futuristic sci-fi horror battlefield, built for GitHub Pages.</div>
+        <div class="meta">One marine. Endless hordes. Earth's last line of defense.</div>
       </div>
       <div class="controls">
         Click to lock mouse-look<br />
@@ -152,8 +152,8 @@
       <canvas id="game" width="1280" height="720"></canvas>
       <div class="overlay" id="overlay">
         <div class="card" id="card">
-          <h2>Drop into Mars</h2>
-          <p>First-person breach response. Clicking locks your mouse-look — WASD to move, click to fire. Clear every corridor of the research complex.</p>
+          <h2>You Are Unstoppable</h2>
+          <p>A demonic breach has torn open the Mars research complex — and it won't stop there. You're the only thing standing between this horde and Earth. Click to lock your mouse-look, WASD to move, click to fire. Hold the line.</p>
           <button class="button" id="startBtn">Deploy Marine</button>
         </div>
       </div>
@@ -473,6 +473,13 @@
         player.fireCd = 0.38;
       }
 
+      // A truly unstoppable marine shrugs off scrapes over time — a slow
+      // passive regen, nowhere near enough to tank a horde, just enough
+      // that a clean stretch between waves earns some health back.
+      if (player.health > 0 && player.health < 100) {
+        player.health = Math.min(100, player.health + 1.4 * dt);
+      }
+
       // Enemies chase the player with simple grid collision
       enemies.forEach((e) => {
         const ex = player.x - e.x, ey = player.y - e.y;
@@ -506,8 +513,8 @@
       if (player.health <= 0) {
         gameOver = true;
         card.innerHTML = `
-          <h2 class="danger">Run Failed</h2>
-          <p>The horde overtook you on Wave ${wave}.<br/>Total Score: ${score}</p>
+          <h2 class="danger">Earth's Defense Has Fallen</h2>
+          <p>The horde overtook you on Wave ${wave}. There's no one left between them and Earth.<br/>Total Score: ${score}</p>
           <button class="button" id="startBtn">Deploy Again</button>
         `;
         document.getElementById("startBtn").addEventListener("click", reset);
@@ -982,7 +989,7 @@
       ctx.strokeRect(18, 18, 236, 86);
       ctx.fillStyle = "#ffbd4a";
       ctx.font = "bold 12px monospace";
-      ctx.fillText("MARS QUARANTINE // CRITICAL", 28, 38);
+      ctx.fillText("MARS FRONTLINE // CRITICAL", 28, 38);
       ctx.fillStyle = "#f0f5ff";
       ctx.font = "bold 14px monospace";
       ctx.fillText(`WAVE ${wave}`, 28, 60);
