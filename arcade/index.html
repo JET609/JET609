@@ -234,6 +234,9 @@
     let screenShake = 0;
     let flashTimer = 0;
     let recoil = 0;
+    let waveAnnounceT = 0;
+    let bobT = 0;
+    let isMoving = false;
 
     const keys = {};
     let pointerLocked = false;
@@ -249,6 +252,79 @@
     let sparks = [];
     let bursts = [];
     let hitMarkers = []; // brief screen-space "you hit something" flashes
+
+    // ============================================================
+    // AUDIO — tiny WebAudio synth, no external files. Started on the
+    // "Deploy Marine" click so browsers don't block it as autoplay.
+    // ============================================================
+    let audioCtx = null;
+    let ambientGain = null;
+    let hurtCd = 0;
+
+    function initAudio() {
+      if (audioCtx) return;
+      try {
+        const AC = window.AudioContext || window.webkitAudioContext;
+        audioCtx = new AC();
+      } catch (e) { /* audio unavailable — game stays fully playable without it */ }
+    }
+
+    function tone(freq, duration, type, volume, fadeTime) {
+      if (!audioCtx) return;
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      osc.type = type;
+      osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+      gain.gain.setValueAtTime(0, audioCtx.currentTime);
+      gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + fadeTime);
+      gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + duration);
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start();
+      osc.stop(audioCtx.currentTime + duration);
+    }
+
+    function noiseBurst(duration, volume) {
+      if (!audioCtx) return;
+      const bufferSize = Math.floor(audioCtx.sampleRate * duration);
+      const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+      const data = buffer.getChannelData(0);
+      for (let i = 0; i < bufferSize; i++) data[i] = (Math.random() * 2 - 1) * (1 - i / bufferSize);
+      const src = audioCtx.createBufferSource();
+      src.buffer = buffer;
+      const filter = audioCtx.createBiquadFilter();
+      filter.type = "lowpass";
+      filter.frequency.setValueAtTime(2200, audioCtx.currentTime);
+      const gain = audioCtx.createGain();
+      gain.gain.setValueAtTime(volume, audioCtx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+      src.connect(filter); filter.connect(gain); gain.connect(audioCtx.destination);
+      src.start();
+    }
+
+    function playShot() { noiseBurst(0.18, 0.35); tone(90, 0.22, "sine", 0.3, 0.005); }
+    function playHit() { tone(680 + Math.random() * 220, 0.08, "square", 0.12, 0.005); }
+    function playDeath() { tone(180, 0.35, "sawtooth", 0.18, 0.01); tone(90, 0.4, "sine", 0.15, 0.02); }
+    function playWaveStart() {
+      [523.25, 659.25, 783.99].forEach((f, i) => setTimeout(() => tone(f, 0.25, "sine", 0.12, 0.02), i * 80));
+    }
+    function playHurt(dt) {
+      hurtCd -= dt;
+      if (hurtCd > 0) return;
+      hurtCd = 0.35;
+      tone(140, 0.16, "square", 0.16, 0.005);
+    }
+    function startAmbient() {
+      if (!audioCtx || ambientGain) return;
+      const osc1 = audioCtx.createOscillator();
+      osc1.type = "sine"; osc1.frequency.value = 55;
+      const osc2 = audioCtx.createOscillator();
+      osc2.type = "sine"; osc2.frequency.value = 58;
+      ambientGain = audioCtx.createGain();
+      ambientGain.gain.value = 0.045;
+      osc1.connect(ambientGain); osc2.connect(ambientGain); ambientGain.connect(audioCtx.destination);
+      osc1.start(); osc2.start();
+    }
 
     const enemyKinds = [
       { kind: "demon", color: "#7b0f18", accent: "#ffbd4a", hp: 1, speed: 1, r: 1 },
@@ -277,10 +353,13 @@
       sparks = [];
       bursts = [];
       hitMarkers = [];
+      waveAnnounceT = 2.2;
       spawnWave();
       overlay.style.display = "none";
       syncHud();
       canvas.requestPointerLock();
+      initAudio();
+      startAmbient();
     }
 
     function farFromPlayer(cell, minDist) {
@@ -301,6 +380,7 @@
           speed: (1.1 + wave * 0.08 + Math.random() * 0.3) * archetype.speed,
           hp: archetype.hp + Math.floor(wave / 3),
           wobble: Math.random() * Math.PI * 2,
+          flashT: 0,
           kind: archetype.kind,
           color: archetype.color,
           accent: archetype.accent
@@ -366,6 +446,7 @@
       if (screenShake > 0) screenShake -= dt * 40;
       if (screenShake < 0) screenShake = 0;
       if (flashTimer > 0) flashTimer -= dt;
+      if (waveAnnounceT > 0) waveAnnounceT -= dt;
       recoil += (0 - recoil) * Math.min(1, dt * 8);
 
       // Movement relative to facing direction
@@ -378,7 +459,8 @@
       if (keys["ArrowRight"]) player.angle += 2.2 * dt;
 
       const len = Math.hypot(fwd, strafe);
-      if (len > 0) { fwd /= len; strafe /= len; }
+      isMoving = len > 0;
+      if (isMoving) { fwd /= len; strafe /= len; bobT += dt * 9; }
       const speed = (keys["Shift"] ? 4.6 : 2.6) * dt;
       const ca = Math.cos(player.angle), sa = Math.sin(player.angle);
       const dx = (fwd * ca - strafe * sa) * speed;
@@ -396,6 +478,7 @@
         const ex = player.x - e.x, ey = player.y - e.y;
         const dist = Math.hypot(ex, ey);
         e.wobble += dt * 5;
+        if (e.flashT > 0) e.flashT -= dt;
         if (dist > 0.05) {
           const mvx = (ex / dist) * e.speed * dt;
           const mvy = (ey / dist) * e.speed * dt;
@@ -404,16 +487,19 @@
         if (dist < e.r + 0.5) {
           player.health -= 26 * dt;
           screenShake = Math.max(screenShake, 4);
+          playHurt(dt);
         }
       });
 
       enemies = enemies.filter((e) => {
-        if (e.hp <= 0) { kills++; return false; }
+        if (e.hp <= 0) { kills++; playDeath(); return false; }
         return true;
       });
 
       if (enemies.length === 0) {
         wave++;
+        waveAnnounceT = 2.2;
+        playWaveStart();
         spawnWave();
       }
 
@@ -446,6 +532,7 @@
       screenShake = Math.max(screenShake, 5);
       flashTimer = 0.08;
       recoil = 1;
+      playShot();
       const spreadAngles = [player.angle - 0.09, player.angle, player.angle + 0.09];
       spreadAngles.forEach((pelletAngle) => {
         const wallHit = castRay(player.x, player.y, pelletAngle);
@@ -463,8 +550,10 @@
         });
         if (best) {
           best.hp -= 1;
+          best.flashT = 0.12;
           score += 15;
           hitMarkers.push({ life: 0.12 });
+          playHit();
           for (let i = 0; i < 3; i++) {
             bursts.push({ life: 0.3, x: best.x, y: best.y, color: best.accent });
           }
@@ -549,6 +638,16 @@
       ctx.scale(scale, scale);
       ctx.rotate(Math.sin(e.wobble) * 0.06);
       drawEnemySprite(e);
+      if (e.flashT > 0) {
+        ctx.save();
+        ctx.globalCompositeOperation = "screen";
+        ctx.globalAlpha = Math.min(1, e.flashT / 0.12) * 0.85;
+        ctx.fillStyle = "#ffffff";
+        ctx.beginPath();
+        ctx.arc(0, 0, 62 * 0.9, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+      }
       ctx.restore();
     }
 
@@ -712,8 +811,10 @@
 
     function drawWeapon() {
       const kick = recoil * 22;
+      const bobX = isMoving ? Math.cos(bobT * 0.5) * 5 : 0;
+      const bobY = isMoving ? Math.abs(Math.sin(bobT)) * 8 : 0;
       ctx.save();
-      ctx.translate(SW / 2, SH - kick);
+      ctx.translate(SW / 2 + bobX, SH - kick + bobY);
       // Shotgun silhouette, viewed from behind
       ctx.fillStyle = "#22262f";
       ctx.fillRect(-34, -170, 68, 180);
@@ -762,6 +863,68 @@
         ctx.fillStyle = `rgba(255,180,90,${flashTimer * 0.9})`;
         ctx.fillRect(0, 0, SW, SH);
       }
+
+      if (player.health < 35 && player.health > 0 && !gameOver) {
+        const pulse = 0.16 + Math.sin(performance.now() / 180) * 0.1;
+        const urgency = 1 - player.health / 35;
+        ctx.save();
+        const g = ctx.createRadialGradient(SW / 2, SH / 2, SH * 0.25, SW / 2, SH / 2, SH * 0.7);
+        g.addColorStop(0, "rgba(200,20,20,0)");
+        g.addColorStop(1, `rgba(200,20,20,${pulse * urgency})`);
+        ctx.fillStyle = g;
+        ctx.fillRect(0, 0, SW, SH);
+        ctx.restore();
+      }
+    }
+
+    // Screen-space hit-impact flashes at the world position they occurred,
+    // respecting wall occlusion the same way enemy sprites do.
+    function drawBursts() {
+      bursts.forEach((b) => {
+        const edx = b.x - player.x, edy = b.y - player.y;
+        const dist = Math.hypot(edx, edy);
+        const angleToE = Math.atan2(edy, edx);
+        const rel = normalizeAngle(angleToE - player.angle);
+        if (Math.abs(rel) > FOV / 2 + 0.3 || dist < 0.05) return;
+        const screenX = (SW / 2) + (rel / FOV) * SW;
+        const col = Math.floor((screenX / SW) * RAYS);
+        if (col >= 0 && col < RAYS && zbuffer[col] < dist - 0.15) return;
+        const screenY = SH / 2 + (PROJ / dist) * 0.06;
+        const t = 1 - Math.max(0, b.life) / 0.3;
+        const size = Math.min(140, (PROJ / dist) * 0.55) * (0.4 + t);
+        ctx.save();
+        ctx.globalCompositeOperation = "screen";
+        ctx.globalAlpha = Math.max(0, b.life / 0.3);
+        ctx.shadowBlur = 26;
+        ctx.shadowColor = b.color;
+        ctx.strokeStyle = b.color;
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.arc(screenX, screenY, size, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.restore();
+      });
+    }
+
+    function drawWaveBanner() {
+      if (waveAnnounceT <= 0) return;
+      let a = 1;
+      if (waveAnnounceT > 1.8) a = (2.2 - waveAnnounceT) / 0.4;
+      else if (waveAnnounceT < 0.4) a = waveAnnounceT / 0.4;
+      ctx.save();
+      ctx.globalAlpha = Math.max(0, Math.min(1, a));
+      ctx.textAlign = "center";
+      ctx.shadowBlur = 22;
+      ctx.shadowColor = "rgba(255,50,50,0.6)";
+      ctx.fillStyle = "#ff5b5b";
+      ctx.font = "bold 46px monospace";
+      ctx.fillText(`WAVE ${wave}`, SW / 2, SH / 2 - 140);
+      ctx.shadowBlur = 0;
+      ctx.fillStyle = "#f0f5ff";
+      ctx.font = "bold 14px monospace";
+      ctx.fillText("INCOMING", SW / 2, SH / 2 - 108);
+      ctx.textAlign = "left";
+      ctx.restore();
     }
 
     function drawMinimap() {
@@ -864,12 +1027,14 @@
           return db - da; // far to near
         });
         sorted.forEach(drawSprite);
+        drawBursts();
         drawWeapon();
       }
 
       drawGrit();
       drawMinimap();
       drawHud();
+      if (!gameOver) drawWaveBanner();
 
       ctx.restore();
     }
