@@ -86,13 +86,19 @@ class Main {
 <pre align="center">
 $ whoami
 Jayanth Eapen Thomas — B.Tech CSE student, builder, shipper.
-
-$ cat focus.txt
-Automation & systems · Modern web apps · ML & analytics
-
-$ echo $PORTFOLIO
-https://jaytee.world
 </pre>
+
+<div align="center">
+  <img src="https://img.shields.io/badge/⚙️_Automation_%26_Systems-00E5FF?style=for-the-badge&labelColor=000814" />
+  <img src="https://img.shields.io/badge/🌐_Modern_Web_Apps-92FF3E?style=for-the-badge&labelColor=000814" />
+  <img src="https://img.shields.io/badge/📊_ML_%26_Analytics-FFBD4A?style=for-the-badge&labelColor=000814" />
+</div>
+
+<div align="center">
+  <a href="https://jaytee.world" target="_blank">
+    <img src="https://img.shields.io/badge/🚀_Live_Portfolio-jaytee.world-FF5B5B?style=for-the-badge&labelColor=000814" />
+  </a>
+</div>
 
 ---
 
