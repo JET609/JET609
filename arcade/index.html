@@ -627,7 +627,10 @@
       const col = Math.floor((screenX / SW) * RAYS);
       if (col >= 0 && col < RAYS && zbuffer[col] < dist - 0.15) return; // occluded by a wall
 
-      const size = Math.min(SH * 1.4, (PROJ / dist) * (e.spriteR / 60) * 3.4);
+      // Floor the distance used for sizing (not for hit/occlusion logic) so
+      // sprites don't balloon into an oversized flat cutout at point-blank range.
+      const sizeDist = Math.max(dist, 1.1);
+      const size = Math.min(SH * 0.62, (PROJ / sizeDist) * (e.spriteR / 60) * 1.6);
       const screenY = SH / 2 + size * 0.06;
 
       ctx.save();
@@ -659,10 +662,25 @@
       return drawDemon(e, r);
     }
 
+    // Radial-gradient body fill instead of a flat solid color — gives the
+    // billboarded sprites a sense of roundness/volume so they read as a
+    // creature rather than a flat paper cutout, especially up close where
+    // they fill a lot of the screen.
+    function bodyShading(hex, r) {
+      const n = parseInt(hex.slice(1), 16);
+      const lr = Math.min(255, (n >> 16) + 80);
+      const lg = Math.min(255, ((n >> 8) & 0xff) + 80);
+      const lb = Math.min(255, (n & 0xff) + 80);
+      const g = ctx.createRadialGradient(-r * 0.28, -r * 0.4, r * 0.15, 0, 0, r * 1.3);
+      g.addColorStop(0, `rgb(${lr},${lg},${lb})`);
+      g.addColorStop(1, hex);
+      return g;
+    }
+
     function drawDemon(e, r) {
       ctx.shadowBlur = 12;
       ctx.shadowColor = "rgba(255,40,30,0.5)";
-      ctx.fillStyle = e.color;
+      ctx.fillStyle = bodyShading(e.color, r);
       ctx.beginPath();
       ctx.moveTo(-r * 0.9, r * 0.3);
       ctx.lineTo(-r * 0.6, -r * 0.7);
@@ -700,7 +718,7 @@
     function drawSkull(e, r) {
       ctx.shadowBlur = 12;
       ctx.shadowColor = "rgba(220,220,210,0.35)";
-      ctx.fillStyle = e.color;
+      ctx.fillStyle = bodyShading(e.color, r);
       ctx.beginPath();
       ctx.arc(0, -r * 0.15, r * 0.85, Math.PI, 0);
       ctx.lineTo(r * 0.75, r * 0.35);
@@ -733,7 +751,7 @@
     function drawCyber(e, r) {
       ctx.shadowBlur = 12;
       ctx.shadowColor = "rgba(95,246,255,0.55)";
-      ctx.fillStyle = e.color;
+      ctx.fillStyle = bodyShading(e.color, r);
       ctx.beginPath();
       ctx.moveTo(-r, -r * 0.5);
       ctx.lineTo(-r * 0.6, -r * 0.9);
@@ -766,7 +784,7 @@
     function drawBeast(e, r) {
       ctx.shadowBlur = 16;
       ctx.shadowColor = "rgba(146,255,62,0.3)";
-      ctx.fillStyle = e.color;
+      ctx.fillStyle = bodyShading(e.color, r);
       ctx.beginPath();
       ctx.moveTo(-r * 1.1, r * 0.2);
       ctx.lineTo(-r * 0.9, -r * 0.5);
