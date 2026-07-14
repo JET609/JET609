@@ -95,34 +95,6 @@ I’m **Jayanth Eapen Thomas**, a B.Tech CSE student who likes building practica
 
 ---
 
-## Starting grid
-
-<!--PROJECTS_START-->
-
-- [.github-workflows-daily-streak.yml](https://github.com/JET609/.github-workflows-daily-streak.yml) — No description yet. · ⭐ 0 · *Tech*
-- [devops](https://github.com/JET609/devops) — No description yet. · ⭐ 0 · *Tech*
-- [teamsync1](https://github.com/JET609/teamsync1) — No description yet. · ⭐ 0 · *TypeScript*
-- [ai-employee-dir](https://github.com/JET609/ai-employee-dir) — No description yet. · ⭐ 0 · *Tech*
-
-<!--PROJECTS_END-->
-
----
-
-## GitHub stats
-
-<div align="center">
-  <table>
-    <tr>
-    </tr>
-  </table>
-
-  <img src="https://streak-stats.demolab.com?user=JET609&theme=tokyonight&hide_border=true&date_format=M%20j%5B,%20Y%5D" /><br/>
-  <img src="https://github-profile-trophy.vercel.app/?username=JET609&theme=tokyonight&no-frame=true&margin-w=8&row=1" /><br/>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=JET609&theme=tokyo-night&hide_border=true&area=true&radius=10&custom_title=Contribution%20Heatmap" width="100%" />
-</div>
-
----
-
 ## Race grid
 
 <div align="center">
@@ -180,8 +152,6 @@ Loading latest posts...
 <div align="center">
   <a href="https://jaytee.world"><img src="https://img.shields.io/badge/Website-jaytee.world-00E5FF?style=for-the-badge&logo=google-chrome&logoColor=000814" /></a>
   <a href="https://www.linkedin.com/in/jayanth-thomas-027318221/"><img src="https://img.shields.io/badge/LinkedIn-Jayanth_Thomas-0A66C2?style=for-the-badge&logo=linkedin&logoColor=ffffff" /></a>
-  <a href="mailto:jayanththomas2004@gmail.com"><img src="https://img.shields.io/badge/Gmail-jayanththomas2004-D14836?style=for-the-badge&logo=gmail&logoColor=ffffff" /></a>
-  <a href="https://twitter.com/JAYANTHTHOMASS"><img src="https://img.shields.io/badge/Twitter-@JAYANTHTHOMASS-1DA1F2?style=for-the-badge&logo=twitter&logoColor=ffffff" /></a>
   <a href="https://medium.com/@jayanththomas2004"><img src="https://img.shields.io/badge/Medium-Jayanththomas2004-12100E?style=for-the-badge&logo=medium&logoColor=ffffff" /></a>
 </div>
 
