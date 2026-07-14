@@ -291,7 +291,7 @@
         enemies.push({
           x: pos[0],
           y: pos[1],
-          r: (16 + Math.random() * 10) * archetype.r,
+          r: (22 + Math.random() * 12) * archetype.r,
           speed: (70 + wave * 10 + Math.random() * 30) * archetype.speed,
           hp: archetype.hp + Math.floor(wave / 3),
           wobble: Math.random() * Math.PI * 2,
@@ -572,23 +572,55 @@
       }
       ctx.restore();
 
-      // Lava channels
+      // Lava channels — charred rock crust with glowing molten cracks running
+      // through it, instead of one flat glowing ribbon
       const lavaBands = [
         [{ x: 140, y: 500 }, { x: 420, y: 470 }, { x: 700, y: 486 }, { x: 1140, y: 442 }, { x: 1140, y: 520 }, { x: 720, y: 566 }, { x: 420, y: 548 }, { x: 140, y: 580 }],
         [{ x: 118, y: 270 }, { x: 428, y: 246 }, { x: 704, y: 256 }, { x: 1082, y: 220 }, { x: 1082, y: 286 }, { x: 708, y: 320 }, { x: 430, y: 308 }, { x: 118, y: 336 }]
       ];
       lavaBands.forEach((band, idx) => {
         ctx.save();
-        ctx.shadowBlur = 35; // Increased bloom
-        ctx.shadowColor = idx ? "rgba(255,50,50,0.9)" : "rgba(255,150,50,0.9)";
-        ctx.fillStyle = idx ? "#c21b23" : "#ff8a1c";
+        // Base crust — dark charred rock, not a bright fill
+        ctx.fillStyle = idx ? "#210704" : "#241002";
         ctx.beginPath();
         ctx.moveTo(band[0].x, band[0].y);
         for (let i = 1; i < band.length; i++) ctx.lineTo(band[i].x, band[i].y);
         ctx.closePath();
         ctx.fill();
-        ctx.fillStyle = "rgba(255,255,255,0.18)";
-        ctx.fillRect(200 + idx * 80, 0, 18, world.h);
+        ctx.clip(); // keep the cracks and mottling confined to the band
+
+        const minX = Math.min(...band.map((p) => p.x));
+        const maxX = Math.max(...band.map((p) => p.x));
+        const minY = Math.min(...band.map((p) => p.y));
+        const maxY = Math.max(...band.map((p) => p.y));
+
+        // Molten cracks — jagged glowing seams, not a solid glow
+        ctx.shadowBlur = 16;
+        ctx.shadowColor = idx ? "rgba(255,60,40,0.85)" : "rgba(255,140,40,0.85)";
+        ctx.strokeStyle = idx ? "#ff4423" : "#ff8a1c";
+        ctx.lineWidth = 5;
+        for (let c = 0; c < 4; c++) {
+          const sy = minY + (maxY - minY) * (0.12 + c * 0.24);
+          ctx.beginPath();
+          ctx.moveTo(minX, sy);
+          let cx = minX;
+          while (cx < maxX) {
+            cx += 26 + Math.random() * 46;
+            ctx.lineTo(cx, sy + (Math.random() - 0.5) * 20);
+          }
+          ctx.stroke();
+        }
+        ctx.shadowBlur = 0;
+
+        // Cooled dark patches for texture/grit
+        ctx.fillStyle = "rgba(8,3,2,0.5)";
+        for (let p = 0; p < 9; p++) {
+          const px = minX + Math.random() * (maxX - minX);
+          const py = minY + Math.random() * (maxY - minY);
+          ctx.beginPath();
+          ctx.arc(px, py, 9 + Math.random() * 16, 0, Math.PI * 2);
+          ctx.fill();
+        }
         ctx.restore();
       });
 
@@ -728,7 +760,8 @@
       ctx.save();
       ctx.translate(player.x, player.y);
       ctx.rotate(player.angle);
-      
+      ctx.scale(1.25, 1.25); // bigger and chunkier, easier to read against the busier scene
+
       // Shadow
       ctx.fillStyle = "rgba(0,0,0,0.42)";
       ctx.beginPath();
@@ -811,86 +844,190 @@
     function drawDemon(e) {
       ctx.save();
       ctx.translate(e.x, e.y);
-      ctx.rotate(Math.sin(e.wobble) * 0.2);
-      ctx.shadowBlur = 25;
-      ctx.shadowColor = "rgba(255,50,50,0.8)";
+      ctx.rotate(Math.sin(e.wobble) * 0.15);
+      const r = e.r;
+      // Jagged imp silhouette, not a plain circle
+      ctx.shadowBlur = 12;
+      ctx.shadowColor = "rgba(255,40,30,0.5)";
       ctx.fillStyle = e.color;
       ctx.beginPath();
-      ctx.arc(0, 0, e.r, 0, Math.PI * 2);
+      ctx.moveTo(-r * 0.9, r * 0.3);
+      ctx.lineTo(-r * 0.6, -r * 0.7);
+      ctx.lineTo(-r * 0.15, -r * 0.45);
+      ctx.lineTo(0, -r * 0.95);
+      ctx.lineTo(r * 0.15, -r * 0.45);
+      ctx.lineTo(r * 0.6, -r * 0.7);
+      ctx.lineTo(r * 0.9, r * 0.3);
+      ctx.lineTo(r * 0.55, r * 0.95);
+      ctx.lineTo(-r * 0.55, r * 0.95);
+      ctx.closePath();
       ctx.fill();
-      ctx.fillStyle = "rgba(0,0,0,0.35)";
-      ctx.beginPath(); ctx.arc(-6, -3, e.r * 0.22, 0, Math.PI * 2); ctx.fill();
-      ctx.beginPath(); ctx.arc(6, -3, e.r * 0.22, 0, Math.PI * 2); ctx.fill();
-      ctx.strokeStyle = e.accent;
-      ctx.lineWidth = 2;
+      ctx.shadowBlur = 0;
+      // Mottled dark skin patches
+      ctx.fillStyle = "rgba(0,0,0,0.3)";
+      ctx.beginPath(); ctx.arc(-r * 0.3, r * 0.2, r * 0.22, 0, Math.PI * 2); ctx.fill();
+      ctx.beginPath(); ctx.arc(r * 0.25, r * 0.4, r * 0.18, 0, Math.PI * 2); ctx.fill();
+      // Horns
+      ctx.fillStyle = "#160b06";
       ctx.beginPath();
-      ctx.moveTo(-e.r * 0.55, -e.r * 0.6);
-      ctx.lineTo(-e.r * 0.12, -e.r * 1.05);
-      ctx.lineTo(0, -e.r * 0.55);
-      ctx.moveTo(e.r * 0.55, -e.r * 0.6);
-      ctx.lineTo(e.r * 0.12, -e.r * 1.05);
-      ctx.lineTo(0, -e.r * 0.55);
-      ctx.stroke();
+      ctx.moveTo(-r * 0.5, -r * 0.55); ctx.lineTo(-r * 0.7, -r * 1.15); ctx.lineTo(-r * 0.3, -r * 0.6);
+      ctx.closePath(); ctx.fill();
+      ctx.beginPath();
+      ctx.moveTo(r * 0.5, -r * 0.55); ctx.lineTo(r * 0.7, -r * 1.15); ctx.lineTo(r * 0.3, -r * 0.6);
+      ctx.closePath(); ctx.fill();
+      // Glowing eyes
+      ctx.shadowBlur = 10;
+      ctx.shadowColor = e.accent;
+      ctx.fillStyle = e.accent;
+      ctx.beginPath(); ctx.arc(-r * 0.22, -r * 0.05, r * 0.14, 0, Math.PI * 2); ctx.fill();
+      ctx.beginPath(); ctx.arc(r * 0.22, -r * 0.05, r * 0.14, 0, Math.PI * 2); ctx.fill();
+      ctx.shadowBlur = 0;
+      // Fangs
+      ctx.fillStyle = "#f0e8d8";
+      ctx.beginPath(); ctx.moveTo(-r * 0.12, r * 0.18); ctx.lineTo(-r * 0.05, r * 0.36); ctx.lineTo(-r * 0.19, r * 0.32); ctx.closePath(); ctx.fill();
+      ctx.beginPath(); ctx.moveTo(r * 0.12, r * 0.18); ctx.lineTo(r * 0.05, r * 0.36); ctx.lineTo(r * 0.19, r * 0.32); ctx.closePath(); ctx.fill();
       ctx.restore();
     }
 
     function drawSkull(e) {
       ctx.save();
       ctx.translate(e.x, e.y);
-      ctx.rotate(Math.sin(e.wobble * 1.4) * 0.25);
+      ctx.rotate(Math.sin(e.wobble * 1.4) * 0.2);
+      const r = e.r;
+      ctx.shadowBlur = 12;
+      ctx.shadowColor = "rgba(220,220,210,0.35)";
+      // Cranium + jagged jaw silhouette
       ctx.fillStyle = e.color;
-      ctx.shadowBlur = 25;
-      ctx.shadowColor = "rgba(255,255,255,0.35)";
       ctx.beginPath();
-      ctx.arc(0, 0, e.r, 0, Math.PI * 2);
+      ctx.arc(0, -r * 0.15, r * 0.85, Math.PI, 0);
+      ctx.lineTo(r * 0.75, r * 0.35);
+      ctx.lineTo(r * 0.5, r * 0.55);
+      ctx.lineTo(r * 0.25, r * 0.4);
+      ctx.lineTo(0, r * 0.55);
+      ctx.lineTo(-r * 0.25, r * 0.4);
+      ctx.lineTo(-r * 0.5, r * 0.55);
+      ctx.lineTo(-r * 0.75, r * 0.35);
+      ctx.closePath();
       ctx.fill();
-      ctx.fillStyle = "#081018";
-      ctx.beginPath(); ctx.arc(-5, -2, e.r * 0.18, 0, Math.PI * 2); ctx.fill();
-      ctx.beginPath(); ctx.arc(5, -2, e.r * 0.18, 0, Math.PI * 2); ctx.fill();
+      ctx.shadowBlur = 0;
+      // Bone cracks
+      ctx.strokeStyle = "rgba(40,35,30,0.5)";
+      ctx.lineWidth = 1.5;
+      ctx.beginPath(); ctx.moveTo(-r * 0.2, -r * 0.7); ctx.lineTo(-r * 0.05, -r * 0.3); ctx.stroke();
+      // Deep eye sockets with glow
+      ctx.fillStyle = "#0a0805";
+      ctx.beginPath(); ctx.arc(-r * 0.32, -r * 0.12, r * 0.22, 0, Math.PI * 2); ctx.fill();
+      ctx.beginPath(); ctx.arc(r * 0.32, -r * 0.12, r * 0.22, 0, Math.PI * 2); ctx.fill();
+      ctx.shadowBlur = 10;
+      ctx.shadowColor = e.accent;
       ctx.fillStyle = e.accent;
-      ctx.beginPath(); ctx.arc(0, 5, e.r * 0.16, 0, Math.PI * 2); ctx.fill();
+      ctx.beginPath(); ctx.arc(-r * 0.32, -r * 0.12, r * 0.08, 0, Math.PI * 2); ctx.fill();
+      ctx.beginPath(); ctx.arc(r * 0.32, -r * 0.12, r * 0.08, 0, Math.PI * 2); ctx.fill();
+      ctx.shadowBlur = 0;
+      // Nasal cavity
+      ctx.fillStyle = "#0a0805";
+      ctx.beginPath();
+      ctx.moveTo(0, r * 0.05); ctx.lineTo(-r * 0.1, r * 0.22); ctx.lineTo(r * 0.1, r * 0.22); ctx.closePath(); ctx.fill();
+      // Teeth row
+      for (let i = -3; i <= 3; i++) {
+        ctx.fillRect(i * r * 0.11 - r * 0.02, r * 0.32, r * 0.05, r * 0.16);
+      }
       ctx.restore();
     }
 
     function drawCyber(e) {
       ctx.save();
       ctx.translate(e.x, e.y);
-      ctx.rotate(Math.sin(e.wobble * 0.7) * 0.15);
-      ctx.shadowBlur = 20;
-      ctx.shadowColor = "rgba(95,246,255,0.85)";
+      ctx.rotate(Math.sin(e.wobble * 0.7) * 0.12);
+      const r = e.r;
+      // Angular armored chassis, not a rounded box
+      ctx.shadowBlur = 12;
+      ctx.shadowColor = "rgba(95,246,255,0.55)";
       ctx.fillStyle = e.color;
       ctx.beginPath();
-      ctx.roundRect(-e.r, -e.r * 0.75, e.r * 2, e.r * 1.5, 6);
+      ctx.moveTo(-r, -r * 0.5);
+      ctx.lineTo(-r * 0.6, -r * 0.9);
+      ctx.lineTo(r * 0.6, -r * 0.9);
+      ctx.lineTo(r, -r * 0.5);
+      ctx.lineTo(r, r * 0.6);
+      ctx.lineTo(r * 0.5, r * 0.95);
+      ctx.lineTo(-r * 0.5, r * 0.95);
+      ctx.lineTo(-r, r * 0.6);
+      ctx.closePath();
       ctx.fill();
+      ctx.shadowBlur = 0;
+      // Panel seams
+      ctx.strokeStyle = "rgba(0,0,0,0.45)";
+      ctx.lineWidth = 2;
+      ctx.strokeRect(-r * 0.7, -r * 0.3, r * 1.4, r * 0.5);
+      // Cyclops eye
+      ctx.shadowBlur = 14;
+      ctx.shadowColor = e.accent;
       ctx.fillStyle = e.accent;
-      ctx.fillRect(-e.r * 0.65, -2, e.r * 1.3, 4);
-      ctx.fillRect(-3, -e.r * 0.55, 6, e.r * 1.1);
-      ctx.strokeStyle = "rgba(0,0,0,0.5)";
-      ctx.strokeRect(-e.r, -e.r * 0.75, e.r * 2, e.r * 1.5);
+      ctx.beginPath(); ctx.arc(0, -r * 0.1, r * 0.22, 0, Math.PI * 2); ctx.fill();
+      ctx.shadowBlur = 0;
+      ctx.fillStyle = "rgba(0,0,0,0.7)";
+      ctx.beginPath(); ctx.arc(0, -r * 0.1, r * 0.09, 0, Math.PI * 2); ctx.fill();
+      // Vents
+      ctx.fillStyle = e.accent;
+      ctx.globalAlpha = 0.7;
+      ctx.fillRect(-r * 0.5, r * 0.35, r * 0.25, r * 0.08);
+      ctx.fillRect(r * 0.25, r * 0.35, r * 0.25, r * 0.08);
+      ctx.globalAlpha = 1;
       ctx.restore();
     }
 
     function drawBeast(e) {
       ctx.save();
       ctx.translate(e.x, e.y);
-      ctx.rotate(Math.sin(e.wobble * 0.9) * 0.18);
-      ctx.shadowBlur = 30;
-      ctx.shadowColor = "rgba(146,255,62,0.6)";
+      ctx.rotate(Math.sin(e.wobble * 0.9) * 0.1);
+      const r = e.r;
+      // Hulking irregular body, not a plain circle
+      ctx.shadowBlur = 16;
+      ctx.shadowColor = "rgba(146,255,62,0.3)";
       ctx.fillStyle = e.color;
       ctx.beginPath();
-      ctx.arc(0, 0, e.r, 0, Math.PI * 2);
+      ctx.moveTo(-r * 1.1, r * 0.2);
+      ctx.lineTo(-r * 0.9, -r * 0.5);
+      ctx.lineTo(-r * 0.4, -r * 0.9);
+      ctx.lineTo(r * 0.1, -r * 1.05);
+      ctx.lineTo(r * 0.55, -r * 0.75);
+      ctx.lineTo(r * 1.05, -r * 0.2);
+      ctx.lineTo(r * 0.9, r * 0.6);
+      ctx.lineTo(r * 0.3, r * 1.0);
+      ctx.lineTo(-r * 0.4, r * 0.95);
+      ctx.lineTo(-r * 0.95, r * 0.65);
+      ctx.closePath();
       ctx.fill();
+      ctx.shadowBlur = 0;
+      // Glowing veins radiating from the core
+      ctx.strokeStyle = e.accent;
+      ctx.lineWidth = 2;
+      ctx.globalAlpha = 0.75;
+      for (let i = 0; i < 5; i++) {
+        const a = (Math.PI * 2 * i) / 5 + e.wobble * 0.3;
+        ctx.beginPath();
+        ctx.moveTo(Math.cos(a) * r * 0.2, Math.sin(a) * r * 0.2);
+        ctx.lineTo(Math.cos(a) * r * 0.85, Math.sin(a) * r * 0.85);
+        ctx.stroke();
+      }
+      ctx.globalAlpha = 1;
+      // Glowing core
+      ctx.shadowBlur = 14;
+      ctx.shadowColor = e.accent;
       ctx.fillStyle = e.accent;
-      ctx.beginPath();
-      ctx.arc(0, 0, e.r * 0.38, 0, Math.PI * 2);
-      ctx.fill();
+      ctx.beginPath(); ctx.arc(0, 0, r * 0.28, 0, Math.PI * 2); ctx.fill();
+      ctx.shadowBlur = 0;
+      // Jagged spikes on the rim
+      ctx.fillStyle = "rgba(0,0,0,0.4)";
       for (let i = 0; i < 6; i++) {
         const a = (Math.PI * 2 * i) / 6;
-        ctx.strokeStyle = "rgba(0,0,0,0.35)";
         ctx.beginPath();
-        ctx.moveTo(Math.cos(a) * e.r * 0.5, Math.sin(a) * e.r * 0.5);
-        ctx.lineTo(Math.cos(a) * e.r * 1.1, Math.sin(a) * e.r * 1.1);
-        ctx.stroke();
+        ctx.moveTo(Math.cos(a) * r * 0.9, Math.sin(a) * r * 0.9);
+        ctx.lineTo(Math.cos(a + 0.15) * r * 1.15, Math.sin(a + 0.15) * r * 1.15);
+        ctx.lineTo(Math.cos(a - 0.15) * r * 1.15, Math.sin(a - 0.15) * r * 1.15);
+        ctx.closePath();
+        ctx.fill();
       }
       ctx.restore();
     }
@@ -900,6 +1037,29 @@
       if (e.kind === "cyber") return drawCyber(e);
       if (e.kind === "beast") return drawBeast(e);
       return drawDemon(e);
+    }
+
+    // Scanlines + a heavy vignette so the scene reads as a gritty CRT
+    // display instead of a flat, brightly-lit canvas.
+    function drawGrit() {
+      ctx.save();
+      ctx.globalAlpha = 0.06;
+      ctx.fillStyle = "#000000";
+      for (let y = 0; y < world.h; y += 3) {
+        ctx.fillRect(0, y, world.w, 1);
+      }
+      ctx.restore();
+
+      ctx.save();
+      const vignette = ctx.createRadialGradient(
+        world.w / 2, world.h / 2, world.h * 0.28,
+        world.w / 2, world.h / 2, world.h * 0.75
+      );
+      vignette.addColorStop(0, "rgba(0,0,0,0)");
+      vignette.addColorStop(1, "rgba(0,0,0,0.65)");
+      ctx.fillStyle = vignette;
+      ctx.fillRect(0, 0, world.w, world.h);
+      ctx.restore();
     }
 
     function draw() {
@@ -946,6 +1106,8 @@
         enemies.forEach(drawEnemy);
         drawMarine();
       }
+
+      drawGrit();
 
       // Brutal HUD Overlay
       ctx.save();
