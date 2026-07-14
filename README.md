@@ -13,6 +13,7 @@
   <a href="#tech-stack">Tech Stack</a> ·
   <a href="#race-grid">Race Grid</a> ·
   <a href="#live-display">Live Display</a> ·
+  <a href="#activity">Activity</a> ·
   <a href="#writing">Writing</a> ·
   <a href="#connect">Connect</a>
 </p>
@@ -27,6 +28,7 @@
   <a href="https://jaytee.world" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-jaytee.world-00E5FF?style=for-the-badge&logo=google-chrome&logoColor=000814" />
   </a>
+  <img src="https://komarev.com/ghpvc/?username=JET609&color=00E5FF&style=for-the-badge&label=PROFILE+VIEWS" />
 </div>
 
 <div align="center">
@@ -81,32 +83,16 @@ class Main {
 
 <h2 id="about-me">About me</h2>
 
-<table>
-<tr>
-<td width="60%" valign="top">
+<pre align="center">
+$ whoami
+Jayanth Eapen Thomas — B.Tech CSE student, builder, shipper.
 
-I'm **Jayanth Eapen Thomas**, a B.Tech CSE student who likes building practical things and shipping them, not just talking about them.
+$ cat focus.txt
+Automation & systems · Modern web apps · ML & analytics
 
-- ⚙️ Automation and systems
-- 🌐 Modern web apps and polished UI
-- 📊 ML, analytics, and useful experiments
-- 🏁 Currently in the driver's seat, learning at speed
-
-</td>
-<td width="40%" valign="top">
-
-**Quick facts**
-
-| | |
-|---|---|
-| 🎓 | B.Tech CSE student |
-| 🌍 | India · IST (UTC+5:30) |
-| 🚀 | [jaytee.world](https://jaytee.world) |
-| 🛠️ | Python · JS · Java · C |
-
-</td>
-</tr>
-</table>
+$ echo $PORTFOLIO
+https://jaytee.world
+</pre>
 
 ---
 
@@ -176,16 +162,25 @@ I'm **Jayanth Eapen Thomas**, a B.Tech CSE student who likes building practical 
 
 </details>
 
-<p align="center"><sub>The display above is clickable, and the arcade page opens without the GitHub Pages 404.</sub></p>
+<p align="center"><sub>Clickable — opens the arcade page directly, no GitHub Pages 404.</sub></p>
+
+---
+
+<h2 id="activity">Recent activity</h2>
+
+<!--ACTIVITY_START-->
+Loading recent activity...
+<!--ACTIVITY_END-->
+
+<p align="center"><sub>Live feed of my public GitHub activity, refreshed daily.</sub></p>
 
 ---
 
 <h2 id="writing">Writing</h2>
 
-**Featured**
 - 📝 [How I Built My First Python Project](https://medium.com/@jayanththomas2004/how-i-built-my-first-python-project-using-ai-b66967184d04)
 
-**Latest from my blog**
+**Latest posts**
 
 <!--BLOG_START-->
 Loading latest posts...
