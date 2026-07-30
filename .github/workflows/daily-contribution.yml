@@ -21,15 +21,9 @@ jobs:
           echo "Last update: $(date)" > .github/daily-update.txt
 
       - name: Commit changes
+        uses: ./.github/actions/commit-and-push
+        with:
+          files: .github/daily-update.txt
+          commit-message: "chore: ⏰ daily contribution"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          if [[ -n "$(git status --porcelain)" ]]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add .github/daily-update.txt
-            git commit -m "chore: \u23f0 daily contribution"
-            git push
-          else
-            echo "No changes to commit."
-          fi
