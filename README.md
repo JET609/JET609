@@ -85,7 +85,7 @@ class Main {
 
 <pre align="center">
 $ whoami
-Jayanth - CSE student who'd rather build something than talk about it.
+Jayanth - CSE student who is very curious about lot of stuff and exploring.
 </pre>
 
 <div align="center">
