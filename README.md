@@ -74,8 +74,8 @@ class Main {
 
 <div align="center">
   <sub>
-    <b>Last updated:</b> <!--LAST_UPDATED-->2026-08-08 19:00 IST<!--/LAST_UPDATED--> •
-    <b>Quote:</b> <!--RANDOM_QUOTE-->Discipline compounds. Tiny steps, big outcomes.<!--/RANDOM_QUOTE-->
+    <b>Last updated:</b> <!--LAST_UPDATED-->2026-08-09 19:04 IST<!--/LAST_UPDATED--> •
+    <b>Quote:</b> <!--RANDOM_QUOTE-->Your GitHub is your portfolio. Treat it like one.<!--/RANDOM_QUOTE-->
   </sub>
 </div>
 
