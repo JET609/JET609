@@ -41,12 +41,6 @@
 </div>
 
 <h2 id="about-me">About me</h2>
-
-<pre align="center">
-$ whoami
-Jayanth - CSE student who is very curious about lot of stuff and exploring.
-</pre>
-
 <div align="center">
 <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/terminal.svg" alt="Animated terminal boot sequence" width="440" />
 </div>
