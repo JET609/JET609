@@ -8,15 +8,15 @@
       </feMerge>
     </filter>
     <linearGradient id="barFillCyan" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.4"/>
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.5"/>
       <stop offset="100%" stop-color="#00E5FF"/>
     </linearGradient>
     <linearGradient id="barFillGreen" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#92FF3E" stop-opacity="0.4"/>
+      <stop offset="0%" stop-color="#92FF3E" stop-opacity="0.5"/>
       <stop offset="100%" stop-color="#92FF3E"/>
     </linearGradient>
     <linearGradient id="barFillGold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#FFBD4A" stop-opacity="0.4"/>
+      <stop offset="0%" stop-color="#FFBD4A" stop-opacity="0.5"/>
       <stop offset="100%" stop-color="#FFBD4A"/>
     </linearGradient>
   </defs>
@@ -32,63 +32,87 @@
   <text x="0" y="20" class="label">Python</text>
   <text x="600" y="20" class="pct" text-anchor="end">92%</text>
   <rect x="0" y="30" width="640" height="14" rx="7" class="track"/>
-  <rect x="2" y="32" height="10" rx="5" width="0" fill="url(#barFillCyan)" filter="url(#barGlow)">
-    <animate attributeName="width" values="0;585;585" keyTimes="0;0.5;1" dur="6s" begin="0s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1;0 0 0 0"/>
-  </rect>
+  <g transform="translate(2,32)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" from="0 1" to="1 1" begin="0s" dur="1.6s" fill="freeze"/>
+      <rect x="0" y="0" width="585" height="10" rx="5" fill="url(#barFillCyan)" filter="url(#barGlow)"/>
+    </g>
+  </g>
 
   <!-- JavaScript 85% -->
   <text x="0" y="70" class="label">JavaScript</text>
   <text x="600" y="70" class="pct" text-anchor="end">85%</text>
   <rect x="0" y="80" width="640" height="14" rx="7" class="track"/>
-  <rect x="2" y="82" height="10" rx="5" width="0" fill="url(#barFillGold)" filter="url(#barGlow)">
-    <animate attributeName="width" values="0;540;540" keyTimes="0;0.5;1" dur="6s" begin="0.1s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1;0 0 0 0"/>
-  </rect>
+  <g transform="translate(2,82)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" from="0 1" to="1 1" begin="0.1s" dur="1.6s" fill="freeze"/>
+      <rect x="0" y="0" width="540" height="10" rx="5" fill="url(#barFillGold)" filter="url(#barGlow)"/>
+    </g>
+  </g>
 
   <!-- Java 78% -->
   <text x="0" y="120" class="label">Java</text>
   <text x="600" y="120" class="pct" text-anchor="end">78%</text>
   <rect x="0" y="130" width="640" height="14" rx="7" class="track"/>
-  <rect x="2" y="132" height="10" rx="5" width="0" fill="url(#barFillCyan)" filter="url(#barGlow)">
-    <animate attributeName="width" values="0;495;495" keyTimes="0;0.5;1" dur="6s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1;0 0 0 0"/>
-  </rect>
+  <g transform="translate(2,132)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" from="0 1" to="1 1" begin="0.2s" dur="1.6s" fill="freeze"/>
+      <rect x="0" y="0" width="495" height="10" rx="5" fill="url(#barFillCyan)" filter="url(#barGlow)"/>
+    </g>
+  </g>
 
   <!-- React 80% -->
   <text x="0" y="170" class="label">React</text>
   <text x="600" y="170" class="pct" text-anchor="end">80%</text>
   <rect x="0" y="180" width="640" height="14" rx="7" class="track"/>
-  <rect x="2" y="182" height="10" rx="5" width="0" fill="url(#barFillGreen)" filter="url(#barGlow)">
-    <animate attributeName="width" values="0;508;508" keyTimes="0;0.5;1" dur="6s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1;0 0 0 0"/>
-  </rect>
+  <g transform="translate(2,182)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" from="0 1" to="1 1" begin="0.3s" dur="1.6s" fill="freeze"/>
+      <rect x="0" y="0" width="508" height="10" rx="5" fill="url(#barFillGreen)" filter="url(#barGlow)"/>
+    </g>
+  </g>
 
   <!-- TensorFlow 70% -->
   <text x="0" y="220" class="label">TensorFlow</text>
   <text x="600" y="220" class="pct" text-anchor="end">70%</text>
   <rect x="0" y="230" width="640" height="14" rx="7" class="track"/>
-  <rect x="2" y="232" height="10" rx="5" width="0" fill="url(#barFillGold)" filter="url(#barGlow)">
-    <animate attributeName="width" values="0;445;445" keyTimes="0;0.5;1" dur="6s" begin="0.4s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1;0 0 0 0"/>
-  </rect>
+  <g transform="translate(2,232)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" from="0 1" to="1 1" begin="0.4s" dur="1.6s" fill="freeze"/>
+      <rect x="0" y="0" width="445" height="10" rx="5" fill="url(#barFillGold)" filter="url(#barGlow)"/>
+    </g>
+  </g>
 
   <!-- Docker 75% -->
   <text x="0" y="270" class="label">Docker</text>
   <text x="600" y="270" class="pct" text-anchor="end">75%</text>
   <rect x="0" y="280" width="640" height="14" rx="7" class="track"/>
-  <rect x="2" y="282" height="10" rx="5" width="0" fill="url(#barFillCyan)" filter="url(#barGlow)">
-    <animate attributeName="width" values="0;476;476" keyTimes="0;0.5;1" dur="6s" begin="0.5s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1;0 0 0 0"/>
-  </rect>
+  <g transform="translate(2,282)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" from="0 1" to="1 1" begin="0.5s" dur="1.6s" fill="freeze"/>
+      <rect x="0" y="0" width="476" height="10" rx="5" fill="url(#barFillCyan)" filter="url(#barGlow)"/>
+    </g>
+  </g>
 
   <!-- Linux 82% -->
   <text x="0" y="320" class="label">Linux</text>
   <text x="600" y="320" class="pct" text-anchor="end">82%</text>
   <rect x="0" y="330" width="640" height="14" rx="7" class="track"/>
-  <rect x="2" y="332" height="10" rx="5" width="0" fill="url(#barFillGreen)" filter="url(#barGlow)">
-    <animate attributeName="width" values="0;520;520" keyTimes="0;0.5;1" dur="6s" begin="0.6s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1;0 0 0 0"/>
-  </rect>
+  <g transform="translate(2,332)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" from="0 1" to="1 1" begin="0.6s" dur="1.6s" fill="freeze"/>
+      <rect x="0" y="0" width="520" height="10" rx="5" fill="url(#barFillGreen)" filter="url(#barGlow)"/>
+    </g>
+  </g>
 
   <!-- C 65% -->
   <text x="0" y="370" class="label">C</text>
   <text x="600" y="370" class="pct" text-anchor="end">65%</text>
   <rect x="0" y="380" width="640" height="14" rx="7" class="track"/>
-  <rect x="2" y="382" height="10" rx="5" width="0" fill="url(#barFillGold)" filter="url(#barGlow)">
-    <animate attributeName="width" values="0;413;413" keyTimes="0;0.5;1" dur="6s" begin="0.7s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1;0 0 0 0"/>
-  </rect>
+  <g transform="translate(2,382)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" from="0 1" to="1 1" begin="0.7s" dur="1.6s" fill="freeze"/>
+      <rect x="0" y="0" width="413" height="10" rx="5" fill="url(#barFillGold)" filter="url(#barGlow)"/>
+    </g>
+  </g>
 </svg>
