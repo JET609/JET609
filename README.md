@@ -14,8 +14,6 @@
 <a href="#stats">Stats</a> ·
 <a href="#race-grid">Race Grid</a> ·
 <a href="#live-display">Live Display</a> ·
-<a href="#activity">Activity</a> ·
-<a href="#writing">Writing</a> ·
 <a href="#connect">Connect</a>
 </p>
 
@@ -34,10 +32,6 @@
 <b>Last updated:</b> <!--LAST_UPDATED-->2026-09-20 21:57 IST<!--/LAST_UPDATED--> •
 <b>Quote:</b> <!--RANDOM_QUOTE-->Build things that outlive the tutorial.<!--/RANDOM_QUOTE-->
 </sub>
-</div>
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/starfield.svg" alt="" width="100%" />
 </div>
 
 <h2 id="about-me">About me</h2>
@@ -60,10 +54,6 @@
 <div align="center">
 <img src="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&hide_border=true&bg_color=000814&title_color=00E5FF&icon_color=00E5FF&text_color=FFFFFF&count_private=true" height="150" />
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JET609&layout=compact&hide_border=true&bg_color=000814&title_color=00E5FF&text_color=FFFFFF" height="150" />
-</div>
-
-<div align="center">
-<img src="https://streak-stats.demolab.com/?user=JET609&hide_border=true&background=000814&ring=00E5FF&fire=DC2626&currStreakLabel=00E5FF&sideLabels=FFFFFF&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8891A6" />
 </div>
 
 <div align="center">
@@ -97,24 +87,6 @@
 - Restart with `R`
 
 </details>
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/starfield.svg" alt="" width="100%" />
-</div>
-
-<h2 id="activity">Recent activity</h2>
-
-<!--ACTIVITY_START-->
-Loading recent activity...
-<!--ACTIVITY_END-->
-
-<h2 id="writing">Writing</h2>
-
-- 📝 [How I Built My First Python Project](https://medium.com/@jayanththomas2004/how-i-built-my-first-python-project-using-ai-b66967184d04)
-
-<!--BLOG_START-->
-Loading latest posts...
-<!--BLOG_END-->
 
 <h2 id="connect">Connect</h2>
 
