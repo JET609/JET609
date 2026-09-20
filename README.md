@@ -75,8 +75,8 @@ System.out.println("SYSTEMS ARMED");
 
 <div align="center">
 <sub>
-<b>Last updated:</b> <!--LAST_UPDATED-->2026-09-19 21:32 IST<!--/LAST_UPDATED--> •
-<b>Quote:</b> <!--RANDOM_QUOTE-->Discipline compounds. Tiny steps, big outcomes.<!--/RANDOM_QUOTE-->
+<b>Last updated:</b> <!--LAST_UPDATED-->2026-09-20 21:57 IST<!--/LAST_UPDATED--> •
+<b>Quote:</b> <!--RANDOM_QUOTE-->Build things that outlive the tutorial.<!--/RANDOM_QUOTE-->
 </sub>
 </div>
 
