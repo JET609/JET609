@@ -55,9 +55,11 @@
     <text x="14" y="24" font-family="Fira Code, monospace" font-size="13" fill="#ff5f5f" font-weight="700">WAVE 3</text>
     <text x="14" y="42" font-family="Fira Code, monospace" font-size="11" fill="#8891A6">KILLS: 12</text>
     <rect x="360" y="12" width="86" height="10" rx="2" fill="#170606" stroke="#ff5f5f" stroke-opacity="0.5"/>
-    <rect x="362" y="14" width="50" height="6" fill="#ff5f5f">
-      <animate attributeName="width" values="70;50;70" dur="3s" begin="0.1s" repeatCount="indefinite"/>
-    </rect>
+    <g transform="translate(362,14)">
+      <rect x="0" y="0" width="70" height="6" fill="#ff5f5f">
+        <animateTransform attributeName="transform" type="scale" values="1 1;0.714 1;1 1" dur="3s" begin="0.1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
 
     <rect x="0" y="0" width="460" height="200" fill="url(#scan2)" opacity="0.04"/>
   </g>
