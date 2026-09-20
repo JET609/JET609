@@ -1,0 +1,66 @@
+<svg viewBox="0 0 460 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="screenBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0a0a"/>
+      <stop offset="100%" stop-color="#000814"/>
+    </linearGradient>
+    <filter id="arcGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="scan2" width="3" height="3" patternUnits="userSpaceOnUse">
+      <rect width="3" height="1.2" fill="#ff5f5f"/>
+    </pattern>
+    <clipPath id="screenClip">
+      <rect x="1" y="1" width="458" height="198" rx="10"/>
+    </clipPath>
+  </defs>
+
+  <!-- priming no-op -->
+  <rect x="-10" y="-10" width="1" height="1" opacity="0">
+    <animate attributeName="opacity" from="0" to="0" begin="0s" dur="0.01s"/>
+  </rect>
+
+  <rect x="1" y="1" width="458" height="198" rx="10" fill="url(#screenBg)" stroke="#ff5f5f" stroke-opacity="0.5" stroke-width="1.5"/>
+
+  <g clip-path="url(#screenClip)">
+    <!-- distant skyline silhouette -->
+    <g fill="#2a0f0f">
+      <rect x="10" y="120" width="24" height="50"/>
+      <rect x="40" y="100" width="18" height="70"/>
+      <rect x="64" y="130" width="30" height="40"/>
+      <rect x="380" y="110" width="20" height="60"/>
+      <rect x="405" y="95" width="24" height="75"/>
+      <rect x="432" y="125" width="18" height="45"/>
+    </g>
+
+    <!-- ground -->
+    <rect x="0" y="170" width="460" height="30" fill="#170606"/>
+    <line x1="0" y1="170" x2="460" y2="170" stroke="#ff5f5f" stroke-opacity="0.6" stroke-width="1.5"/>
+
+    <!-- marine sprite -->
+    <g transform="translate(230,150)">
+      <rect x="-8" y="-30" width="16" height="22" rx="3" fill="#8891A6"/>
+      <rect x="-10" y="-10" width="20" height="16" fill="#5b6472"/>
+      <rect x="4" y="-24" width="16" height="4" fill="#3a4048"/>
+      <animateTransform attributeName="transform" type="translate" values="230 150; 226 150; 230 150; 234 150; 230 150" dur="2.4s" begin="0.05s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- muzzle flash pulse -->
+    <circle cx="246" cy="128" r="6" fill="#FFBD4A" filter="url(#arcGlow)" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.3;0.35;0.42;1" dur="2.4s" begin="0.05s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- HUD -->
+    <text x="14" y="24" font-family="Fira Code, monospace" font-size="13" fill="#ff5f5f" font-weight="700">WAVE 3</text>
+    <text x="14" y="42" font-family="Fira Code, monospace" font-size="11" fill="#8891A6">KILLS: 12</text>
+    <rect x="360" y="12" width="86" height="10" rx="2" fill="#170606" stroke="#ff5f5f" stroke-opacity="0.5"/>
+    <rect x="362" y="14" width="50" height="6" fill="#ff5f5f">
+      <animate attributeName="width" values="70;50;70" dur="3s" begin="0.1s" repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="0" y="0" width="460" height="200" fill="url(#scan2)" opacity="0.04"/>
+  </g>
+
+  <text x="230" y="186" text-anchor="middle" font-family="Fira Code, monospace" font-size="10" fill="#8891A6">MARTIAN OUTBREAK &#8212; CLICK BELOW TO DEPLOY</text>
+</svg>
