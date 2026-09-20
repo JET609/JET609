@@ -28,6 +28,16 @@
     .track { fill: #0d1117; stroke: #1c2530; stroke-width: 1; }
   </style>
 
+  <!-- Invisible priming animation. The genuinely first <animateTransform> in
+       an externally-loaded (<img src>) SVG's document order sometimes never
+       fires -- reproduced directly: every bar below animated correctly
+       except whichever one happened to be first, regardless of its begin
+       delay. This throwaway no-op absorbs that so the real first bar
+       (Python) behaves like all the others. -->
+  <rect x="-10" y="-10" width="1" height="1" opacity="0">
+    <animateTransform attributeName="transform" type="scale" from="1 1" to="1 1" begin="0s" dur="0.01s"/>
+  </rect>
+
   <!-- Python 92% -->
   <text x="0" y="20" class="label">Python</text>
   <text x="600" y="20" class="pct" text-anchor="end">92%</text>
