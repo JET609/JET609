@@ -88,10 +88,9 @@ System.out.println("SYSTEMS ARMED");
 <img src="https://capsule-render.vercel.app/api?type=rect&height=70&color=0:000814,50:001F3F,100:00E5FF&text=ABOUT%20ME&fontColor=FFFFFF&fontSize=24&fontAlignY=45&animation=twinkling" />
 </div>
 
-<pre align="center">
-$ whoami
-Jayanth - CSE student who is very curious about lot of stuff and exploring.
-</pre>
+<div align="center">
+<img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/terminal.svg" alt="Animated terminal boot sequence" width="480" />
+</div>
 
 <div align="center">
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=16&duration=2200&pause=600&color=92FF3E&center=true&vCenter=true&width=700&lines=Currently+exploring%3A+AI+%2B+Automation;Learning+in+public%2C+one+commit+at+a+time;Always+down+to+pair+on+something+new" />
@@ -118,8 +117,10 @@ Jayanth - CSE student who is very curious about lot of stuff and exploring.
 </div>
 
 <div align="center">
-<img src="https://skillicons.dev/icons?i=python,js,java,c,react,flask,tensorflow,docker,linux&theme=dark" />
+<img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/orbit.svg" alt="Orbiting tech stack" width="420" />
 </div>
+
+<p align="center"><sub>Python · JavaScript · Java · C · React · Flask · TensorFlow · Docker · Linux</sub></p>
 
 **Languages**
 
