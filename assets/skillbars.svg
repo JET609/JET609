@@ -34,7 +34,7 @@
   <rect x="0" y="30" width="640" height="14" rx="7" class="track"/>
   <g transform="translate(2,32)">
     <g>
-      <animateTransform attributeName="transform" type="scale" from="0 1" to="1 1" begin="0s" dur="1.6s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="scale" from="0 1" to="1 1" begin="0.05s" dur="1.6s" fill="freeze"/>
       <rect x="0" y="0" width="585" height="10" rx="5" fill="url(#barFillCyan)" filter="url(#barGlow)"/>
     </g>
   </g>
