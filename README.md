@@ -59,7 +59,9 @@
 </div>
 
 <h2 id="live-display">Live display</h2>
-
+<div align="center">
+<img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/arcadescreen.svg" alt="Martian Outbreak arcade preview" width="420" />
+</div>
 <div align="center">
 <a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/JET609/JET609/main/arcade/index.html" target="_blank"><img src="https://img.shields.io/badge/Start_Run-00E5FF?style=for-the-badge" /></a>
 <a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/JET609/JET609/main/arcade/index.html" target="_blank"><img src="https://img.shields.io/badge/Open_Arcade-111827?style=for-the-badge" /></a>
