@@ -122,28 +122,8 @@ System.out.println("SYSTEMS ARMED");
 
 <p align="center"><sub>Python · JavaScript · Java · C · React · Flask · TensorFlow · Docker · Linux</sub></p>
 
-**Languages**
-
 <div align="center">
-<img src="https://img.shields.io/badge/Python-000814?style=for-the-badge&logo=python&logoColor=00E5FF" />
-<img src="https://img.shields.io/badge/JavaScript-000814?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
-<img src="https://img.shields.io/badge/Java-000814?style=for-the-badge&logo=openjdk&logoColor=F89820" />
-<img src="https://img.shields.io/badge/C-000814?style=for-the-badge&logo=c&logoColor=00E5FF" />
-</div>
-
-**Frameworks & ML**
-
-<div align="center">
-<img src="https://img.shields.io/badge/React-020817?style=for-the-badge&logo=react&logoColor=61DAFB" />
-<img src="https://img.shields.io/badge/Flask-020817?style=for-the-badge&logo=flask&logoColor=FFFFFF" />
-<img src="https://img.shields.io/badge/TensorFlow-020817?style=for-the-badge&logo=tensorflow&logoColor=FF6F00" />
-</div>
-
-**Infra & tools**
-
-<div align="center">
-<img src="https://img.shields.io/badge/Docker-020817?style=for-the-badge&logo=docker&logoColor=00BFFF" />
-<img src="https://img.shields.io/badge/Linux-020817?style=for-the-badge&logo=linux&logoColor=FFFFFF" />
+<img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/skillbars.svg" alt="Skill proficiency bars" width="560" />
 </div>
 
 <div align="center">
