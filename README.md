@@ -33,7 +33,7 @@
 </div>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00E5FF&section=header" />
+<img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00E5FF&section=header&animation=fadeIn" />
 </div>
 
 <div align="center">
@@ -84,10 +84,18 @@ System.out.println("SYSTEMS ARMED");
 
 <h2 id="about-me">About me</h2>
 
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&height=70&color=0:000814,50:001F3F,100:00E5FF&text=ABOUT%20ME&fontColor=FFFFFF&fontSize=24&fontAlignY=45&animation=twinkling" />
+</div>
+
 <pre align="center">
 $ whoami
 Jayanth - CSE student who is very curious about lot of stuff and exploring.
 </pre>
+
+<div align="center">
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=16&duration=2200&pause=600&color=92FF3E&center=true&vCenter=true&width=700&lines=Currently+exploring%3A+AI+%2B+Automation;Learning+in+public%2C+one+commit+at+a+time;Always+down+to+pair+on+something+new" />
+</div>
 
 <div align="center">
 <img src="https://img.shields.io/badge/⚙️_Automation_%26_Systems-00E5FF?style=for-the-badge&labelColor=000814" />
@@ -104,6 +112,10 @@ Jayanth - CSE student who is very curious about lot of stuff and exploring.
 ---
 
 <h2 id="tech-stack">Tech stack</h2>
+
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&height=70&color=0:000814,50:001F3F,100:00E5FF&text=TECH%20STACK&fontColor=FFFFFF&fontSize=24&fontAlignY=45&animation=twinkling" />
+</div>
 
 <div align="center">
 <img src="https://skillicons.dev/icons?i=python,js,java,c,react,flask,tensorflow,docker,linux&theme=dark" />
@@ -134,10 +146,14 @@ Jayanth - CSE student who is very curious about lot of stuff and exploring.
 </div>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:000814,50:dc2626,100:f59e0b&section=header" />
+<img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:000814,50:dc2626,100:f59e0b&section=header&animation=fadeIn" />
 </div>
 
 <h2 id="stats">Stats</h2>
+
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&height=70&color=0:000814,50:dc2626,100:f59e0b&text=STATS&fontColor=FFFFFF&fontSize=24&fontAlignY=45&animation=twinkling" />
+</div>
 
 <div align="center">
 <img src="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&hide_border=true&bg_color=000814&title_color=00E5FF&icon_color=00E5FF&text_color=FFFFFF&count_private=true" height="165" />
@@ -153,7 +169,7 @@ Jayanth - CSE student who is very curious about lot of stuff and exploring.
 </div>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:000814,50:dc2626,100:f59e0b&section=header" />
+<img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:000814,50:dc2626,100:f59e0b&section=header&animation=fadeIn" />
 </div>
 
 <h2 id="race-grid">Race grid</h2>
@@ -198,6 +214,10 @@ Jayanth - CSE student who is very curious about lot of stuff and exploring.
 
 <h2 id="activity">Recent activity</h2>
 
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&height=70&color=0:000814,50:001F3F,100:00E5FF&text=RECENT%20ACTIVITY&fontColor=FFFFFF&fontSize=22&fontAlignY=45&animation=twinkling" />
+</div>
+
 <!--ACTIVITY_START-->
 Loading recent activity...
 <!--ACTIVITY_END-->
@@ -207,6 +227,10 @@ Loading recent activity...
 ---
 
 <h2 id="writing">Writing</h2>
+
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&height=70&color=0:000814,50:001F3F,100:00E5FF&text=WRITING&fontColor=FFFFFF&fontSize=24&fontAlignY=45&animation=twinkling" />
+</div>
 
 - 📝 [How I Built My First Python Project](https://medium.com/@jayanththomas2004/how-i-built-my-first-python-project-using-ai-b66967184d04)
 
@@ -219,6 +243,10 @@ Loading latest posts...
 ---
 
 <h2 id="connect">Connect</h2>
+
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&height=70&color=0:000814,50:001F3F,100:00E5FF&text=LET'S%20CONNECT&fontColor=FFFFFF&fontSize=24&fontAlignY=45&animation=twinkling" />
+</div>
 
 <div align="center">
 <a href="https://jaytee.online"><img src="https://img.shields.io/badge/Website-jaytee.online-00E5FF?style=for-the-badge&logo=google-chrome&logoColor=000814" /></a>
@@ -236,7 +264,7 @@ Loading latest posts...
 ---
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&height=140&section=footer&color=0:000814,50:001F3F,100:00E5FF" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=140&section=footer&color=0:000814,50:001F3F,100:00E5FF&animation=twinkling" />
 <br/>
 <sub>Keep building. Keep shipping. · <a href="#readme-top">Back to top ↑</a></sub>
 </div>
