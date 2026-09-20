@@ -123,10 +123,6 @@ System.out.println("SYSTEMS ARMED");
 <p align="center"><sub>Python · JavaScript · Java · C · React · Flask · TensorFlow · Docker · Linux</sub></p>
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/skillbars.svg?v=3" alt="Skill proficiency bars" width="560" />
-</div>
-
-<div align="center">
 <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:000814,50:dc2626,100:f59e0b&section=header&animation=fadeIn" />
 </div>
 
