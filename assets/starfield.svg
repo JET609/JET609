@@ -1,0 +1,62 @@
+<svg viewBox="0 0 1000 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#000814"/>
+      <stop offset="25%" stop-color="#001a2b"/>
+      <stop offset="50%" stop-color="#04122b"/>
+      <stop offset="75%" stop-color="#1a0a2b"/>
+      <stop offset="100%" stop-color="#000814"/>
+    </linearGradient>
+    <radialGradient id="nebulaCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nebulaPink" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff5f9c" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#ff5f9c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nebulaGold" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFBD4A" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#FFBD4A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- priming no-op -->
+  <rect x="-10" y="-10" width="1" height="1" opacity="0">
+    <animate attributeName="opacity" from="0" to="0" begin="0s" dur="0.01s"/>
+  </rect>
+
+  <rect x="0" y="0" width="1000" height="120" fill="url(#skyGrad)"/>
+  <ellipse cx="160" cy="60" rx="220" ry="70" fill="url(#nebulaCyan)"/>
+  <ellipse cx="520" cy="55" rx="200" ry="65" fill="url(#nebulaPink)"/>
+  <ellipse cx="850" cy="65" rx="220" ry="70" fill="url(#nebulaGold)"/>
+
+  <!-- twinkling stars -->
+  <g fill="#FFFFFF">
+    <circle cx="40" cy="30" r="1.4"><animate attributeName="opacity" values="1;0.15;1" dur="2.6s" begin="0.05s" repeatCount="indefinite"/></circle>
+    <circle cx="95" cy="80" r="1"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.2s" begin="0.3s" repeatCount="indefinite"/></circle>
+    <circle cx="150" cy="20" r="1.6"><animate attributeName="opacity" values="1;0.2;1" dur="2.1s" begin="0.6s" repeatCount="indefinite"/></circle>
+    <circle cx="210" cy="95" r="1"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.8s" begin="0.9s" repeatCount="indefinite"/></circle>
+    <circle cx="265" cy="45" r="1.3"><animate attributeName="opacity" values="1;0.15;1" dur="3.4s" begin="1.1s" repeatCount="indefinite"/></circle>
+    <circle cx="320" cy="15" r="1"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" begin="1.4s" repeatCount="indefinite"/></circle>
+    <circle cx="380" cy="90" r="1.5"><animate attributeName="opacity" values="1;0.2;1" dur="2.9s" begin="1.7s" repeatCount="indefinite"/></circle>
+    <circle cx="440" cy="35" r="1"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.1s" begin="0.2s" repeatCount="indefinite"/></circle>
+    <circle cx="500" cy="70" r="1.4"><animate attributeName="opacity" values="1;0.15;1" dur="2.3s" begin="0.5s" repeatCount="indefinite"/></circle>
+    <circle cx="555" cy="25" r="1"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.7s" begin="0.8s" repeatCount="indefinite"/></circle>
+    <circle cx="610" cy="85" r="1.6"><animate attributeName="opacity" values="1;0.2;1" dur="3.3s" begin="1.2s" repeatCount="indefinite"/></circle>
+    <circle cx="670" cy="50" r="1"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" begin="1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="720" cy="15" r="1.3"><animate attributeName="opacity" values="1;0.15;1" dur="3s" begin="1.8s" repeatCount="indefinite"/></circle>
+    <circle cx="775" cy="95" r="1"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" begin="0.1s" repeatCount="indefinite"/></circle>
+    <circle cx="830" cy="40" r="1.5"><animate attributeName="opacity" values="1;0.2;1" dur="2.9s" begin="0.4s" repeatCount="indefinite"/></circle>
+    <circle cx="885" cy="75" r="1"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.2s" begin="0.7s" repeatCount="indefinite"/></circle>
+    <circle cx="935" cy="25" r="1.4"><animate attributeName="opacity" values="1;0.15;1" dur="2.4s" begin="1s" repeatCount="indefinite"/></circle>
+    <circle cx="965" cy="85" r="1"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.8s" begin="1.3s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- a slow comet -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="-40 20" to="1040 90" begin="1s" dur="7s" repeatCount="indefinite"/>
+    <circle cx="0" cy="0" r="2" fill="#FFFFFF"/>
+    <path d="M0,0 L-26,-8" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="1.5"/>
+  </g>
+</svg>
