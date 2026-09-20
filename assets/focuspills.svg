@@ -1,0 +1,40 @@
+<svg viewBox="0 0 620 46" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="fpGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    text { font-family: 'Fira Code', monospace; font-size: 13px; font-weight: 700; }
+  </style>
+
+  <!-- priming no-op -->
+  <rect x="-10" y="-10" width="1" height="1" opacity="0">
+    <animateTransform attributeName="transform" type="scale" from="1 1" to="1 1" begin="0s" dur="0.01s"/>
+  </rect>
+
+  <g transform="translate(0,3)">
+    <rect x="0" y="0" width="205" height="34" rx="17" fill="#00212b" stroke="#00E5FF" stroke-width="1.2"/>
+    <circle cx="20" cy="17" r="5" fill="#00E5FF" filter="url(#fpGlow)">
+      <animate attributeName="opacity" values="1;0.35;1" dur="2s" begin="0.05s" repeatCount="indefinite"/>
+    </circle>
+    <text x="36" y="22" fill="#8FE9FF">⚙️ AUTOMATION</text>
+  </g>
+
+  <g transform="translate(220,3)">
+    <rect x="0" y="0" width="170" height="34" rx="17" fill="#132b0a" stroke="#92FF3E" stroke-width="1.2"/>
+    <circle cx="20" cy="17" r="5" fill="#92FF3E" filter="url(#fpGlow)">
+      <animate attributeName="opacity" values="1;0.35;1" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="36" y="22" fill="#C8FF9E">🌐 WEB APPS</text>
+  </g>
+
+  <g transform="translate(405,3)">
+    <rect x="0" y="0" width="205" height="34" rx="17" fill="#2b220a" stroke="#FFBD4A" stroke-width="1.2"/>
+    <circle cx="20" cy="17" r="5" fill="#FFBD4A" filter="url(#fpGlow)">
+      <animate attributeName="opacity" values="1;0.35;1" dur="2s" begin="0.55s" repeatCount="indefinite"/>
+    </circle>
+    <text x="36" y="22" fill="#FFE1AD">📊 ML &amp; ANALYTICS</text>
+  </g>
+</svg>
