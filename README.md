@@ -11,7 +11,6 @@
 <p align="center">
 <a href="#about-me">About</a> ·
 <a href="#tech-stack">Tech Stack</a> ·
-<a href="#stats">Stats</a> ·
 <a href="#race-grid">Race Grid</a> ·
 <a href="#live-display">Live Display</a> ·
 <a href="#connect">Connect</a>
@@ -47,17 +46,6 @@
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/orbit.svg" alt="Orbiting tech stack" width="360" />
-</div>
-
-<h2 id="stats">Stats</h2>
-
-<div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&hide_border=true&bg_color=000814&title_color=00E5FF&icon_color=00E5FF&text_color=FFFFFF&count_private=true" height="150" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JET609&layout=compact&hide_border=true&bg_color=000814&title_color=00E5FF&text_color=FFFFFF" height="150" />
-</div>
-
-<div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=JET609&theme=onedark&no-frame=true&row=1&column=6" />
 </div>
 
 <h2 id="race-grid">Race grid</h2>
