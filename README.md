@@ -20,10 +20,6 @@
 </p>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:00E5FF,100:001F3F&animation=twinkling" width="300" />
-</div>
-
-<div align="center">
 <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/statuspills.svg" alt="Status" height="40" />
 <a href="https://jaytee.online" target="_blank"><img src="https://img.shields.io/badge/Portfolio-jaytee.online-00E5FF?style=for-the-badge&logo=google-chrome&logoColor=000814" /></a>
 <img src="https://komarev.com/ghpvc/?username=JET609&color=00E5FF&style=for-the-badge&label=VIEWS" />
@@ -40,10 +36,11 @@
 </sub>
 </div>
 
----
+<div align="center">
+<img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/starfield.svg" alt="" width="100%" />
+</div>
 
 <h2 id="about-me">About me</h2>
-<img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:001F3F,100:00E5FF&animation=twinkling" width="300" />
 
 <pre align="center">
 $ whoami
@@ -58,19 +55,13 @@ Jayanth - CSE student who is very curious about lot of stuff and exploring.
 <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/focuspills.svg" alt="Focus areas" height="40" />
 </div>
 
----
-
 <h2 id="tech-stack">Tech stack</h2>
-<img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:00E5FF,100:92FF3E&animation=twinkling" width="300" />
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/orbit.svg" alt="Orbiting tech stack" width="360" />
 </div>
 
-<p align="center"><sub>Python · JavaScript · Java · C · React · Flask · TensorFlow · Docker · Linux</sub></p>
-
 <h2 id="stats">Stats</h2>
-<img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:92FF3E,100:dc2626&animation=twinkling" width="300" />
 
 <div align="center">
 <img src="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&hide_border=true&bg_color=000814&title_color=00E5FF&icon_color=00E5FF&text_color=FFFFFF&count_private=true" height="150" />
@@ -86,7 +77,6 @@ Jayanth - CSE student who is very curious about lot of stuff and exploring.
 </div>
 
 <h2 id="race-grid">Race grid</h2>
-<img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:dc2626,100:f59e0b&animation=twinkling" width="300" />
 
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=rect&height=60&color=0:000814,50:dc2626,100:f59e0b&text=POLE%20POSITION&fontColor=FFFFFF&fontSize=22&fontAlignY=45&animation=twinkling" />
@@ -97,7 +87,6 @@ Jayanth - CSE student who is very curious about lot of stuff and exploring.
 </div>
 
 <h2 id="live-display">Live display</h2>
-<img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:f59e0b,100:00E5FF&animation=twinkling" width="300" />
 
 <div align="center">
 <a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/JET609/JET609/main/arcade/index.html" target="_blank"><img src="https://img.shields.io/badge/Start_Run-00E5FF?style=for-the-badge" /></a>
@@ -115,40 +104,25 @@ Jayanth - CSE student who is very curious about lot of stuff and exploring.
 
 </details>
 
-<p align="center"><sub>Clickable — opens the arcade page directly, no GitHub Pages 404.</sub></p>
-
----
+<div align="center">
+<img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/starfield.svg" alt="" width="100%" />
+</div>
 
 <h2 id="activity">Recent activity</h2>
-<img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:00E5FF,100:001F3F&animation=twinkling" width="300" />
 
 <!--ACTIVITY_START-->
 Loading recent activity...
 <!--ACTIVITY_END-->
 
-<p align="center"><sub>Live feed of my public GitHub activity, refreshed daily.</sub></p>
-
----
-
 <h2 id="writing">Writing</h2>
-<img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:001F3F,100:00E5FF&animation=twinkling" width="300" />
-
-<div align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=14&duration=2400&pause=700&color=8891A6&center=true&vCenter=true&width=600&lines=Writing+down+what+I+learn+so+future-me+doesn%27t+relearn+it;Notes+from+building%2C+not+just+building" />
-</div>
 
 - 📝 [How I Built My First Python Project](https://medium.com/@jayanththomas2004/how-i-built-my-first-python-project-using-ai-b66967184d04)
-
-**Latest posts**
 
 <!--BLOG_START-->
 Loading latest posts...
 <!--BLOG_END-->
 
----
-
 <h2 id="connect">Connect</h2>
-<img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:00E5FF,100:ff5f9c&animation=twinkling" width="300" />
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/radar.svg" alt="Scanning for collaborators" width="220" />
@@ -158,14 +132,9 @@ Loading latest posts...
 <a href="https://jaytee.online"><img src="https://img.shields.io/badge/Website-jaytee.online-00E5FF?style=for-the-badge&logo=google-chrome&logoColor=000814" /></a>
 <a href="https://www.linkedin.com/in/jayanth-thomas-027318221/"><img src="https://img.shields.io/badge/LinkedIn-Jayanth_Thomas-0A66C2?style=for-the-badge&logo=linkedin&logoColor=ffffff" /></a>
 <a href="https://medium.com/@jayanththomas2004"><img src="https://img.shields.io/badge/Medium-Jayanththomas2004-12100E?style=for-the-badge&logo=medium&logoColor=ffffff" /></a>
-</div>
-
-<div align="center">
 <a href="https://www.buymeacoffee.com/jayteee"><img src="https://img.shields.io/badge/Buy_Me_a_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=000000" /></a>
 <a href="https://github.com/sponsors/JET609"><img src="https://img.shields.io/badge/Sponsor_on_GitHub-111827?style=for-the-badge&logo=github-sponsors&logoColor=EA4AAA" /></a>
 </div>
-
----
 
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:000814,50:001F3F,100:00E5FF&animation=twinkling" />
