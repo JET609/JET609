@@ -39,6 +39,7 @@
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/terminal.svg" alt="Animated terminal boot sequence" width="440" />
+  <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/asciiphoto.svg" alt="ASCII-art rendering of profile photo" width="360" />
 </div>
 
 <div align="center">
