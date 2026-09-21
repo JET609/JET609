@@ -18,8 +18,8 @@
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/statuspills.svg" alt="Status" height="40" />
-<a href="https://jaytee.online" target="_blank"><img src="https://img.shields.io/badge/Portfolio-jaytee.online-00E5FF?style=for-the-badge&logo=google-chrome&logoColor=000814" /></a>
-<img src="https://komarev.com/ghpvc/?username=JET609&color=00E5FF&style=for-the-badge&label=VIEWS" />
+<a href="https://jaytee.online" target="_blank"><img src="https://img.shields.io/badge/Portfolio-jaytee.online-00E5FF?style=for-the-badge&logo=google-chrome&logoColor=000814" height="40" /></a>
+<img src="https://komarev.com/ghpvc/?username=JET609&color=00E5FF&style=for-the-badge&label=VIEWS" height="40" />
 </div>
 
 <div align="center">
@@ -39,7 +39,10 @@
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/terminal.svg" alt="Animated terminal boot sequence" width="440" />
-  <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/asciiphoto.svg" alt="ASCII-art rendering of profile photo" width="360" />
+</div>
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/asciiphoto.svg" alt="ASCII-art rendering of profile photo" width="320" />
 </div>
 
 <div align="center">
@@ -71,18 +74,17 @@
 <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/arcadescreen.svg?v=2" alt="Martian Outbreak arcade preview" width="420" />
 </div>
 <div align="center">
-<a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/JET609/JET609/main/arcade/index.html" target="_blank"><img src="https://img.shields.io/badge/Start_Run-00E5FF?style=for-the-badge" /></a>
-<a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/JET609/JET609/main/arcade/index.html" target="_blank"><img src="https://img.shields.io/badge/Open_Arcade-111827?style=for-the-badge" /></a>
-<a href="#live-display"><img src="https://img.shields.io/badge/View_Controls-DC2626?style=for-the-badge" /></a>
+<a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/JET609/JET609/main/arcade/index.html" target="_blank"><img src="https://img.shields.io/badge/Start_Run-00E5FF?style=for-the-badge" height="40" /></a>
+<a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/JET609/JET609/main/arcade/index.html" target="_blank"><img src="https://img.shields.io/badge/Open_Arcade-111827?style=for-the-badge" height="40" /></a>
+<a href="#live-display"><img src="https://img.shields.io/badge/View_Controls-DC2626?style=for-the-badge" height="40" /></a>
 </div>
 
 <details>
 <summary>Controls</summary>
 
-- Move with `WASD` or arrow keys
-- Shoot with mouse or `Space`
-- Dash with `Shift`
-- Restart with `R`
+<div align="center">
+<img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/controlskeys.svg" alt="Controls: WASD or arrows to move, Space or click to shoot, Shift to dash, R to restart" width="440" />
+</div>
 
 </details>
 
@@ -94,11 +96,11 @@
 </div>
 
 <div align="center">
-<a href="https://jaytee.online"><img src="https://img.shields.io/badge/Website-jaytee.online-00E5FF?style=for-the-badge&logo=google-chrome&logoColor=000814" /></a>
-<a href="https://www.linkedin.com/in/jayanth-thomas-027318221/"><img src="https://img.shields.io/badge/LinkedIn-Jayanth_Thomas-0A66C2?style=for-the-badge&logo=linkedin&logoColor=ffffff" /></a>
-<a href="https://medium.com/@jayanththomas2004"><img src="https://img.shields.io/badge/Medium-Jayanththomas2004-12100E?style=for-the-badge&logo=medium&logoColor=ffffff" /></a>
-<a href="https://www.buymeacoffee.com/jayteee"><img src="https://img.shields.io/badge/Buy_Me_a_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=000000" /></a>
-<a href="https://github.com/sponsors/JET609"><img src="https://img.shields.io/badge/Sponsor_on_GitHub-111827?style=for-the-badge&logo=github-sponsors&logoColor=EA4AAA" /></a>
+<a href="https://jaytee.online"><img src="https://img.shields.io/badge/Website-jaytee.online-00E5FF?style=for-the-badge&logo=google-chrome&logoColor=000814" height="40" /></a>
+<a href="https://www.linkedin.com/in/jayanth-thomas-027318221/"><img src="https://img.shields.io/badge/LinkedIn-Jayanth_Thomas-0A66C2?style=for-the-badge&logo=linkedin&logoColor=ffffff" height="40" /></a>
+<a href="https://medium.com/@jayanththomas2004"><img src="https://img.shields.io/badge/Medium-Jayanththomas2004-12100E?style=for-the-badge&logo=medium&logoColor=ffffff" height="40" /></a>
+<a href="https://www.buymeacoffee.com/jayteee"><img src="https://img.shields.io/badge/Buy_Me_a_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=000000" height="40" /></a>
+<a href="https://github.com/sponsors/JET609"><img src="https://img.shields.io/badge/Sponsor_on_GitHub-111827?style=for-the-badge&logo=github-sponsors&logoColor=EA4AAA" height="40" /></a>
 </div>
 
 <div align="center">
