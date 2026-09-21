@@ -23,17 +23,20 @@
 </div>
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/idbadge.svg" alt="Access credential" width="440" />
+<img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/idbadge.svg?v=2" alt="Access credential" width="440" />
 </div>
 
 <div align="center">
 <sub>
+<img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/syncicon.svg" alt="" width="12" height="12" valign="middle" />
 <b>Last updated:</b> <!--LAST_UPDATED-->2026-09-20 21:57 IST<!--/LAST_UPDATED--> •
 <b>Quote:</b> <!--RANDOM_QUOTE-->Build things that outlive the tutorial.<!--/RANDOM_QUOTE-->
 </sub>
 </div>
 
 <h2 id="about-me">About me</h2>
+<img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/headerdivider.svg" alt="" width="100%" height="6" />
+
 <div align="center">
 <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/terminal.svg" alt="Animated terminal boot sequence" width="440" />
 </div>
@@ -43,12 +46,14 @@
 </div>
 
 <h2 id="tech-stack">Tech stack</h2>
+<img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/headerdivider.svg" alt="" width="100%" height="6" />
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/orbit.svg" alt="Orbiting tech stack" width="360" />
 </div>
 
 <h2 id="race-grid">Race grid</h2>
+<img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/headerdivider.svg" alt="" width="100%" height="6" />
 
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=rect&height=60&color=0:000814,50:dc2626,100:f59e0b&text=POLE%20POSITION&fontColor=FFFFFF&fontSize=22&fontAlignY=45&animation=twinkling" />
@@ -59,6 +64,8 @@
 </div>
 
 <h2 id="live-display">Live display</h2>
+<img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/headerdivider.svg" alt="" width="100%" height="6" />
+
 <div align="center">
 <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/arcadescreen.svg?v=2" alt="Martian Outbreak arcade preview" width="420" />
 </div>
@@ -79,6 +86,7 @@
 </details>
 
 <h2 id="connect">Connect</h2>
+<img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/headerdivider.svg" alt="" width="100%" height="6" />
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/radar.svg" alt="Scanning for collaborators" width="220" />
