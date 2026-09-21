@@ -38,7 +38,7 @@
 <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/headerdivider.svg" alt="" width="100%" height="6" />
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/asciiphoto.svg?v=2" alt="ASCII-art rendering of profile photo" width="320" />
+<img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/asciiphoto.svg?v=3" alt="ASCII-art rendering of profile photo" width="320" />
 </div>
 
 <div align="center">
