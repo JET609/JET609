@@ -79,6 +79,7 @@
 <a href="#live-display"><img src="https://img.shields.io/badge/View_Controls-DC2626?style=for-the-badge" height="40" /></a>
 </div>
 
+<div align="center">
 <details>
 <summary>Controls</summary>
 
@@ -87,6 +88,7 @@
 </div>
 
 </details>
+</div>
 
 <h2 id="connect">Connect</h2>
 <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/headerdivider.svg" alt="" width="100%" height="6" />
