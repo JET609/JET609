@@ -1,0 +1,67 @@
+<svg viewBox="0 0 440 130" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="ckGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    .lbl { font-family: 'Fira Code', monospace; font-size: 11px; fill: #8891A6; }
+    .key { font-family: 'Fira Code', monospace; font-size: 11px; font-weight: 700; fill: #E6F1FF; }
+  </style>
+
+  <!-- priming no-op -->
+  <rect x="-10" y="-10" width="1" height="1" opacity="0">
+    <animate attributeName="opacity" from="0" to="0" begin="0s" dur="0.01s"/>
+  </rect>
+
+  <rect x="1" y="1" width="438" height="128" rx="12" fill="#170606" stroke="#ff5f5f" stroke-opacity="0.45" stroke-width="1.5"/>
+
+  <!-- row 1: move -->
+  <g transform="translate(24,20)">
+    <rect x="0" y="0" width="22" height="22" rx="4" fill="#2a0f0f" stroke="#ff5f5f" filter="url(#ckGlow)">
+      <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4.8s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+    <text x="11" y="15" text-anchor="middle" class="key">W</text>
+    <rect x="26" y="0" width="22" height="22" rx="4" fill="#2a0f0f" stroke="#ff5f5f" filter="url(#ckGlow)">
+      <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4.8s" begin="0.12s" repeatCount="indefinite"/>
+    </rect>
+    <text x="37" y="15" text-anchor="middle" class="key">A</text>
+    <rect x="52" y="0" width="22" height="22" rx="4" fill="#2a0f0f" stroke="#ff5f5f" filter="url(#ckGlow)">
+      <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4.8s" begin="0.24s" repeatCount="indefinite"/>
+    </rect>
+    <text x="63" y="15" text-anchor="middle" class="key">S</text>
+    <rect x="78" y="0" width="22" height="22" rx="4" fill="#2a0f0f" stroke="#ff5f5f" filter="url(#ckGlow)">
+      <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4.8s" begin="0.36s" repeatCount="indefinite"/>
+    </rect>
+    <text x="89" y="15" text-anchor="middle" class="key">D</text>
+    <text x="112" y="15" class="lbl">or arrow keys &#8212; MOVE</text>
+  </g>
+
+  <!-- row 2: shoot -->
+  <g transform="translate(24,53)">
+    <rect x="0" y="0" width="46" height="22" rx="4" fill="#2a0f0f" stroke="#ff5f5f" filter="url(#ckGlow)">
+      <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4.8s" begin="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="23" y="15" text-anchor="middle" class="key">SPACE</text>
+    <text x="112" y="15" class="lbl">or mouse click &#8212; SHOOT</text>
+  </g>
+
+  <!-- row 3: dash -->
+  <g transform="translate(24,86)">
+    <rect x="0" y="0" width="60" height="22" rx="4" fill="#2a0f0f" stroke="#ff5f5f" filter="url(#ckGlow)">
+      <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4.8s" begin="2.4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="30" y="15" text-anchor="middle" class="key">SHIFT</text>
+    <text x="112" y="15" class="lbl">hold to sprint &#8212; DASH</text>
+  </g>
+
+  <!-- restart, right column -->
+  <g transform="translate(280,53)">
+    <rect x="0" y="0" width="22" height="22" rx="4" fill="#2a0f0f" stroke="#ff5f5f" filter="url(#ckGlow)">
+      <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4.8s" begin="3.6s" repeatCount="indefinite"/>
+    </rect>
+    <text x="11" y="15" text-anchor="middle" class="key">R</text>
+    <text x="34" y="15" class="lbl">RESTART</text>
+  </g>
+</svg>
