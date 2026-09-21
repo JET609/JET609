@@ -5,10 +5,6 @@
 </div>
 
 <div align="center">
-<img src="https://avatars.githubusercontent.com/u/143103020?v=4" alt="Jayanth Eapen Thomas" width="120" height="120" />
-</div>
-
-<div align="center">
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=20&duration=1900&pause=500&color=00E5FF&center=true&vCenter=true&width=760&lines=Retro-Futuristic+Developer;Python+%E2%80%A2+C+%E2%80%A2+Java;Terminal+windows+and+code+snippets;Building+fast+and+shipping+clean" />
 </div>
 
