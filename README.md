@@ -18,21 +18,8 @@
   <a href="#connect">Connect</a>
 </p>
 
-<p align="center">
-  <a href="https://jaytee.online"><img src="https://img.shields.io/badge/Portfolio-jaytee.online-00E5FF?style=for-the-badge&logo=google-chrome&logoColor=000814" alt="Portfolio" /></a>
-</p>
-
 <div align="center">
-  <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/idbadge.svg?v=5" alt="Access credential" width="440" />
-  <br /><br />
-  <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/statuspills.svg" alt="Current status" height="40" />
-  <br />
-  <sub>
-    <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/syncicon.svg" alt="" width="12" height="12" valign="middle" />
-    <b>LIVE STATUS</b> · Updated <!--LAST_UPDATED-->2026-10-10 00:00 IST<!--/LAST_UPDATED-->
-    <br />
-    <!--RANDOM_QUOTE-->Discipline compounds. Tiny steps, big outcomes.<!--/RANDOM_QUOTE-->
-  </sub>
+  <a href="https://jaytee.online"><img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/idbadge.svg?v=6" alt="Animated profile console: Jayanth Eapen Thomas, portfolio at jaytee.online, online in India, and a current quote" width="460" /></a>
 </div>
 
 <br />
@@ -118,14 +105,7 @@
 <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/headerdivider.svg" alt="Animated section divider" width="100%" height="6" />
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JET609&layout=compact&hide_border=true&bg_color=000814&title_color=00E5FF&text_color=FFFFFF" alt="Most used languages" height="170" />
-</div>
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=JET609&theme=dark&hide_border=true&background=000814&ring=00E5FF&fire=DC2626&currStreakLabel=00E5FF" alt="GitHub contribution streak" width="600" />
-</div>
-
-<div align="center">
+  <p><sub>A visual trail of things I have been building and sharing.</sub></p>
   <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" alt="Animated contribution snake" width="100%" />
 </div>
 
