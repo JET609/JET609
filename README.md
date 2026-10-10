@@ -18,12 +18,13 @@
 </p>
 
 <p align="center">
-  <a href="https://jaytee.online" target="_blank"><img src="https://img.shields.io/badge/Portfolio-jaytee.online-00E5FF?style=for-the-badge&logo=google-chrome&logoColor=000814" alt="Portfolio" /></a>
-  <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/statuspills.svg" alt="Current status" height="40" />
+  <a href="https://jaytee.online"><img src="https://img.shields.io/badge/Portfolio-jaytee.online-00E5FF?style=for-the-badge&logo=google-chrome&logoColor=000814" alt="Portfolio" /></a>
 </p>
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/idbadge.svg?v=5" alt="Access credential" width="440" />
+  <br /><br />
+  <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/statuspills.svg" alt="Current status" height="40" />
 </div>
 
 <div align="center">
@@ -40,21 +41,13 @@
 <h2 id="about-me">👾 About me</h2>
 <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/headerdivider.svg" alt="Animated section divider" width="100%" height="6" />
 
-<table>
-  <tr>
-    <td width="46%" align="center" valign="middle">
-      <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/asciiphoto.svg?v=5" alt="Animated ASCII portrait" width="380" />
-    </td>
-    <td width="54%" valign="middle">
-      <h3>Welcome to my corner of the internet.</h3>
-      <p>I am a developer who enjoys turning ideas into useful, polished, and interactive experiences.</p>
-      <p>My interests include Python, web development, creative interfaces, automation, and experimenting with new technologies.</p>
-      <p><b>Current mindset:</b> learn → build → improve → ship.</p>
-    </td>
-  </tr>
-</table>
-
 <div align="center">
+  <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/asciiphoto.svg?v=5" alt="Animated ASCII portrait" width="360" />
+  <h3>Welcome to my corner of the internet.</h3>
+  <p>I am a developer who enjoys turning ideas into useful, polished, and interactive experiences.</p>
+  <p>My interests include Python, web development, creative interfaces, automation, and experimenting with new technologies.</p>
+  <p><b>Current mindset:</b> learn → build → improve → ship.</p>
+  <br />
   <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/terminal.svg" alt="Animated terminal boot sequence" width="440" />
   <br />
   <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/focuspills.svg" alt="Focus areas" height="40" />
@@ -110,11 +103,12 @@
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&hide_border=true&bg_color=000814&title_color=00E5FF&text_color=FFFFFF&icon_color=00E5FF&ring_color=00E5FF" alt="GitHub statistics" height="170" />
+  <br /><br />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JET609&layout=compact&hide_border=true&bg_color=000814&title_color=00E5FF&text_color=FFFFFF" alt="Most used languages" height="170" />
 </div>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=JET609&theme=dark&hide_border=true&background=000814&ring=00E5FF&fire=DC2626&currStreakLabel=00E5FF" alt="GitHub contribution streak" width="70%" />
+  <img src="https://streak-stats.demolab.com?user=JET609&theme=dark&hide_border=true&background=000814&ring=00E5FF&fire=DC2626&currStreakLabel=00E5FF" alt="GitHub contribution streak" width="600" />
 </div>
 
 <div align="center">
