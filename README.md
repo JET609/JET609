@@ -5,7 +5,7 @@
 </div>
 
 <div align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=20&duration=1900&pause=500&color=00E5FF&center=true&vCenter=true&width=760&lines=Retro-Futuristic+Developer;Python+%E2%80%A2+C+%E2%80%A2+Java;Terminal+windows+and+code+snippets;Building+fast+and+shipping+clean" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=20&duration=1900&pause=500&color=00E5FF&center=true&vCenter=true&width=760&lines=Retro-Futuristic+Developer;Python+%26+Web+Developer" />
 </div>
 
 <p align="center">
@@ -19,7 +19,6 @@
 <div align="center">
 <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/statuspills.svg" alt="Status" height="40" />
 <a href="https://jaytee.online" target="_blank"><img src="https://img.shields.io/badge/Portfolio-jaytee.online-00E5FF?style=for-the-badge&logo=google-chrome&logoColor=000814" height="40" /></a>
-<img src="https://komarev.com/ghpvc/?username=JET609&color=00E5FF&style=for-the-badge&label=VIEWS" height="40" />
 </div>
 
 <div align="center">
@@ -74,8 +73,8 @@
 <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/arcadescreen.svg?v=2" alt="Martian Outbreak arcade preview" width="420" />
 </div>
 <div align="center">
-<a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/JET609/JET609/main/arcade/index.html" target="_blank"><img src="https://img.shields.io/badge/Start_Run-00E5FF?style=for-the-badge" height="40" /></a>
-<a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/JET609/JET609/main/arcade/index.html" target="_blank"><img src="https://img.shields.io/badge/Open_Arcade-111827?style=for-the-badge" height="40" /></a>
+<a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/JET609/JET609/main/arcade/index.html" target="_blank"><img src="https://img.shields.io/badge/Start_Run-00E5FF?style=for-the-badge" /></a>
+<a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/JET609/JET609/main/arcade/index.html" target="_blank"><img src="https://img.shields.io/badge/Open_Arcade-111827?style=for-the-badge" /></a>
 <a href="#live-display"><img src="https://img.shields.io/badge/View_Controls-DC2626?style=for-the-badge" height="40" /></a>
 </div>
 
