@@ -13,6 +13,7 @@
   <a href="#about-me">About</a> ·
   <a href="#tech-stack">Tech Stack</a> ·
   <a href="#featured-project">Featured Project</a> ·
+  <a href="#cybersecurity-showcase">Cybersecurity</a> ·
   <a href="#activity">Activity</a> ·
   <a href="#connect">Connect</a>
 </p>
@@ -25,13 +26,12 @@
   <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/idbadge.svg?v=5" alt="Access credential" width="440" />
   <br /><br />
   <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/statuspills.svg" alt="Current status" height="40" />
-</div>
-
-<div align="center">
+  <br />
   <sub>
     <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/syncicon.svg" alt="" width="12" height="12" valign="middle" />
-    <b>Last updated:</b> <!--LAST_UPDATED-->2026-10-10 00:00 IST<!--/LAST_UPDATED--> ·
-    <b>Quote:</b> <!--RANDOM_QUOTE-->Discipline compounds. Tiny steps, big outcomes.<!--/RANDOM_QUOTE-->
+    <b>LIVE STATUS</b> · Updated <!--LAST_UPDATED-->2026-10-10 00:00 IST<!--/LAST_UPDATED-->
+    <br />
+    <!--RANDOM_QUOTE-->Discipline compounds. Tiny steps, big outcomes.<!--/RANDOM_QUOTE-->
   </sub>
 </div>
 
@@ -75,6 +75,22 @@
   | **Creative direction** | Retro-futuristic visuals, dashboards, animations |
 </details>
 
+<!-- ===================== CYBERSECURITY ===================== -->
+<h2 id="cybersecurity-showcase">🛡️ Cybersecurity showcase</h2>
+<img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/headerdivider.svg" alt="Animated section divider" width="100%" height="6" />
+
+<div align="center">
+  <a href="https://github.com/JET609/neuronfort"><img src="https://img.shields.io/badge/Featured%20Project-NeuronFort-00E5FF?style=for-the-badge&logo=github&logoColor=000814" alt="Featured cybersecurity project: NeuronFort" /></a>
+  <h3>Learning security, responsibly</h3>
+  <p><b>NeuronFort</b> is a community-maintained guide to defensive security tools, legal practice environments, and everyday security habits.</p>
+  <p>
+    <img src="https://img.shields.io/badge/Focus-Defensive%20security-00E5FF?style=flat-square" alt="Focus: defensive security" />
+    <img src="https://img.shields.io/badge/Practice-Legal%20labs-111827?style=flat-square" alt="Practice: legal labs" />
+    <img src="https://img.shields.io/badge/Approach-Responsible-16A34A?style=flat-square" alt="Approach: responsible" />
+  </p>
+  <a href="https://github.com/JET609/neuronfort"><img src="https://img.shields.io/badge/Explore%20NeuronFort-000814?style=for-the-badge&logo=github&logoColor=00E5FF" alt="Explore NeuronFort" /></a>
+</div>
+
 <!-- ===================== FEATURED PROJECT ===================== -->
 <h2 id="featured-project">🕹️ Featured project</h2>
 <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/headerdivider.svg" alt="Animated section divider" width="100%" height="6" />
@@ -102,8 +118,6 @@
 <img src="https://raw.githubusercontent.com/JET609/JET609/main/assets/headerdivider.svg" alt="Animated section divider" width="100%" height="6" />
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=JET609&show_icons=true&hide_border=true&bg_color=000814&title_color=00E5FF&text_color=FFFFFF&icon_color=00E5FF&ring_color=00E5FF" alt="GitHub statistics" height="170" />
-  <br /><br />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JET609&layout=compact&hide_border=true&bg_color=000814&title_color=00E5FF&text_color=FFFFFF" alt="Most used languages" height="170" />
 </div>
 
